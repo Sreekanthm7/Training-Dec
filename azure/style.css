@@ -1,0 +1,121 @@
+body{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4c4c51;
+    font-family:segoeuI; 
+    margin: 0;
+    padding: 0;
+}
+
+
+.hamburger-azure svg{
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 14.5px;
+    padding-bottom: 15.5px;
+    width: 44px;
+    height: 44px;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(3px);
+
+}
+.hamburger-azure{
+    display: flex;
+    align-items: center;
+    min-width: 130px;
+    transform: translateY(1px);
+    height: 45.5px;
+}
+.azure{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    line-height: 44px;
+    transform: translateX(4px);
+}
+.hamburger-azure a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1A1A1F;
+}
+
+.header-1{
+    padding: 12px;
+    width: 100%;
+    height: 78px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.microsoft-logo svg{
+    width: 32px;
+    height: 32px;
+    padding: 11px 0 11px;
+    vertical-align: middle;
+    
+    
+}
+
+.sign-in-search{
+    width: 130px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.search-icon i{
+    /* width: 18px; */
+    /* height: 18px; */
+    font-size: 17px;
+    /* transform: translateY(2px); */
+    transform: rotate(90deg);
+    padding: 13px;
+
+}
+.sign-in a{
+
+    text-decoration: none;
+    color: #1A1A1F;
+    padding: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    transform: translateY(-1px);
+}
+
+@font-face {
+    font-family: latest-woff2;
+    src: url('https://azurecomcdn.azureedge.net/cvt-aa06087a39fae1017fc357f80fdb205b83d06b703469a18441ce51fc0265fe37/fonts/bapimdl2/normal/latest.woff2');
+}
+
+@font-face {
+    font-family: segoeuI;
+    src: url('https://azurecomcdn.azureedge.net/cvt-63c12051016796d92bcf4bc20b4881057475e6dfa4937c29c9e16054814ab47d/fonts/segoe-ui/variable/SegoeUI-Roman-VF_web.woff2');
+}
+
+    /* header-2 */
+
+.header-2{
+    
+    width: 100%;
+    height: 55px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+@media screen and (min-width: 768px){
+    
+.header-1{
+    display: none;
+}
+    
+}

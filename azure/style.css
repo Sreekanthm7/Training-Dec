@@ -161,6 +161,12 @@ body{
     width: 24px;
     height: 24px;
 }
+
+.sign-in-second a{
+    text-decoration: none;
+    color: #1A1A1F;
+
+}
 @media screen and (min-width: 768px){
     
 .header-one{

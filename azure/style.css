@@ -1,9 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 1.5;
     color: #4c4c51;
-    font-family:segoeuI; 
+    font-family: segoeuI; 
     margin: 0;
     padding: 0;
 }
@@ -104,7 +108,7 @@ body{
     
     width: 100%;
     height: 55px;
-    padding: 0px 12px;
+    padding: 0px 0 0 12px;
     margin: 0px 48.4906px 0px 0px;
     box-sizing: border-box;
     display: flex;
@@ -116,7 +120,6 @@ body{
 .microsoft-logo-second svg{
     width: 24px;
     height: 25.25px;
-    padding: 11px 0 11px;
     vertical-align: middle;
     margin: 0;
 }
@@ -141,17 +144,24 @@ body{
 .nav ul{
     display: flex;
     list-style: none;
-    
-}
-.nav li{
-    display: flex;
-}
-.nav li a{
-    text-decoration: none;
-    color: #1A1A1F;
+    padding: 0px 48.8906px 0px 14px;
     
 }
 
+.nav li a{
+    text-decoration: none;
+    color: #1A1A1F;
+    font-size: 13px;
+    padding: 20px 8px;
+    letter-spacing: 0.008ch;
+}
+
+.nav ul i{
+    width: 8px;
+    height: 8px;
+    font-size: 10px;
+    font-weight: 600;
+}
 .right-side{
     display: flex;
     flex-direction: row;
@@ -165,6 +175,179 @@ body{
 .sign-in-second a{
     text-decoration: none;
     color: #1A1A1F;
+   
+}
+.search-icon-second{
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon-second i{
+    transform: rotate(90deg);
+    font-size: 14px;
+    padding: 0 15px;
+}
+.options-icons{
+    width: 44px;
+    height: 52px;
+}
+.options-icons svg{
+    padding: 15px 8px;
+    font-size: 13px;
+}
+
+.sign-in-second{
+    width: 55.14px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+}
+.sign-in-second a{
+    padding: 20px 8px;
+
+}
+
+
+/* header-third */
+
+.header-third{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.microsoft-logo-third svg{
+    width: 24px;
+    height: 25.25px;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.left-side-third{
+    padding: 0px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2px;
+    white-space: nowrap;
+}
+
+.azure-third a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #1A1A1F;
+    margin: 0px 0px 0px 24px;
+    font-weight: 600;
+
+
+}
+
+.nav-third{
+    margin: 0 0 0 24px;
+    box-sizing: border-box
+}
+.nav-third ul{
+    display: flex; 
+    padding: 0px;
+    height: 100%;
+}
+.nav-third li{
+    list-style: none;
+    padding: 4px 10px;  
+
+    
+}
+
+.nav-third a{
+    text-decoration: none;
+    color: #1A1A1F;
+}
+
+.nav-third i{
+    width: 4px;
+    height: 3px;
+
+}
+
+.nav-third{
+    display: flex;
+}
+
+.right-side-third{
+    display: flex;
+    align-items: center;
+}
+
+.search-third{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 8px;
+ 
+}
+.search-third i{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    transform: rotate(90deg);
+
+    
+}
+#search{
+    min-height: 32px;
+    padding-left: 12px;
+    padding-right: 24px;
+    width: 120px;
+    font-family: inherit;
+    display: block;
+    line-height: 1.2;
+    box-sizing: border-box;
+    border: 1px solid #747379;
+    border-radius: 4px;
+    border-color: #747379;
+    background-color: #f8f9fa;
+
+    
+}
+
+.nav-right-third{
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  
+
+}
+
+
+.nav-right-third a{
+    text-decoration: none;
+    color: #1A1A1F;
+    padding: 8px;
+    /* word-wrap: normal; */
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.free-account{
+    background-color: #89c402;
+    margin: 0 6px;
+    padding: 9px;
+    box-sizing: border-box;
+    line-height: 1;
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 4px;
+}
+.free-account a{
+    font-weight: 600;
+    font-size: 12px
+    
 
 }
 @media screen and (min-width: 768px){
@@ -181,4 +364,25 @@ body{
         display: none;
     }
     
+}
+
+@media screen and (min-width: 1080px) {
+    
+    .header-second{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    .header-third{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1320px) {
+    .header-third{
+        max-width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

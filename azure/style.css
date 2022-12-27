@@ -59,7 +59,6 @@ body{
 .microsoft-logo svg{
     width: 32px;
     height: 32px;
-    padding: 11px 0 11px;
     vertical-align: middle;
     
     
@@ -232,7 +231,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 2px;
     white-space: nowrap;
 }
 
@@ -275,6 +273,7 @@ body{
 
 .nav-third{
     display: flex;
+    word-spacing: 0.09ch;
 }
 
 .right-side-third{
@@ -286,7 +285,7 @@ body{
     position: relative;
     display: flex;
     justify-content: flex-start;
-    margin-right: 8px;
+    margin-right: 17px;
  
 }
 .search-third i{
@@ -315,7 +314,7 @@ body{
 }
 
 .nav-right-third{
-    padding: 8px;
+    padding: 8px 0 8px 8px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -329,19 +328,18 @@ body{
     color: #1A1A1F;
     padding: 8px;
     /* word-wrap: normal; */
-    white-space: nowrap;
-    display: inline-block;
+    display: flex;
+    text-align: center;
+    line-height: 1;
 }
 
 .free-account{
     background-color: #89c402;
     margin: 0 6px;
-    padding: 9px;
+    padding: 1px;
     box-sizing: border-box;
     line-height: 1;
-    width: 100%;
-    height: 100%;
-    
+    border: 1px solid #6f9e02;
     border-radius: 4px;
 }
 .free-account a{
@@ -349,6 +347,9 @@ body{
     font-size: 12px
     
 
+}
+.right-side-third{
+    margin-left: 10px;
 }
 @media screen and (min-width: 768px){
     
@@ -381,7 +382,7 @@ body{
 
 @media screen and (min-width: 1320px) {
     .header-third{
-        max-width: 1320px;
+        max-width: 1311px;
         margin-left: auto;
         margin-right: auto;
     }

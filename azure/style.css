@@ -351,12 +351,168 @@ body{
 .right-side-third{
     margin-left: 10px;
 }
+
+/* azure introduction  */
+.azure-intro{
+    background-color: #fff;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #4c4c51;
+    overflow: hidden;
+    position: relative;
+}
+.background-img-one{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+.background-img-one img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+
+.heading h3{
+    font-size: 54px;
+    position: relative;
+    color: #1A1A1F;    
+    text-align: center;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 62px 0 27px;
+    
+}
+
+.content p{
+    position: relative;
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.text-content{
+    margin: 0px 14px;
+    margin-bottom: 71px;
+}
+
+.content-buttons{
+    position: relative;
+    margin: 46px 0px 0px;
+}
+.content-buttons a{
+    text-decoration: none;
+    color: #1A1A1F;
+}
+
+.get-started{
+    margin: 12px 0 0;
+    display: flex;
+    justify-content: center;
+}
+.get-started button{
+    width: 100%;
+    height: 43px;
+    margin: 0 27px;
+    background-color: #0078D4;
+    border-radius: 4px;
+    border: 1px solid #0078D4;
+    display: inline-block;
+    /* padding: 10px 16px; */
+}
+.get-started a{
+    color: #FFFFFF;
+    font-size:14px;
+    font-weight: 600;
+}
+.try-free{
+    display: flex;
+    justify-content: center;
+}
+.try-free button{
+    width: 100%;
+    height: 43px;
+    margin: 12px 27px 0;
+    background: transparent;
+    border-color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+.try-free button a{
+    color: #000000;
+    padding: 10px 16px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.background-img-two{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.background-img-two img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-two{
+
+    padding: 60px 0;
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+
+}
+
+.page-two-heading h2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 0 5px;
+    margin: 0 0 12px;
+
+}
+.page-two-heading{
+    padding: 0 15px;
+
+}
+
+.page-two-cards{
+    margin: 32px 0 0;
+    padding: 0px 15px;
+}
+
+.workloads{
+    display: flex;
+    align-items: center;
+    padding: 24px 24px 24px 80px;
+    position: relative;
+}
+
+
 @media screen and (min-width: 768px){
     
 .header-one{
     display: none;
 }
-    
+
+    .page-two-heading h2{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin: 0 0 12px;
+    }
+
+
 }
 
 @media screen and (max-width: 767px){
@@ -385,5 +541,90 @@ body{
         max-width: 1311px;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .azure-intro{
+        /* height: 434.95px; */
+  
+    }
+    .content-buttons{
+        margin: 25px 29px 0;
+    }
+    .content{
+        margin: -23px 1px 48px 1px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .heading h3{
+       text-align: left;
+       
+    }
+
+    .content p{
+        text-align: left;
+  
+        width: 49%;
+    }
+
+    .content-buttons{
+        display: flex;
+        margin: -12px 0px;
+    }
+    .get-started button{
+        margin: 0 0;
+        width: 104.95px;
+    }
+
+    .try-free{
+        width: 144.69px;
+        margin-left: 25px;
+
+    }
+}
+
+@media screen and (min-width: 961px) {
+    .background-img-one{
+        display: none;
+    }
+
+ 
+}
+
+
+@media screen and (max-width: 960px) {
+    .background-img-two{
+        display: none;
+    }
+
+   
+}
+
+@media screen and (min-width: 960px) {
+    
+
+    .heading h3{
+        padding-right: 515px;
+
+    }
+
+   
+}
+
+
+@media screen and (min-width: 1280px) {
+    .content-buttons{
+        margin: -12px 0 269px;
+    }
+    .text-content{
+        margin: 86px 0 0 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .page-two-heading h2{
+        padding: 0 9px;
     }
 }

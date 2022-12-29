@@ -333,6 +333,12 @@ body{
     line-height: 1;
 }
 
+.text-content{
+    max-width: 1305;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .free-account{
     background-color: #89c402;
     margin: 0 6px;
@@ -487,17 +493,163 @@ body{
 }
 
 .page-two-cards{
-    margin: 32px 0 0;
-    padding: 0px 15px;
+    /* margin: 32px 0 0;
+    padding: 0px 15px; */
+    max-width: 1306px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    column-gap: 30px;
+    row-gap: 24px;
+    padding: 15px;
+ 
 }
 
-.workloads{
+.workloads, .compute-service, .configuration{
     display: flex;
     align-items: center;
-    padding: 24px 24px 24px 80px;
+    padding: 18px 24px 18px 80px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    color: #4c4c51;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.workloads-img img{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px 0 0 6px;
+    border: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 68px;
+}
+
+.workloads-text h2{
+    margin-bottom: 0;
+    width: 100%;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 12px;
+    font-size: 20px;
+}
+.workloads-text, a{
+    text-decoration: none;
+    color: #0062AD;
+    line-height: 1.5;
+}
+.compute-service{
+    align-items: center;
+    display: flex;
+    padding: 21px 24px 21px 80px;
     position: relative;
 }
 
+.compute-service-img{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 6px 0 0 6px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 68px;
+}
+
+.compute-service-img img{
+    border-radius: inherit;
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+    
+}
+
+.compute-service, a{
+    text-decoration: none;
+    color: #0062AD;
+}
+
+.compute-service h2{
+    margin-bottom: 0;
+    width: 100%;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 12px;
+    font-size: 20px;
+}
+
+.configuration{
+    align-items: center;
+    display: flex;
+    padding: 27px 24px 27px 80px;
+    position: relative;
+}
+
+.configuration-img{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 6px 0 0 6px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 68px;
+}
+.configuration-img img{
+    border-radius: inherit;
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.configuration-text h2{
+    width: 100%;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+    font-size: 20px;
+}
+
+.page-two-end{
+    padding: 0px 15px;
+    margin-top: 10%;
+}
+.end-content{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.new-to-azure p{
+    color: #1A1A1F;
+    font-size: 16px;
+}
+.overview{
+    width: 100%;
+}
+.overview button {
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid #0078d4;
+    border-radius: 4px;
+    color: #0062ad;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 16px;
+    width: 100%;
+}
+.overview a{
+    padding: 10px 16px;
+}
 
 @media screen and (min-width: 768px){
     
@@ -513,6 +665,10 @@ body{
     }
 
 
+}
+
+.new-to-azure p{
+    font-weight: 600;
 }
 
 @media screen and (max-width: 767px){
@@ -555,7 +711,91 @@ body{
     .content{
         margin: -23px 1px 48px 1px;
     }
+
+    .page-two-cards{
+       grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .workloads{
+        grid-row: 1/span 2;
+        height: 100%;
+        padding: 0px;
+    }
+    .workloads-text p{
+        color: #1A1A1F;
+        font-size: 16px;
+    }
+
+    .workloads-img img{
+        display: none;
+    }
+
+    .workloads-img{
+        background-image: url(/assets/workloadimg-2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+    .workloads-text{
+        position: absolute;
+        bottom: 4%;
+        padding-left: 24px;
+    }
+    .workloads-text a{
+        font-size: 24px;
+    }
+    .compute-service-img{
+        width: 119px;
+    }
+
+    .compute-service-img img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    .compute-service-text{
+        padding-left: 18px;
+
+    }
+    
+    .compute-service-text p{
+        font-size: 16px;
+        color: #4C4C51;
+    }
+    .compute-service{
+        padding: 21px 21px 21px 154px;
+    }
+    
+
+    .configuration-text p{
+        font-size: 16px;
+        color: #4C4C51;
+    }
+
+    .configuration{
+        padding: 21px 37px 21px 154px;
+    }
+    .configuration-img{
+        width: 119px;
+    }
+    .configuration-img img{
+        
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .end-content{
+        display: flex;
+        flex-direction: row;
+         justify-content: center;
+    }
+  
 }
+
 
 @media screen and (min-width: 769px) {
     .heading h3{
@@ -626,5 +866,39 @@ body{
 @media screen and (min-width: 1024px) {
     .page-two-heading h2{
         padding: 0 9px;
+    }
+}
+
+@media screen and (min-width: 540px){
+    .overview button{
+        width: 136.77px;
+        white-space: nowrap;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        height: 43px;
+    }
+    .overview a{
+        padding: 3px 12px;
+    }
+    .overview{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+
+    .workloads p{
+        display: none;
+    }
+
+    .compute-service p{
+        display: none;
+    }
+
+    .configuration-text p{
+        display: none;
     }
 }

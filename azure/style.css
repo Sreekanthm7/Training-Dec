@@ -1079,6 +1079,28 @@ body{
     min-width: 100%;
 }
 
+.product-and-services-two{
+    background-color: #f8f9fa;
+    padding: 60px 0px;
+    color: #4C4C51;
+
+}
+
+.products-and-services-heading-two h2{
+    font-size: 24px;
+    text-align: left;
+    color: #1A1A1F;
+    padding-right: 16px;
+
+}
+
+.products-and-services-heading-two{
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;    
+}
+
+
+
 @media screen and (min-width: 768px){
     
 .header-one{
@@ -1097,6 +1119,10 @@ body{
         font-size: 25px;
         font-weight: 600;
         line-height: 1.2;
+    }
+
+    .product-and-services{
+        display: none;
     }
  
 

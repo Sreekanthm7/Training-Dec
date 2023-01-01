@@ -1099,7 +1099,9 @@ body{
     padding-right: 0.9375rem;    
 }
 
-
+.product-and-service-left-side-two li{
+    list-style: none;
+}
 
 @media screen and (min-width: 768px){
     

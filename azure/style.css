@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     font-size: 13px;
     font-weight: 400;
@@ -1225,7 +1226,7 @@ body{
     font-weight: 600;
     line-height: 1.2;
     color: #1A1A1F;
-    
+
 }
 .nhs-content{
     margin-top: 0;
@@ -1244,7 +1245,6 @@ body{
 .nhs-image{
 display: block;
 margin-top: 10px;
-position: relative;
 }
 
 .nhs-image img{
@@ -1302,16 +1302,16 @@ position: relative;
     display: block;
 }
 .nhs-text-case-study{
+    bottom: 70px;
+    position: absolute;
     padding: 24px;
-    width: 50%;
+    width: 47%;
     background-color: #1A1A1FF0;
     margin: 0 15px;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
     border: 1px solid transparent;
-    margin-top: 30%;
     margin-right: auto;
-    position: absolute;
 }
 .nhs-text-case-study p{
     color: #F8F9FA;
@@ -1359,24 +1359,25 @@ position: relative;
 }
 
 .accelerate-your-migration{
-    padding: 60px 15px;
+    padding: 60px 0 60px 0;
     background-color: #f8f9fa;
 
 }
-.accelerate-main{
+/* .accelerate-main{
     padding: 36px;
-}
-.accelerate-img{
+} */
+/* .accelerate-img{
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-}
+} */
 .accelerate-img img{
-    height: auto;
-    max-width: 100%;
+    /* height: auto; */
+    width: 100%;
+    height: 100%;
 }
 
 .accelerate-content{
-    margin: 24.7969px 0px 0px;
+    /* margin: 24.7969px 0px 0px; */
     padding: 0px 5px;
 }
 .accelerate-text h2{
@@ -2853,6 +2854,7 @@ position: relative;
         min-height: 600px;
         max-height: 700px;
         object-fit: cover;
+
         
     }
     .discover-grid-content-two{
@@ -2885,7 +2887,7 @@ position: relative;
    }
    
    .nhs-image-one{
-    position: absolute;
+    position: relative;
    }
 
    .dots{

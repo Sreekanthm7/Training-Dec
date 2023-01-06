@@ -1301,6 +1301,38 @@ margin-top: 10px;
     width: 25%;
     display: block;
 }
+
+.forza{
+    filter: grayscale(100%);
+}
+.forza:hover{
+    filter: grayscale(0%);
+}
+.nba{
+    filter: grayscale(100%);
+
+}
+.nba:hover{
+    filter: grayscale(0%);
+}
+.acs{
+    filter: grayscale(100%);
+}
+.acs:hover{
+    filter: grayscale(0%);
+}
+.pepsico{
+    filter: grayscale(100%);
+}
+.pepsico:hover{
+    filter: grayscale(0%);
+}
+.ge-logo{
+    filter: grayscale(100%);
+}
+.ge-logo:hover{
+    filter: grayscale(0%);
+}
 .nhs-text-case-study{
     bottom: 70px;
     position: absolute;
@@ -1312,6 +1344,7 @@ margin-top: 10px;
     box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
     border: 1px solid transparent;
     margin-right: auto;
+    max-width: 625px;
 }
 .nhs-text-case-study p{
     color: #F8F9FA;
@@ -1340,6 +1373,8 @@ margin-top: 10px;
     object-fit: cover;
     width: 100%;
     height: auto;
+    max-width: 1920px;
+    margin-inline: auto;
 }
 .nhs-image-one img{
     width: 100%;
@@ -1678,6 +1713,8 @@ margin-top: 10px;
     color: #4c4c51;
     display: block;
     width: 100%;
+    max-width: 1950px;
+    margin-inline: auto;
 }
 .developer-stories-img-one{
     position: relative;
@@ -1817,6 +1854,7 @@ margin-top: 10px;
     padding: 0 15px;
     padding-top: 50px;
 
+
 }
 .developer-stories-content-two{
  
@@ -1830,6 +1868,7 @@ margin-top: 10px;
     box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
     position: relative;
     border: 1px solid transparent;
+    margin-left: 0;
 }
 .developer-stories-text-two{
     margin-top: 0;
@@ -2513,6 +2552,9 @@ margin-top: 10px;
     .azure-footer-content ul{
         display: none;
     }
+    .sticky-header{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 540px){
@@ -2730,7 +2772,7 @@ margin-top: 10px;
     .header-one{
         display: none;
     }
-    
+   
         .page-two-heading h2{
             font-size: 24px;
             font-weight: 600;
@@ -2763,10 +2805,13 @@ margin-top: 10px;
     .accelerate-main{
         align-items: center;
         display: flex;
+        max-width: 1310px;
+        margin-inline: auto;
     }
     .accelerate-content{
         margin-right: 30px;
         margin-top: -43px;
+        max-width: 619px;
     }
     .start-buliding{
         display: none;
@@ -2897,6 +2942,7 @@ margin-top: 10px;
     display: block;
     position: absolute;
     top: 0;
+    left: 0;
    }
 
 .developer-stories-img-two img{
@@ -2904,10 +2950,7 @@ margin-top: 10px;
     height: 100%;
     min-height: 600px;
     max-height: 700px;
-    max-width: 1920px;
     object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
 }
 .developer-stories-content{
     display: none;

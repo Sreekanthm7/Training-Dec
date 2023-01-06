@@ -147,7 +147,6 @@ body{
     padding: 0px 48.8906px 0px 14px;
     
 }
-
 .nav li a{
     text-decoration: none;
     color: #1A1A1F;
@@ -242,7 +241,11 @@ body{
     margin: 0px 0px 0px 24px;
     font-weight: 600;
 
+}
 
+.azure-third a:hover{
+    text-decoration: underline;
+    color: #1A1A1F;
 }
 
 .nav-third{
@@ -254,6 +257,12 @@ body{
     padding: 0px;
     height: 100%;
 }
+
+.nav-third li:hover{
+    text-decoration: underline;
+    color: #1A1A1F;
+}
+
 .nav-third li{
     list-style: none;
     padding: 4px 10px;  
@@ -319,10 +328,12 @@ body{
     box-sizing: border-box;
     display: flex;
     align-items: center;
-  
+}
+.nav-right-third a:hover{
+    text-decoration: underline;
+    color: #1A1A1F;
 
 }
-
 
 .nav-right-third a{
     text-decoration: none;
@@ -430,6 +441,10 @@ body{
     display: inline-block;
     /* padding: 10px 16px; */
 }
+.get-started a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
 .get-started a{
     color: #FFFFFF;
     font-size:14px;
@@ -448,11 +463,19 @@ body{
     border: 1px solid #000;
     border-radius: 4px;
 }
+.try-free button:hover{
+    background-color: #1A1A1F;
+
+}
 .try-free button a{
     color: #000000;
     padding: 10px 16px;
     font-weight: 600;
     white-space: nowrap;
+}
+.try-free button a:hover{
+    text-decoration: underline;
+    color: #fff;
 }
 
 .background-img-two{
@@ -505,6 +528,13 @@ body{
     row-gap: 24px;
     padding: 15px;
  
+}
+.page-two-cards h2:hover{
+    text-decoration: underline;
+    color: #1A1A1F;
+}
+.page-two-cards a:hover{
+    color: #1A1A1F;
 }
 
 .workloads, .compute-service, .configuration{
@@ -650,6 +680,13 @@ body{
 }
 .overview a{
     padding: 10px 47px;
+}
+.overview button:hover{
+    background-color: #0078D4;
+}
+.overview a:hover{
+    text-decoration: underline;
+    color: #fff;
 }
 
 
@@ -1112,6 +1149,10 @@ body{
     margin-right: 12px;
     width: 25%;
 }
+.product-and-service-left-side-two li:hover{
+    text-decoration: underline;
+    color: #1A1A1F;
+}
 
 .product-and-service-left-side-two ul{
     list-style: none;
@@ -1144,7 +1185,9 @@ body{
     font-size: 16px;
 
 }
-
+.see-all-products-two a:hover{
+    color: #1A1A1F;
+}
 .see-all-products-two a, i{
     text-decoration: none;
     color: #0062AD;
@@ -1155,7 +1198,10 @@ body{
 .product-and-service-right-side-two{
     width: 75%;
 }
-
+.product-and-service-right-side-two a:hover{
+    text-decoration: underline;
+    color: #0078D4;
+}
 .product-and-services-two img{
     height: 36px;
     min-width: 36px;
@@ -1184,6 +1230,12 @@ body{
 .right-monitor{
     margin-top: 21px;
     width: 25%;
+ 
+}
+.right-monitor:hover{
+    transform: translateX(-40px);
+    transition: 0.5s ease-in-out;
+
 }
 .monitor-img-two img{
   width: 100%;
@@ -1431,6 +1483,13 @@ margin-top: 10px;
     margin-right: 0;
 
 }
+.help-btn button:hover{
+    background-color: #0078D4;  
+}
+.help-btn a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
 .help-btn button{
     background-color: transparent;
     border: 1px solid #0078d4;
@@ -1599,6 +1658,10 @@ margin-top: 10px;
     font-size: 16px;
     margin: 0;
 }
+.card-text-two:hover{
+    text-decoration: underline;
+    color: #1A1A1F;
+}
 
 .discover-card-idc-two{
     display: grid;
@@ -1651,6 +1714,10 @@ margin-top: 10px;
     margin-left: 1px;
     
 }
+.card-idc-text-two:hover{
+    text-decoration: underline;
+    color: #FFFFFF;
+}
 
 .discover-card-gobeyond-two{
     display: grid;
@@ -1702,6 +1769,11 @@ margin-top: 10px;
     color: #FFFFFF;
     margin-left: 1px;
     
+}
+
+.card-gobeyond-text-two:hover{
+    text-decoration: underline;
+    color: #FFFFFF;
 }
 .developer-stories{
     padding: 0;
@@ -1900,6 +1972,11 @@ margin-top: 10px;
         margin-top: 12px;
         margin-bottom: 0;
 }
+.watch-story-btn:hover{
+    text-decoration: underline;
+    color: #FFFFFF;
+    background-color: #0062AD;
+}
 .watch-story-btn ::before{
     content: '';
     display: block;
@@ -1944,6 +2021,9 @@ margin-top: 10px;
     text-decoration-color: #b8b9ba;
     font-size: 14px;
     font-weight: 600;
+}
+.check-out a:hover{
+    text-decoration: none;
 }
 .check-out i{
     color: inherit;
@@ -2116,6 +2196,13 @@ margin-top: 10px;
     font-size: 20px;
     margin: 0;
 }
+
+.start-building-text-two h3:hover{
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+
 .start-building-text-two p{
     padding-right: 4px;
     font-size: 16px;
@@ -2151,6 +2238,11 @@ margin-top: 10px;
     color: #f8f9fa;
     padding-right: 10px;
 }
+.sales-specialist-text-two h3:hover{
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
 .sales-specialist-text-two h3{
     font-size: 20px;
     margin: 0;
@@ -2191,6 +2283,11 @@ margin-top: 10px;
 .new-to-azure-last-text-two h3{
     font-size: 20px;
     margin: 0;
+}
+
+.new-to-azure-last-text-two h3:hover{
+    text-decoration: underline;
+    color: #FFFFFF;
 }
 .new-to-azure-last-two p{
     padding-right: 4px;
@@ -2291,6 +2388,10 @@ margin-top: 10px;
 .explore-azure-footer a{
     font-size: 18px;
     color: inherit;
+}
+.azure-footer-content li a:hover{
+    text-decoration: underline;
+    color: #1A1A1F;
 }
 
 .products-and-pricing-azure-footer button{
@@ -2397,6 +2498,10 @@ margin-top: 10px;
     justify-content: flex-end;
 
 
+}
+.minimum-links-footer a:hover{
+    text-decoration: underline;
+    color: #1A1A1F;
 }
 
 .minimum-links-footer li a{

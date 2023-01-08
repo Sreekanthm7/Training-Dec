@@ -382,12 +382,18 @@
     .above-header{
         display: none;
     }
+    .airbnb-header-two{
+        display: none;
+    }
 }
 @media screen and (min-width: 744px) {
     .airbnb-header-one{
         display: none;
     }
     .above-header{
+        display: block;
+    }
+    .airbnb-header-two{
         display: block;
     }
 }

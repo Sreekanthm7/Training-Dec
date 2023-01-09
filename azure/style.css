@@ -542,7 +542,7 @@ body{
     align-items: center;
     padding: 18px 24px 18px 80px;
     position: relative;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     border-radius: 6px;
     box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
     color: #4c4c51;
@@ -2742,10 +2742,6 @@ margin-top: 10px;
     
 }
 @media screen and (min-width: 768px){
-    .azure-intro{
-        /* height: 434.95px; */
-  
-    }
     .content-buttons{
         margin: 25px 29px 0;
     }
@@ -2769,12 +2765,11 @@ margin-top: 10px;
         font-size: 16px;
     }
 
-    .workloads-img img{
+    /* .workloads-img img{
         display: none;
-    }
+    } */
 
     .workloads-img{
-        background-image: url(/assets/workloadimg-2.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;

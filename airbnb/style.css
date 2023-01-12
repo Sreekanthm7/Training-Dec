@@ -752,7 +752,7 @@
     list-style: none;
 }
 .footer-list li{
-    margin: 12px 0 0;
+    margin: 12px 8px 0 0;
 }
 .footer-list a{
     text-decoration: none;
@@ -907,7 +907,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
     .airbnb-footer{
-        padding: 0 80px;
+        padding: 0 40px;
     }
     .airbnb-inc{
         display: flex;
@@ -1009,6 +1009,12 @@
         padding: 0 80px;
     }
     .nav-filter{
+        padding: 0 80px;
+    }
+    .airbnb-filter-button{
+        margin-right: 0;
+    }
+    .airbnb-footer{
         padding: 0 80px;
     }
 }

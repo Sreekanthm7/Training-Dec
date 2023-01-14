@@ -275,7 +275,17 @@
     margin: 12px 0px 0px;
     background-color: transparent;
     display: flex;
-    
+    align-items: center;
+}
+
+.content-one-btn p{
+    font-size: 14px;
+    font-family: 'doordash-bold';
+    line-height: 20px;
+    letter-spacing: -0.04ch;
+    color: rgb(235, 23, 0);
+    margin: 0;
+    padding: 0;
 }
 @media screen and (min-width: 320px) {
     .header-logo{

@@ -434,27 +434,218 @@
     max-width: 100%;
 }
 .doordash-footer{
-    max-width: 1160px;
     padding: 0px 20px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+    background-color: rgb(25, 25, 25);
+
 }
 .footer-one{
     display: flex;
     flex-direction: row;
+    max-width: 1160px;
+    margin: auto;
+
 }
 .top-cities{
     text-align: center;
     padding-top: 32px;
     padding-bottom: 32px;
     flex: 1 1 0%;
+    
+}
+.top-cities h2{
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-family: 'doordash-medium';
+    font-weight: 500;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+}
+.top-cities-section a{
+    font-size: 14px;
+    font-family: 'doordash-medium';
+    font-weight: 500;
+    line-height: 20px;
+    color: rgb(196, 196, 196);
+    text-decoration: none;
+    margin-top: 8px;
+}
+.top-cities-one{
+    display: flex;
+    flex-direction: column;
+}
+.top-cities-two{
+    display: flex;
+    flex-direction: column;
+}
+.top-cities-three{
+    display: flex;
+    flex-direction: column;
 }
 .cuisines-near-you{
     text-align: center;
     padding-top: 32px;
     padding-bottom: 32px;
     flex: 1 1 0%;
+}
+.cuisines-near-you h2{
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-family: 'doordash-medium';
+    font-weight: 500;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+.cuisines-one{
+    display: flex;
+    flex-direction: column;
+}
+.cuisines-two{
+    display: flex;
+    flex-direction: column;
+}
+.cuisines-section a{
+    font-size: 14px;
+    font-family: 'doordash-medium';
+    font-weight: 500;
+    line-height: 20px;
+    color:rgb(196, 196, 196);
+    text-decoration: none;
+    margin-top: 8px;
+}
+.footer-two{
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 1160px;
+    margin: auto;
+}
+.footer-two-section{
+    flex-direction: column;
+    text-align: center;
+    flex: 1 1 0%;
+    display: flex;
+    justify-content: space-between;
+}
+.know-us{
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+.know-us h2{
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-family: 'doordash-medium';
+    font-weight: 500;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+}
+.know-us a{
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: 'doordash-medium';
+    font-weight: 500;
+    line-height: 20px;
+    color: rgb(196, 196, 196);
+    text-decoration: none;
+}
+.help-you{
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+.help-you h2{
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-family: 'doordash-medium';
+    font-weight: 500;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+}
+.help-you a{
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: 'doordash-medium';
+    font-weight: 500;
+    line-height: 20px;
+    color: rgb(196, 196, 196);
+    text-decoration: none;
+
+}
+.doing-business{
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+.doing-business h2{
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-family: 'doordash-medium';
+    font-weight: 500;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+}
+.doing-business a{
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: 'doordash-medium';
+    font-weight: 500;
+    line-height: 20px;
+    color: rgb(196, 196, 196);
+    text-decoration: none;
+
+}
+.footer-two-buttons{
+    display: flex;
+    padding-top: 32px;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-two-buttons a{
+    opacity: 0.7;
+}
+.app-store{
+    padding: 2px 8px;
+    border-radius: 8px;
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-two-buttons a:nth-child(2){
+    opacity: 0.7;
+    margin-top: 12px;
+}
+.google-play{
+    padding: 2px 8px;
+    border-radius: 8px;
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-three{
+    display: flex;
+    padding: 32px 0px;
+    flex-direction: column-reverse;
+    max-width: 1160px;
+    margin: auto;
+}
+.footer-three-text{
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-three-text a{
+    margin-left: 16px;
+    font-size: 12px;
+    font-family: 'doordash-regular';
+    font-weight: 400;
+    line-height: 18px;
+    color: rgb(196, 196, 196);
+    text-decoration: none;
+}
+.footer-three-icons a{
+    margin-left: 12px;
 }
 @media screen and (min-width: 320px) {
     .header-logo{
@@ -528,6 +719,67 @@
         justify-content: center;
         flex-direction: column;
     }
+    .footer-one{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-cities-section{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+    .top-cities-one{
+        flex: 1 1 0%;
+    }
+    .top-cities-two{
+        flex: 1 1 0%;
+    }
+    .top-cities-three{
+        flex: 1 1 0%;
+    }
+    .top-cities h2{
+        text-align: left;
+    }
+    .cuisines-section{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+    .cuisines-one{
+        flex: 1 1 0%;
+    }
+    .cuisines-two{
+        flex: 1 1 0%;
+    }
+    .cuisines-near-you h2{
+        text-align: left;
+    }
+    .footer-two-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-two-buttons{
+        padding-top: 72px;
+    }
+    .know-us a{
+        text-align: left;
+    }
+    .help-you a{
+        text-align: left;
+
+    }
+    .doing-business a{
+        text-align: left;
+    }
+    .doing-business h2{
+        text-align: left;
+    }
+    .footer-three{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 @media screen and (min-width: 960px) {
@@ -566,12 +818,6 @@
     .content-two-btn{
        max-width: 120.56px;
         height: 40px;
-
-
-
-
-
-        
         padding: 0 5px;
     }
     .content-two-btn a{
@@ -583,6 +829,30 @@
     }
     .every-flavor-btn{
         font-size: 16px;
+    }
+    .footer-one{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-two{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-two-media-btn{
+        padding-top: 32px;
+        flex: 1 1 0%;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+    .footer-two-buttons{
+        padding: 0;
+    }
+    .footer-two-section{
+        display: flex;
+        flex: 1 1 0%;
+        justify-content: space-between;
+
     }
     }
 @media screen and (min-width: 1184px){

@@ -516,12 +516,71 @@
 // console.log(getHand());
 
 
-// function saveLead(){
-//     console.log("button clicked");
+
+
+
+// const container = document.getElementById("container")
+// container.innerHTML = "<button onclick='buy()'>Buy!</button>"
+
+// function buy(){
+//     container.innerHTML += "<p>Thank you for buying!</p>"
 // }
 
-let inputbtn = document.getElementById("input-btn")
 
-inputbtn.addEventListener("click", function(){
-    console.log("Button clicked from the addEventlistner "); 
-})
+// let myLead = [] 
+// let oldLead=[]
+// const inputEl = document.getElementById("input-el")
+// const inputbtn = document.getElementById("input-btn")
+// const ulEl = document.getElementById("ul-el")
+// const deletebtn = document.getElementById("delete-btn")
+// const leadFromLocalStorage = JSON.parse( localStorage.getItem("myLead"))
+// console.log(leadFromLocalStorage);
+
+// if (leadFromLocalStorage) {
+//     myLead = leadFromLocalStorage
+//     render(myLead)
+// }
+
+// function renderLeads(){
+//     let listItems = ""
+//     for(let i=0;i < myLead.length;i++){
+//         // console.log(myLead[i])
+//         // ulEl.textContent += myLead[i] + " "
+    
+//        listItems += "<li><a target='_blank' href='" + myLead[i] + "'>"  + myLead[i] + "</a></li>"
+        
+//         // const li = document.createElement("li")
+//         // li.textContent =myLead[i]
+//         // ulEl.append(li)
+//     }
+//     ulEl.innerHTML = listItems
+//     }
+    
+
+// deletebtn.addEventListener("dblclick", function(){
+//     console.log("double clicked");
+//     localStorage.clear()
+//     myLead = []
+//     render(myLead)
+// })
+
+// inputbtn.addEventListener("click", function(){
+//    myLead.push(inputEl.value)
+//     inputEl.value = ""
+//     renderLeads()
+// })
+
+
+// const recipient= "James"
+// const sender = "Per Harald Borgen"
+// const email = `Hey ${recipient}! How is it going? Cheers ${sender}`
+
+// console.log(email);
+
+// const welcomeEl = document.getElementById("welcome-el")
+
+// function greetUser(greeting,name){
+//     welcomeEl.textContent = `${greeting}, ${name}` 
+// }
+
+// greetUser("Howdy", "James")

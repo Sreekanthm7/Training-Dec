@@ -63,6 +63,7 @@ button{
 } */
 
 body{
+    /* text-align: center; */
     margin: 0;
     padding: 10px;
     font-family:  Arial, Helvetica, sans-serif;
@@ -81,6 +82,37 @@ button{
     background-color:  #5f9341;
     color: white;
     padding: 10px 20px;
-    border: none;
+    border: 1px solid green;
     font-weight: bold;
+}
+
+/* #container {
+    margin-top: 30px;
+}
+#container button{
+    background-color: lightcoral;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+#container p{
+    color: lightcoral;
+    font-size: 20px;
+    font-weight: bold;
+} */
+
+ul{
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+li{
+    margin-top: 5px;
+}
+
+ a{
+    color: #5f9341;
 }

@@ -1,0 +1,97 @@
+/* .card{
+    background: lightgreen;
+    width: 650px;
+    margin-bottom: 3rem;
+}
+
+.card img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+} */
+
+/* *{
+    box-sizing: border-box;
+}
+
+:root{
+    --background: rgba(85, 214, 170, .85);
+}
+
+body{
+    margin: 0;
+    background: #222;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+header{
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+nav{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.nav a:hover{
+    color: #000;
+}
+.nav-toggle{
+    display: none;
+}
+
+.nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+.nav-toggle:checked ~ nav{
+    display: block;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::after{
+    top: 7px;
+} */
+
+.col{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid grey;
+}
+.col{
+
+}

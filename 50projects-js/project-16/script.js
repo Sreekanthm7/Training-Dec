@@ -46,3 +46,4 @@ function updateBigcup(){
         liters.innerText = `${2-(250 * fullCups/1000)}`
     }
 }
+

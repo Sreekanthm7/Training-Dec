@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "graphik-medium";
+  src: url(assets/fonts/Graphik-Medium-Web.woff2);
+}
+@font-face {
+  font-family: "graphik-regular";
+  src: url(assets/fonts/Graphik-Regular-Web.woff2);
+}
+@font-face {
+  font-family: "guardian";
+  src: url(assets/fonts/Guardian-EgypTT-Light.woff2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.15);
+  padding:0 12px;
+}
+
+.etsy-logo {
+  padding-bottom: 6px;
+  width: 60px;
+  height: 30px;
+  fill: #f1641e;
+  margin-top: -5px;
+  transform: translateX(-3px);
+}
+.accounts{
+    display: flex;
+    align-items: center;
+}
+
+.sign-in button {
+  color: #222;
+  font-size: 13px;
+  line-height: 1.4;
+  /* min-height: 36px;
+  min-width: 36px; */
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  background-color: #fff;
+  font-family: 'graphik-medium';
+  margin-right: 6px;
+  transform: translateX(4px);
+}
+
+.heart-icon {
+    width: 24px;
+    height: 24px;
+    margin: 12px;
+    transform: translate(2px, -1px);
+}
+
+.cart-icon {
+    width: 24px;
+    height: 24px;
+    margin: 12px;
+    transform: translateY(-1px);
+}

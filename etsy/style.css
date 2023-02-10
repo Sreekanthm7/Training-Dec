@@ -163,39 +163,55 @@ header {
   margin-bottom: 42px;
   max-width: 1400px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .content-background{
-  height: 75%;
+  height: 17vh;
   background-color: #d7e6f5;
-  position: absolute;
-  width: 100vw;
+  position: relative;
+  width: 83vw;
   left: 50%;
   margin-left: -50vw;
 }
-
+.discover-images-etsy{
+  position: absolute;
+  top: 0;
+}
 .discover-images-etsy ul{
-  padding-top: 6px;
-  padding-right: 6px;
+  padding: 6px 6px 0;
+  top: 0;
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-left: 40px;
 }
 .discover-images-etsy li{
-  padding-left: 2.5%;
+  padding-left: 3.5%;
   padding-right: 2.5%;
   padding-top: 0px;
   padding-bottom: 0px;
-  flex-grow: 1;
-  flex-basis: 33.33333333333%;
-  max-width: 33.33333333333%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .discover-images-etsy li img{
+  max-width: 96px;
+  border-radius: 50%;
+}
+.discover-images-etsy li a{
+  text-decoration: none;
+  font-family: 'graphik-regular';
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .1px;
+  line-height: 18px;
+  transform: translateY(-3px);
+  color: #222222;
+}
+.img-container-etsy{
   margin: 12px 0px 6px;
-  padding: 93.2188px 0px 0px
-  ;
 }
 @media screen and (min-width: 320px) {
   .main-header-two {

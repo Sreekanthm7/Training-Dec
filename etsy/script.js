@@ -70,7 +70,6 @@ const discoverListData = [
     imageURL:`https://i.etsystatic.com/18077312/r/il/b10e09/2350226444/il_300x300.2350226444_odar.jpg`,
     label: "Jewellery"
   },
-
   {
     imageURL:`https://i.etsystatic.com/32501528/c/1518/1518/253/562/il/4bdfa0/3702738409/il_300x300.3702738409_qfmi.jpg`,
     label: "Clothing"
@@ -147,3 +146,6 @@ for(let key in discoverListData){
 // }
 
 // createCategoryList(categoryListData, ulList,giftImg)
+
+
+

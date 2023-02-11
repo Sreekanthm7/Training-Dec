@@ -213,6 +213,10 @@ header {
 .img-container-etsy{
   margin: 12px 0px 6px;
 }
+
+a p{
+  white-space: nowrap;
+}
 @media screen and (min-width: 320px) {
   .main-header-two {
     display: none;

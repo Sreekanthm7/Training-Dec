@@ -1,6 +1,9 @@
 const navbar = document.querySelector(".etsy-nav")
+
+const cardsContainer = document.querySelector(".cards-container")
 const giftImg =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 5 22 12" width="16" height="12" aria-hidden="true" focusable="false"><path d="M5,6A1,1,0,0,0,4,7v3H5v9a1,1,0,0,0,1,1h5V6H5Z"></path><path d="M19,6H13.007A4.245,4.245,0,0,0,14.97,3.744a1.614,1.614,0,0,0-2.65-1.375,1.757,1.757,0,0,0-.315.324,1.753,1.753,0,0,0-.315-0.324A1.615,1.615,0,0,0,9.042,3.746,4.257,4.257,0,0,0,11.006,6H13V20h5a1,1,0,0,0,1-1V10h1V7A1,1,0,0,0,19,6Z"></path></svg>'
+
 const categoryListData = [
   {
     label: "Sellers' Sales Hub",
@@ -159,40 +162,222 @@ const dealsOfTheDayList = [
   },
 ]
 
-function createDealsOfTheDayContent(imageURL, offer, label){
-const dealsOfTheDayCards = document.createElement("div")
-dealsOfTheDay.appendChild(dealsOfTheDayCards)
-dealsOfTheDayCards.classList.add('deals-of-the-day-cards')
+function createDealsOfTheDayContent(imageURL, offer, label) {
+  // const dealsOfTheDayCardContainer = document.createElement('div')
+  // dealsOfTheDayContainer.appendChild(dealsOfTheDayCardContainer)
+  // dealsOfTheDayCardContainer.classList.add('cards-container')
 
-const dealsOfTheDayCardBox = document.createElement('div')
-dealsOfTheDayCards.appendChild(dealsOfTheDayCardBox)
-dealsOfTheDayCardBox.classList.add('deals-of-the-day-card-box')
+  const dealsOfTheDayCards = document.createElement("div")
+  cardsContainer.appendChild(dealsOfTheDayCards)
+  dealsOfTheDayCards.classList.add("deals-of-the-day-cards")
 
-const dealsOfTheDayImg = document.createElement('img')
-dealsOfTheDayImg.src=imageURL
-dealsOfTheDayCardBox.appendChild(dealsOfTheDayImg)
-dealsOfTheDayImg.classList.add('deals-of-the-day-img')
+  const dealsOfTheDayCardBox = document.createElement("div")
+  dealsOfTheDayCards.appendChild(dealsOfTheDayCardBox)
+  dealsOfTheDayCardBox.classList.add("deals-of-the-day-card-box")
 
-const dealsOfTheDayTextContent = document.createElement('div')
-dealsOfTheDayCards.appendChild(dealsOfTheDayTextContent)
-dealsOfTheDayTextContent.classList.add('deals-of-the-day-text-content')
+  const dealsOfTheDayImg = document.createElement("img")
+  dealsOfTheDayImg.src = imageURL
+  dealsOfTheDayCardBox.appendChild(dealsOfTheDayImg)
+  dealsOfTheDayImg.classList.add("deals-of-the-day-img")
 
+  const dealsOfTheDayTextContent = document.createElement("div")
+  dealsOfTheDayCards.appendChild(dealsOfTheDayTextContent)
+  dealsOfTheDayTextContent.classList.add("deals-of-the-day-text-content")
 
-const dealsOfTheDayOffer = document.createElement('div')
-dealsOfTheDayTextContent.appendChild(dealsOfTheDayOffer)
-dealsOfTheDayOffer.classList.add('deals-of-the-day-offer')
-dealsOfTheDayOffer.innerHTML = offer
+  const dealsOfTheDayOffer = document.createElement("div")
+  dealsOfTheDayTextContent.appendChild(dealsOfTheDayOffer)
+  dealsOfTheDayOffer.classList.add("deals-of-the-day-offer")
+  dealsOfTheDayOffer.innerHTML = offer
 
-const dealsOfTheDayText = document.createElement('div')
-dealsOfTheDayTextContent.appendChild(dealsOfTheDayText)
-dealsOfTheDayText.classList.add('deals-of-the-day-text')
-dealsOfTheDayText.innerHTML = label
+  const dealsOfTheDayText = document.createElement("div")
+  dealsOfTheDayTextContent.appendChild(dealsOfTheDayText)
+  dealsOfTheDayText.classList.add("deals-of-the-day-text")
+  dealsOfTheDayText.innerHTML = label
 }
-for(let key in dealsOfTheDayList){
-createDealsOfTheDayContent(
-  dealsOfTheDayList[key].imageURL,
-  dealsOfTheDayList[key].offer,
-  dealsOfTheDayList[key].label
-)
-
+for (let key in dealsOfTheDayList) {
+  createDealsOfTheDayContent(
+    dealsOfTheDayList[key].imageURL,
+    dealsOfTheDayList[key].offer,
+    dealsOfTheDayList[key].label
+  )
 }
+
+const popularGifts = document.querySelector(".popular-gifts")
+const ratingFullImg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="3 3 18 18" aria-hidden="true" focusable="false"><path d="M19.985,10.36a0.5,0.5,0,0,0-.477-0.352H14.157L12.488,4.366a0.5,0.5,0,0,0-.962,0l-1.67,5.642H4.5a0.5,0.5,0,0,0-.279.911L8.53,13.991l-1.5,5.328a0.5,0.5,0,0,0,.741.6l4.231-2.935,4.215,2.935a0.5,0.5,0,0,0,.743-0.6l-1.484-5.328,4.306-3.074A0.5,0.5,0,0,0,19.985,10.36Z"></path></svg>`
+const ratingHalfImg = `<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="3 3 18 18" aria-hidden="true" focusable="false" width="18" height="18"><path class="background" d="M12.007 16.97l4.21 2.95c.182.12.422.11.592-.027.17-.138.23-.37.15-.574l-1.484-5.33 4.306-3.073c.182-.12.265-.347.203-.557-.065-.21-.258-.352-.477-.352h-5.35l-1.67-5.642c-.06-.215-.257-.363-.48-.363-.225 0-.42.148-.482.363v12.94l.48-.335z" fill="#E1E3DF"></path><path class="foreground" d="M12 4c-.224 0-.42.15-.48.366l-1.67 5.642H4.5c-.218.002-.41.145-.472.354-.064.208.014.433.193.557l4.307 3.07-1.5 5.33c-.08.202-.02.433.15.57.17.14.41.15.59.03L12 16.98V4z" fill="#222222"></path></svg>`
+const playBtn = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><polygon points="4 4 4 20 20 12 4 4"></polygon></svg>`
+const popularGiftsList = [
+  {
+    imageURL: `https://i.etsystatic.com/35966576/c/1614/1283/669/351/il/e1510f/4033777789/il_340x270.4033777789_dqlw.jpg`,
+    label:
+      "Birth Flower jewelry Travel Case, Birth Month Flower Gift, Personalized Birthday Gift, Leather Jewelry Travel Case, Custom Jewelry Case",
+    rating: 4.5,
+    ratingCount: "(9,741)",
+    currencySymbol: `₹`,
+    price: "",
+    oldPrice: 1709,
+    offer: 50,
+    delivery: ""
+  },
+  {
+    imageURL: `https://i.etsystatic.com/25168585/c/2500/1987/0/181/il/214e7e/4589233930/il_340x270.4589233930_dg79.jpg`,
+    label:
+      "Custom Pet Portraits Using Pet Photo Personalized Digital Dog Portraits Cat Portraits Custom Dog Portraits Custom Pet Art Pet",
+    rating: 5,
+    ratingCount: "(11,431)",
+    currencySymbol: `₹`,
+    price: "",
+    oldPrice: 1281,
+    offer: 40,
+    delivery: ""
+  },
+  {
+    imageURL: `https://i.etsystatic.com/32477306/c/2000/1589/0/256/il/0bcd64/3491080620/il_340x270.3491080620_oh18.jpg`,
+    label:
+      "Dainty Name Necklace with Birth Flower, Personalized Name Necklace, Custom Gold Name Jewelry, Birthday Gift for Her, Bridesmaid Gift",
+    rating: 5,
+    ratingCount: "(13,804)",
+    currencySymbol: `₹`,
+    price: "",
+    oldPrice: 3321,
+    offer: 50,
+    delivery: "FREE delivery"
+  },
+  {
+    imageURL: `https://i.etsystatic.com/27890741/c/2343/1862/320/560/il/31a0dd/4028709894/il_340x270.4028709894_i6tr.jpg`,
+    label:
+      "Heart Keychain Set - Made with Authentific LEGO® Bricks, Matching keychains, Gift Set for Couples, Best Friends - Very High Quality & DURABLE ",
+    rating: 5,
+    ratingCount: "(12,849)",
+    currencySymbol: `₹`,
+    price: "",
+    oldPrice: 1451,
+    offer: 50,
+    delivery: ""
+  },
+  {
+    imageURL: `https://i.etsystatic.com/28045281/r/il/3f41fa/3897994052/il_340x270.3897994052_l8xd.jpg`,
+    label:
+      "Sun catcher/ Crystal suncatcher/ Crystal Rainbow maker/ Aurora gemstone suncatcher/ crystal prism / wall hanging/ Home decor/ Gift 4 women",
+    rating: 5,
+    ratingCount: "(7001)",
+    currencySymbol: "₹",
+    price: "",
+    oldPrice: 2650,
+    offer: 10,
+    delivery: "FREE delivery"
+  },
+  {
+    imageURL: `https://i.etsystatic.com/26694795/c/2445/1943/282/0/il/035b01/3254592822/il_340x270.3254592822_5dss.jpg`,
+    label:
+      "Handmade Damascus Pocket Knife Rose Wood Handle Birthday Gift Anniversary Wedding Personalized Gift for Men ",
+    rating: 5,
+    ratingCount: "(6430)",
+    currencySymbol: "₹",
+    price: "",
+    oldPrice: 7697,
+    offer: 70,
+    delivery: ""
+  },
+]
+
+const popularGiftsContainer = document.createElement("div")
+
+popularGifts.appendChild(popularGiftsContainer)
+popularGiftsContainer.classList.add("popular-gifts-container")
+function createPopularGift(popularGiftsList){
+  for(let i = 0; i< popularGiftsList.length; i++){
+
+
+
+
+
+const popularGiftsCardsContainer = document.createElement("div")
+popularGiftsContainer.appendChild(popularGiftsCardsContainer)
+popularGiftsCardsContainer.classList.add("popular-gift-card-container")
+
+const popularGiftsCards = document.createElement("div")
+popularGiftsCardsContainer.appendChild(popularGiftsCards)
+popularGiftsCards.classList.add("popular-gifts-cards")
+
+const popularGiftsCardsBody = document.createElement("div")
+popularGiftsCards.appendChild(popularGiftsCardsBody)
+popularGiftsCardsBody.classList.add("popular-gifts-cards-body")
+
+const popularGiftsCardsImg = document.createElement("div")
+popularGiftsCardsBody.appendChild(popularGiftsCardsImg)
+popularGiftsCardsImg.classList.add("popular-gifts-cards-img")
+
+const popularGiftImg = document.createElement("img")
+popularGiftsCardsImg.appendChild(popularGiftImg)
+popularGiftImg.src = popularGiftsList[i].imageURL
+
+const popularGiftCardContent = document.createElement("div")
+popularGiftsCardsBody.appendChild(popularGiftCardContent)
+popularGiftCardContent.classList.add("popular-gift-card-content")
+
+const popularGiftContentLabel = document.createElement("h3")
+popularGiftCardContent.appendChild(popularGiftContentLabel)
+popularGiftContentLabel.innerHTML = popularGiftsList[i].label
+
+const popularGiftContentRating = document.createElement("div")
+popularGiftCardContent.appendChild(popularGiftContentRating)
+popularGiftContentRating.classList.add("rating-container")
+
+const popularRatingIcon = document.createElement("span")
+popularGiftContentRating.appendChild(popularRatingIcon)
+
+const popularRatingCount = document.createElement("span")
+popularGiftContentRating.appendChild(popularRatingCount)
+popularRatingCount.classList.add('rating-count')
+popularRatingCount.innerHTML = popularGiftsList[i].ratingCount
+
+const popularGiftAmount = document.createElement('div')
+popularGiftCardContent.appendChild(popularGiftAmount)
+popularGiftAmount.classList.add('popular-gift-amount')
+
+const popularGiftAmountIcon = document.createElement('span')
+popularGiftAmount.appendChild(popularGiftAmountIcon)
+popularGiftAmountIcon.classList.add('popular-gift-amount-icon')
+popularGiftAmountIcon.innerHTML = popularGiftsList[i].currencySymbol
+
+const popularGiftPrice = document.createElement('span')
+popularGiftAmount.appendChild(popularGiftPrice)
+popularGiftPrice.classList.add('gift-price')
+popularGiftPrice.innerHTML = Math.floor(popularGiftsList[i].oldPrice/ 100 *(100- popularGiftsList[i].offer))
+
+const popularGiftOldAmount = document.createElement('span')
+popularGiftAmount.appendChild(popularGiftOldAmount)
+popularGiftOldAmount.classList.add('popular-gift-old-amount')
+
+const popularGiftCurrencyOld = document.createElement('span')
+popularGiftOldAmount.appendChild(popularGiftCurrencyOld)
+popularGiftCurrencyOld.innerHTML = popularGiftsList[i].currencySymbol
+
+const popularGiftOldPrice = document.createElement('span')
+popularGiftOldAmount.appendChild(popularGiftOldPrice)
+popularGiftOldPrice.innerHTML = popularGiftsList[i].oldPrice
+
+const popularGiftOffer = document.createElement('span')
+popularGiftAmount.appendChild(popularGiftOffer)
+popularGiftOffer.classList.add('popular-gift-offer')
+popularGiftOffer.innerHTML = `(${(popularGiftsList[i].offer)}% off )`
+const popularGiftFreeDelivery = document.createElement('div')
+popularGiftCardContent.appendChild(popularGiftFreeDelivery)
+popularGiftFreeDelivery.classList.add('free-delivery')
+
+const popularGiftFreeDeliveryText = document.createElement('p')
+popularGiftFreeDelivery.appendChild(popularGiftFreeDeliveryText)
+
+
+
+  if (popularGiftsList[i].rating % 1 === 0) {
+    popularRatingIcon.innerHTML=(ratingFullImg.repeat(popularGiftsList[i].rating))
+  } else {
+    popularRatingIcon.innerHTML=(ratingFullImg.repeat(Math.floor(popularGiftsList[i].rating)) + ratingHalfImg)
+    console.log(ratingFullImg.repeat(Math.floor(popularGiftsList[i].rating)))
+  }
+  }
+}
+createPopularGift(popularGiftsList)
+

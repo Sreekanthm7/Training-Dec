@@ -339,14 +339,17 @@ a p {
 }
 .popular-gifts-cards {
   margin-bottom: 12px;
+  /* position: relative; */
 }
 
 .popular-gifts-cards-img {
   margin-bottom: 6px;
+  position: relative;
 }
 
 .popular-gifts-cards-img img{
   width: 100%;
+  border-radius: 5px;
 }
 
 .popular-gift-card-content {
@@ -366,7 +369,6 @@ a p {
   white-space: normal;
   margin-bottom: 3px;
   overflow: hidden;
-  width: 45vw;
   color: #222222;
 }
 
@@ -382,6 +384,7 @@ a p {
 .rating-container span svg{
   width: 14px;
   height: 14px;
+
 }
 .rating-count{
   font-size: 13px;
@@ -402,7 +405,7 @@ a p {
 }
 
 .popular-gift-old-amount{
-  margin-left: 5px;
+  margin-left: 2px;
   text-decoration: line-through;
   font-size: 15px;
   color: #258635;
@@ -411,6 +414,272 @@ a p {
   margin-left: 5px;
   font-size: 15px;
   color: #258635;
+}
+.free-delivery p{
+  background-color: #d4e9d7;
+  padding: 3px 6px;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.free-delivery{
+  margin: 0px 0px 3px 0px;
+  width: 82px;
+}
+.popular-gift-play-btn{
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  /* top: 90px; */
+  bottom: 10px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+}
+.popular-gift-play-btn span svg{
+  width: 18px;
+  height: 18px;
+  margin: 6px 8px;
+}
+.gift-card-video{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  object-fit: cover;
+  opacity: 0;
+}
+.gift-card-video:hover{
+  opacity: 1;
+}
+.popular-wish-list-img svg{
+  width: 18px;
+  height: 18px;
+  margin: 5px 5px;
+}
+
+.popular-gift-wish-list{
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  border-radius: 50%;
+  right: 10px;
+  border: 1px solid grey;
+  z-index: 1;
+  display: none;
+}
+.popular-gift-card-container:hover .popular-gift-wish-list {
+display: block;
+}
+
+.what-is-etsy{
+ width: 100%;
+}
+.what-is-etsy-body{
+  background-color: #fdebd2;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-body-top-svg{
+  vertical-align: middle;
+  fill: #FFFFFF;
+
+}
+
+.bg-body-top-svg svg{
+  height: 24px;
+  transform: scale(1);
+  display: block;
+  width: 100%;
+}
+
+.whatisetsy-heading{
+  padding: 36px 30px;
+  text-align: center;
+}
+
+.whatisetsy-heading h2{
+  font-family: 'guardian';
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 6px;
+  color: #222222;
+}
+.whatisetsy-heading a{
+  color: inherit;
+  text-decoration: underline;
+  font-size: 14px;
+
+}
+
+.what-is-etsy-content{
+ margin: 0px 0px 6px;
+ padding: 36px 0px 0px; 
+}
+
+.community-doing-good p span{
+  text-decoration: dashed underline;
+  text-underline-position: under;
+}
+
+.whatisetsy-content{
+  padding-top: 36px;
+  margin-bottom: 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.community-doing-good{
+  margin-bottom: 30px;
+  flex: 1 1 0%;
+}
+
+.community-doing-good h3{
+  margin: 0px 0px 18px;
+  font-family: "graphik-regular";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.community-doing-good p{
+  font-family: 'graphik-regular';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.support-independent-creators{
+  margin-bottom: 30px;
+  flex: 1 1 0%;
+}
+.support-independent-creators h3{
+  margin: 0px 0px 18px;
+  font-family: "graphik-regular";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+.support-independent-creators p{
+  font-family: 'graphik-regular';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.peace-of-mind{
+  margin-bottom: 30px;
+  flex: 1 1 0%;
+}
+.peace-of-mind h3{
+  margin: 0px 0px 18px;
+  font-family: "graphik-regular";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+.peace-of-mind p{
+  font-family: 'graphik-regular';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+.have-a-question{
+  text-align: center;
+}
+
+.have-a-question a{
+  font: inherit;
+  cursor: pointer;
+  border-radius: 24px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  min-height: 48px;
+  min-width: 48px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 14px;
+  padding-right: 14px;
+  position: relative;
+  text-align: center;
+  border: 2px solid;
+  text-decoration: none;
+  font-family: 'graphik-regular';
+  margin-top: 12px;
+}
+.have-a-question h4{
+  font-family: "graphik-regular";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-top svg{
+  fill: #d7e6f5;
+  display: block;
+  height: 30px;
+  width: 100%;
+} 
+.footer-top-content{
+  background-color: #d7e6f5;
+  padding-bottom: 36px;
+  height: 100%;
+
+}
+.footer-top-content-body{
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 18px;
+  text-align: center;
+}
+.footer-top-body-text{
+  margin-bottom: 18px;
+}
+
+.footer-top-body-text p{
+  margin-bottom: 12px;
+  font-family: "graphik-regular";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer-top-search{
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.footer-top-search-bar{
+  position: relative;
+  display: flex;
+  border-radius: 96px;
+  box-shadow: 1px 2px 4px 0 rgb(34 34 34 / 10%) inset;
+  background: #fff;
+  padding: 16px 12px 16px 18px;
+  justify-content: space-between;
+
+}
+
+.search-input{
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+.subscribe-btn{
+ border: none;
+ background-color: transparent;
+
+}
+.subscribe-btn{
+  font-family: 'graphik-medium';
+  font-size: 16px;
 }
 
 @media screen and (min-width: 320px) {
@@ -465,6 +734,23 @@ a p {
 
   .discover-images-etsy li img {
     width: 84px;
+  }
+  .popular-gifts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transform: translateX(-6px);
+  }
+  .deals-of-the-day{
+    margin-bottom: 60px;
+  }
+  .popular-gifts-heading{
+    text-align: left;
+  }
+  .popular-gifts-heading h2{
+    font-size: 28px;
+  }
+  .popular-gifts{
+    padding: 0px 24px 60px;
   }
 }
 
@@ -523,6 +809,50 @@ a p {
   }
   .deals-of-the-day {
     padding: 32px;
+  }
+  .popular-gifts-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    transform: translateX(-6px);
+  }
+  .popular-gift-card-container:nth-child(6) {
+    display: none;
+  }
+  .popular-gift-card-content h3{
+    -webkit-line-clamp: 2;
+    font-size: 16px;
+  }
+  .whatisetsy-content{
+    display: flex;
+    flex-direction: row;
+  }
+  .community-doing-good h3{
+    text-align: left;
+    font-size: 28px;
+    margin-right: 10px;
+  }
+  .whatisetsy-heading{
+    padding: 36px 54px;
+  }
+  .community-doing-good p{
+    text-align: left;
+    margin-right: 18px;
+  }
+  .support-independent-creators h3{
+    font-size: 28px;
+    text-align: left;
+  }
+  .support-independent-creators p{
+    text-align: left;
+    margin-right: 20px;
+  }
+  .peace-of-mind h3{
+    font-size: 28px;
+    text-align: left;
+  }
+  .peace-of-mind p{
+    text-align: left;
+    margin-right: 24px;
   }
 }
 

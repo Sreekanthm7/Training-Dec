@@ -449,3 +449,20 @@ function createPopularGift(popularGiftsList) {
   }
 }
 createPopularGift(popularGiftsList)
+
+const footerBodyContentsBtn = document.querySelectorAll('.footer-body-contents-btn')
+const contentsInsideFooterBody = document.querySelectorAll('.contents-inside-footer-body')
+const  toggleArrow = document.querySelectorAll('.toggle-arrow')
+
+footerBodyContentsBtn.forEach((num,idx) => {
+  num.addEventListener("click",  () =>{
+
+  contentsInsideFooterBody[idx].classList.toggle('active')
+
+  toggleArrow[idx].classList.toggle('rotate')
+ 
+ 
+console.log(contentsInsideFooterBody[idx].classList.contains('active'));
+  })
+});
+

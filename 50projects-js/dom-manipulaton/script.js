@@ -172,7 +172,11 @@ const quotes = [{
 },{
     quote: `"The Journey of a thousand miles begins with one step"`,
     person:`Lao Tzu`
-},];
+},{
+    quote: `"The Journey of a thousand miles begins with one step"`,
+    person:`Lao Tzu`
+}
+];
 
 btn.addEventListener('click', function(){
     let random = Math.floor(Math.random() * quotes.length);

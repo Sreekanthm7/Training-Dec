@@ -218,6 +218,8 @@ header {
   margin: 12px 0px 6px;
 }
 
+
+
 a p {
   text-align: center;
 }
@@ -700,7 +702,7 @@ display: block;
   display: block;
   width: 100%;
 }
-.footer-powered-by-content{
+.footer-powered-by-cont131pxent{
   background-color: #4d6bc6;
   color: #fff;
   position: relative;
@@ -1039,7 +1041,6 @@ display: block;
     margin-top: 0;
   }
   .discover-images-etsy li img {
-    max-width: 114px;
     width: 114px;
   }
   .discover-content {
@@ -1109,6 +1110,7 @@ display: block;
     display: flex;
     justify-content: space-between;
   }
+ 
 }
 
 @media screen and (min-width: 1400px) {
@@ -1128,5 +1130,19 @@ display: block;
   }
   .etsy-nav {
     padding: 0;
+  }
+  .img-container-etsy img:hover{
+    max-width: 150px;
+  }
+  .deals-of-the-day-cards:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+  }
+  .popular-gift-card-container:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+
+  }
+  .contents-inside-footer-body li:hover{
+    text-decoration: underline;
+    color: #fff;
   }
 }

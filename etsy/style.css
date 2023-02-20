@@ -265,18 +265,12 @@ a p {
   flex-wrap: wrap;
   border: 1px solid rgba(34, 34, 34, 0.15);
   border-radius: 12px;
-  width: 44vw;
 }
 
-.deals-of-the-day-card-box {
-  flex-grow: 1;
-  flex-basis: 50%;
- 
-}
 .deals-of-the-day-card-box img {
-  width: 44vw;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  width: 100%;
 }
 
 .deals-of-the-day-img img {
@@ -622,7 +616,10 @@ display: block;
   font-size: 18px;
   line-height: 24px;
 }
-
+.deals-of-the-day {
+  max-width: 1400px;
+  margin: auto;
+}
 .footer-top svg{
   fill: #d7e6f5;
   display: block;
@@ -940,12 +937,12 @@ display: block;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .deals-of-the-day-card-box img {
+  /* .deals-of-the-day-card-box img {
     width: 30vw;
   }
   .deals-of-the-day-cards {
     width: 30vw;
-  }
+  } */
 }
 
 @media screen and (min-width: 640px) {
@@ -1052,12 +1049,6 @@ display: block;
   .cards-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-  }
-  .deals-of-the-day-card-box img {
-    width: 14vw;
-  }
-  .deals-of-the-day-cards {
-    width: 14vw;
   }
   .deals-of-the-day {
     padding: 32px;

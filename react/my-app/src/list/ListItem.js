@@ -1,5 +1,6 @@
 import React from "react";
 import Label from "./Label";
+import './ListItem.css';
 function ListItem() {
     return (
       <div className="list-item">
@@ -9,6 +10,7 @@ function ListItem() {
         </div>
         <div className="list-descr">This is a very big description</div>
         <div className="list-label">
+            <Label />
             <Label />
             <Label />
             <Label />

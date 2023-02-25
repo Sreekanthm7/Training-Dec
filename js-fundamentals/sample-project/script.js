@@ -58,7 +58,7 @@ function changeName(idx, name, marks){
 
     console.log(classObj.students[idx].name = name);
 
-
+    
 }
 
 changeName(1, "rahul")
@@ -74,5 +74,5 @@ changeMark(1, "rahul")
 
 
 function sumOfMarks(){
-    
+
 }

@@ -280,3 +280,16 @@
 
 
 // console.log(output);
+
+
+var b = 10;
+ a()
+
+function a() {
+  var b = 10
+
+  c()
+  function c() {}
+}
+console.log(b)
+a()

@@ -163,45 +163,67 @@ const dealsOfTheDayList = [
   },
 ]
 
-function createDealsOfTheDayContent(imageURL, offer, label) {
-  // const dealsOfTheDayCardContainer = document.createElement('div')
-  // dealsOfTheDayContainer.appendChild(dealsOfTheDayCardContainer)
-  // dealsOfTheDayCardContainer.classList.add('cards-container')
+// function createDealsOfTheDayContent(imageURL, offer, label) {
+//   // const dealsOfTheDayCardContainer = document.createElement('div')
+//   // dealsOfTheDayContainer.appendChild(dealsOfTheDayCardContainer)
+//   // dealsOfTheDayCardContainer.classList.add('cards-container')
 
-  const dealsOfTheDayCards = document.createElement("div")
-  cardsContainer.appendChild(dealsOfTheDayCards)
-  dealsOfTheDayCards.classList.add("deals-of-the-day-cards")
+//   const dealsOfTheDayCards = document.createElement("div")
+//   cardsContainer.appendChild(dealsOfTheDayCards)
+//   dealsOfTheDayCards.classList.add("deals-of-the-day-cards")
 
-  const dealsOfTheDayCardBox = document.createElement("div")
-  dealsOfTheDayCards.appendChild(dealsOfTheDayCardBox)
-  dealsOfTheDayCardBox.classList.add("deals-of-the-day-card-box")
+//   const dealsOfTheDayCardBox = document.createElement("div")
+//   dealsOfTheDayCards.appendChild(dealsOfTheDayCardBox)
+//   dealsOfTheDayCardBox.classList.add("deals-of-the-day-card-box")
 
-  const dealsOfTheDayImg = document.createElement("img")
-  dealsOfTheDayImg.src = imageURL
-  dealsOfTheDayCardBox.appendChild(dealsOfTheDayImg)
-  dealsOfTheDayImg.classList.add("deals-of-the-day-img")
+//   const dealsOfTheDayImg = document.createElement("img")
+//   dealsOfTheDayImg.src = imageURL
+//   dealsOfTheDayCardBox.appendChild(dealsOfTheDayImg)
+//   dealsOfTheDayImg.classList.add("deals-of-the-day-img")
 
-  const dealsOfTheDayTextContent = document.createElement("div")
-  dealsOfTheDayCards.appendChild(dealsOfTheDayTextContent)
-  dealsOfTheDayTextContent.classList.add("deals-of-the-day-text-content")
+//   const dealsOfTheDayTextContent = document.createElement("div")
+//   dealsOfTheDayCards.appendChild(dealsOfTheDayTextContent)
+//   dealsOfTheDayTextContent.classList.add("deals-of-the-day-text-content")
 
-  const dealsOfTheDayOffer = document.createElement("div")
-  dealsOfTheDayTextContent.appendChild(dealsOfTheDayOffer)
-  dealsOfTheDayOffer.classList.add("deals-of-the-day-offer")
-  dealsOfTheDayOffer.innerHTML = offer
+//   const dealsOfTheDayOffer = document.createElement("div")
+//   dealsOfTheDayTextContent.appendChild(dealsOfTheDayOffer)
+//   dealsOfTheDayOffer.classList.add("deals-of-the-day-offer")
+//   dealsOfTheDayOffer.innerHTML = offer
 
-  const dealsOfTheDayText = document.createElement("div")
-  dealsOfTheDayTextContent.appendChild(dealsOfTheDayText)
-  dealsOfTheDayText.classList.add("deals-of-the-day-text")
-  dealsOfTheDayText.innerHTML = label
-}
-for (let key in dealsOfTheDayList) {
-  createDealsOfTheDayContent(
-    dealsOfTheDayList[key].imageURL,
-    dealsOfTheDayList[key].offer,
-    dealsOfTheDayList[key].label
-  )
-}
+//   const dealsOfTheDayText = document.createElement("div")
+//   dealsOfTheDayTextContent.appendChild(dealsOfTheDayText)
+//   dealsOfTheDayText.classList.add("deals-of-the-day-text")
+//   dealsOfTheDayText.innerHTML = label
+// }
+// for (let key in dealsOfTheDayList) {
+//   createDealsOfTheDayContent(
+//     dealsOfTheDayList[key].imageURL,
+//     dealsOfTheDayList[key].offer,
+//     dealsOfTheDayList[key].label
+//   )
+// }
+
+
+
+let dealsOfTheDayCardContainer=dealsOfTheDayList.map(function(item) {
+  const html = `
+    
+    <div class="deals-of-the-day-cards">
+    <div class="deals-of-the-day-card-box">
+    <img src= "${item.imageURL}" class= "deals-of-the-day-img">
+    <div class= "deals-of-the-day-text-content">
+    <div class="deals-of-the-day-offer">${item.offer}</div>
+    <div class="deals-of-the-day-text">${item.label}</div>
+    </div>
+    </div>
+    </div>
+   
+  `;
+  return html;
+});
+
+console.log( dealsOfTheDayCardContainer.join(''));
+cardsContainer.innerHTML =  dealsOfTheDayCardContainer.join('')
 
 const popularGifts = document.querySelector(".popular-gifts")
 const ratingFullImg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="3 3 18 18" aria-hidden="true" focusable="false"><path d="M19.985,10.36a0.5,0.5,0,0,0-.477-0.352H14.157L12.488,4.366a0.5,0.5,0,0,0-.962,0l-1.67,5.642H4.5a0.5,0.5,0,0,0-.279.911L8.53,13.991l-1.5,5.328a0.5,0.5,0,0,0,.741.6l4.231-2.935,4.215,2.935a0.5,0.5,0,0,0,.743-0.6l-1.484-5.328,4.306-3.074A0.5,0.5,0,0,0,19.985,10.36Z"></path></svg>`

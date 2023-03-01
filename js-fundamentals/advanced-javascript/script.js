@@ -253,6 +253,186 @@ const arr = [
 // }, 0)
 // console.log(value)
 
+//inheritance
 
-// Nested destructuring
+// class Button {
+//   constructor(name) {
+//     this.button = document.createElement("button")
+//     this.button.innerHTML = name
+//     this.name = name
+
+//     document.body.appendChild(this.button)
+//   }
+
+//   onClick(fn) {
+//     this.button.onclick = fn
+//   }
+// }
+
+// class GreenButton extends Button {
+//   onClick(fn) {
+//     this.button.onclick = function () {
+//       this.button.style.background = "green"
+//       fn()
+//     }.bind(this)
+//   }
+// }
+
+// let b1 = new GreenButton("GButton")
+// b1.onClick(function () {
+//   console.log("clicked")
+// })
+
+// let payButton = new Button("paynow")
+
+// console.log(payButton)
+//prototype
+
+// function myButton(name) {
+//   this.button = document.createElement('button');
+//   this.button.innerHTML = name;
+
+//   document.body.appendChild(this.button);
+// }
+
+// myButton.prototype.onClick = function (fn) {
+//   this.button.onClick = fn;
+// }
+
+// var b2 = new myButton('Yo!')
+// b2.onClick(function () {
+//   console.log('clicked');
+// });
+// console.log(b2);
+
+// console.log(typeof myButton);
+
+// almost all events are asynchronous
+
+// asynchronous callback
+
+// var button = document.getElementById('mybutton');
+
+// button.onclick = () => {
+//   console.log('started click event');
+
+//   var arr = [];
+// $.ajax({
+//   url:'https://jsonplaceholder.typicode.com/todos/1',
+//   success: (data) => {
+//     console.log("ajax1 started");
+//     arr.push(data.title);
+//     console.log("ajax1 ended");
+//   },
+//   async: false
+// });
+
+// $.ajax({
+//   url:'https://jsonplaceholder.typicode.com/todos/2',
+//   success: (data) => {
+//     console.log("ajax2 started");
+//     arr.push(data.title);
+//     console.log("ajax2 ended");
+//   },
+//   async: false
+// });
+
+// document.getElementById('mytext').value = arr.join['\n'];
+// console.log('ended click event');
+// }
+
+// promise
+
+// console.log("started")
+
+// $.ajax({
+//   type: "GET",
+//   url: "https://jsonplaceholder.typicode.com/todos/1",
+//   success: function (msg) {
+//     console.log(msg)
+//   },
+//   error: function (xhr, statusText) {
+//     console.log(statusText)
+//   },
+// })
+
+// const pr = myFetch("https://jsonplaceholder.typicode.com/todos/1")
+
+// function buttonClick() {
+//   console.log("clicked")
+//   pr.then(
+//     (data) => {
+//       console.log(data)
+//     },
+//     (err) => {
+//       console.log(err)
+//     }
+//   );
+// }
+// console.log("ended")
+
+// function myFetch(url) {
+//   return new Promise((res, rej) => {
+//     $.ajax({
+//       type: "GET",
+//       url: url,
+//       success: function (msg) {
+//         res(msg)
+//       },
+
+//       error: function (xhr, statusText) {The then() method of a Promise object takes up to two arguments: callback functions for the fulfilled and rejected cases of the Promise . It immediately returns an equivalent Promise object, allowing you to chain calls to other promise methods.20-Feb-2023
+
+//         rej(statusText)
+//       },
+//     })
+//   })
+// }
+
+// console.log("Requesting 1")
+//  fetch("https://jsonplaceholder.typadsfwficode.com/todos/1")
+//   .then((data) => {
+//     console.log(data)
+//     console.log("Requesting 2")
+//     return fetch("https://jsonplaceholder.typicode.com/todos/2")
+//   })
+//   .then((data) => {
+//     console.log(data)
+//     console.log("Requesting 3")
+//     return fetch("https://jsonplaceholder.typicode.com/todos/3")
+//   })
+//   .then((data) => {
+//     console.log(data)
+//   })
+//   .catch((err) => {
+//     console.log('ERROR: ', err);
+//   })
+
+// Util function
+
+// const cache = {
+//   name: 'Code Malayalam'
+// };
+
+// function getJson(url) {
+//   if(cache) {
+//     return convertToPromise(cache);
+//   }
+
+//   return fetch(url)
+//     .then((data) => {
+//       return data.json();
+//     })
+
+// }
+// function convertToPromise(data) {
+//   return new Promise((res, rej) => {
+//     res(data);
+//   })
+// }
+
+// getJson('https://jsonplaceholder.typadsfwficode.com/todos/1')
+//     .then((data) => {
+//       console.log(data);
+//     })
+
 

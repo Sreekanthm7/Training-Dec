@@ -2,6 +2,7 @@ let state ;
 const navbar = document.querySelector(".etsy-nav")
 
 const cardsContainer = document.querySelector(".cards-container")
+
 const giftImg =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 5 22 12" width="16" height="12" aria-hidden="true" focusable="false"><path d="M5,6A1,1,0,0,0,4,7v3H5v9a1,1,0,0,0,1,1h5V6H5Z"></path><path d="M19,6H13.007A4.245,4.245,0,0,0,14.97,3.744a1.614,1.614,0,0,0-2.65-1.375,1.757,1.757,0,0,0-.315.324,1.753,1.753,0,0,0-.315-0.324A1.615,1.615,0,0,0,9.042,3.746,4.257,4.257,0,0,0,11.006,6H13V20h5a1,1,0,0,0,1-1V10h1V7A1,1,0,0,0,19,6Z"></path></svg>'
 
@@ -90,43 +91,68 @@ const discoverListData = [
     label: "Kitchen & Dining",
   },
 ]
-function createDiscoverContent(imageURL, labels) {
-  const discoverCardContent = document.createElement("div")
-  discoverContainer.appendChild(discoverCardContent)
-  discoverCardContent.classList.add("content-background")
+// function createDiscoverContent(imageURL, labels) {
+//   const discoverCardContent = document.createElement("div")
+//   discoverContainer.appendChild(discoverCardContent)
+//   discoverCardContent.classList.add("content-background")
 
-  const discoverImagesEtsy = document.createElement("div")
-  discoverCardContent.appendChild(discoverImagesEtsy)
-  discoverImagesEtsy.classList.add("discover-images-etsy")
+//   const discoverImagesEtsy = document.createElement("div")
+//   discoverCardContent.appendChild(discoverImagesEtsy)
+//   discoverImagesEtsy.classList.add("discover-images-etsy")
 
-  const totalList = document.createElement("ul")
-  discoverImagesEtsy.appendChild(totalList)
+//   const totalList = document.createElement("ul")
+//   discoverImagesEtsy.appendChild(totalList)
 
-  const singleList = document.createElement("li")
-  totalList.appendChild(singleList)
+//   const singleList = document.createElement("li")
+//   totalList.appendChild(singleList)
 
-  const imgContainerEtsy = document.createElement("div")
-  singleList.appendChild(imgContainerEtsy)
-  imgContainerEtsy.classList.add("img-container-etsy")
+//   const imgContainerEtsy = document.createElement("div")
+//   singleList.appendChild(imgContainerEtsy)
+//   imgContainerEtsy.classList.add("img-container-etsy")
 
-  const cardImg = document.createElement("img")
-  cardImg.src = imageURL
-  imgContainerEtsy.appendChild(cardImg)
+//   const cardImg = document.createElement("img")
+//   cardImg.src = imageURL
+//   imgContainerEtsy.appendChild(cardImg)
 
-  const discoverCardText = document.createElement("a")
-  singleList.appendChild(discoverCardText)
+//   const discoverCardText = document.createElement("a")
+//   singleList.appendChild(discoverCardText)
 
-  const cardText = document.createElement("p")
-  discoverCardText.appendChild(cardText)
-  cardText.innerHTML = labels
-}
+//   const cardText = document.createElement("p")
+//   discoverCardText.appendChild(cardText)
+//   cardText.innerHTML = labels
+// }
 
-for (let key in discoverListData) {
-  createDiscoverContent(
-    discoverListData[key].imageURL,
-    discoverListData[key].label
-  )
-}
+// for (let key in discoverListData) {
+//   createDiscoverContent(
+//     discoverListData[key].imageURL,
+//     discoverListData[key].label
+//   )
+// }
+
+let discover = discoverListData.map(function(item) {
+    const  html = `
+      <div class = "content-background">
+      <div class = "discover-images-etsy">
+      <ul>
+        <li>
+        <div class = "img-container-etsy">
+        <img src = '${item.imageURL}'>
+        </div>
+        <a>
+          <p>${item.label}</p>
+        </a>
+        </li>
+      </ul>
+      </div>
+      </div>
+    
+    `
+
+    return html;
+});
+
+console.log( discover.join(''));
+discoverContainer.innerHTML =  discover.join('')
 
 const dealsOfTheDay = document.querySelector(".deals-of-the-day")
 

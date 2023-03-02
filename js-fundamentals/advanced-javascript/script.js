@@ -185,28 +185,28 @@
 
 // myFuncton()
 
-const arr = [
-  {
-    name: "Alice",
-    mark: 35,
-    place: "Kannur",
-  },
-  {
-    name: "Bob",
-    mark: 28,
-    place: "Palakad",
-  },
-  {
-    name: "Catherine",
-    mark: 44,
-    place: "Trissur",
-  },
-  {
-    name: "Daniel",
-    mark: 23,
-    place: "Kollam",
-  },
-]
+// const arr = [
+//   {
+//     name: "Alice",
+//     mark: 35,
+//     place: "Kannur",
+//   },
+//   {
+//     name: "Bob",
+//     mark: 28,
+//     place: "Palakad",
+//   },
+//   {
+//     name: "Catherine",
+//     mark: 44,
+//     place: "Trissur",
+//   },
+//   {
+//     name: "Daniel",
+//     mark: 23,
+//     place: "Kollam",
+//   },
+// ]
 
 // let sum = 0;
 // arr.forEach((item) => {
@@ -430,9 +430,81 @@ const arr = [
 //   })
 // }
 
+// const cache = {
+//   name: 'Code Malayalam'
+// };
+
+// function getJson(url){
+//   if(cache) {
+//     return Promise.resolve(cache);
+//   }
+
+//   return fetch(url)
+//     .then((data) => {
+//       return data.json();
+//     })
+// }
+
+// function convertToPromise(data) {
+//   return new Promise((res, rej) => {
+//     res(data);
+//   });
+// }
+
 // getJson('https://jsonplaceholder.typadsfwficode.com/todos/1')
 //     .then((data) => {
 //       console.log(data);
 //     })
 
+// getJson('https://jsonplaceholder.typicode.com/todos/1')
+//   .then((data) => {
+//     console.log(data);
+//   })
 
+//   .catch((data) => {
+//     console.log(data);
+//   })
+
+// Promise.all([
+//   getJson('https://jsonplaceholder.typicode.com/todos/1'),
+//   getJson('https://jsonplaceholder.typicode.com/todos/2'),
+//   getJson('https://jsonplaceholder.typicode.com/todos/3')
+
+// ])
+
+// .then((data) => {
+//   console.log(data);
+// })
+
+// try catch finally throw
+
+console.log("started")
+
+let a, b, result;
+
+try {
+  a = getval1()
+  b = getVal2()
+  result = processValues(a, b)
+
+} catch (e) {
+  a = 0
+}
+
+console.log(result)
+
+console.log("ended")
+
+function getval1() {
+  console.log("inside getVal1");
+  junk()
+  return 12
+}
+
+function getVal2() {
+  return 22
+}
+
+function processValues(a, b) {
+  return a + b
+}

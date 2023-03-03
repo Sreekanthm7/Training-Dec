@@ -478,33 +478,308 @@
 
 // try catch finally throw
 
-console.log("started")
+// console.log("started")
 
-let a, b, result;
+// let a, b, result;
 
-try {
-  a = getval1()
-  b = getVal2()
-  result = processValues(a, b)
+// try {
+//   a = getval1()
+//   b = getVal2()
+//   result = processValues(a, b)
 
-} catch (e) {
-  a = 0
-}
+// } catch(e) {
+//   result = 0;
+// }
+// // finally{
+// //   console.log("In finally");
+// // }
 
-console.log(result)
+// console.log(result)
 
-console.log("ended")
+// console.log("ended")
 
-function getval1() {
-  console.log("inside getVal1");
-  junk()
-  return 12
-}
+// function getval1() {
+//   return 12
+// }
 
-function getVal2() {
-  return 22
-}
+// function getVal2() {
 
-function processValues(a, b) {
-  return a + b
-}
+//   throw 'ente swantham error'
+//   return 22
+// }
+
+// function processValues(a, b) {
+//   return a + b
+// }
+
+// aync and await
+
+// async function getValue() {
+//     return 12;
+// }
+
+// let result = getValue();
+//   result.then((data) => {
+//       console.log(data);
+//   })
+
+// console.log("Started")
+// var ee = getValue().then((data) => {
+//   console.log(data)
+// })
+// console.log("Ended")
+
+// async function getValue() {
+//   // fetch('https://jsonplaceholder.typicode.com/todos/1')
+//   //   .then((data) => {
+//   //     console.log(data);
+//   //   })
+//   try{
+//   const data = await "https://jsonplaceholder.typicode.com/todos/1"
+//   const jsonData = await data.json()
+//   return jsonData
+//   } catch(e) {
+//     console.log('handled');
+//     return {};
+//   }
+
+// }
+
+// self invoking
+
+// scope
+// const number1 = 23;
+
+// function fn1() {
+//   let number = 12
+//   console.log(number);
+// }
+
+// function fn2(){
+//   console.log(number1);
+// }
+
+// fn1();
+// fn2();
+
+// console.log(number1);
+
+// (function(a, b) {
+//   console.log(a, b);
+// })(28, 34)
+
+// import and export
+
+// console.log('Script1');
+
+// export function addArray(arr) {
+//     return arr.reduce((total, item) => total + item, 0)
+// }
+
+// const name = "My Array Library"
+
+// const option = {
+//   version: "1.1",
+//   author: "Code Malayalam",
+// }
+
+// function addAll(arr = []) {
+//   console.log("addAll")
+//   return arr.reduce((total, item) => total + item, 0)
+// }
+
+// export default function findMax(arr = []) {
+//   console.log("findMax")
+//   return Math.max(...arr)
+// }
+
+// function log(val) {
+//   console.log("INSIDE", val)
+// }
+
+// export { name, option, findMax, addAll }
+
+// dynamic import
+
+// export function createButton (name, fn) {
+//     const btn = document.createElement('button');
+//     btn.innerText = name;
+//     btn.onclick = fn;
+//     btn.style.margin = '5px';
+//     document.body.appendChild(btn);
+// }
+
+// const var1 = "Code Malayalam It's wonderful"
+// const var2 = 'Code Malayalam It\'s wonderful';
+// const var3 = `Code Malayalam It's wonderful`
+
+// console.log(var1);
+// console.log(var2);
+
+// template literals
+
+// multiline string
+
+//  document.body.innerHTML = `
+// <div className="item">
+//         <h4>Product Name</h4>
+//         <div>Price: 001</div>
+//     </div>
+//  `;
+
+// const productName = "Pen";
+// const Price = "12 Rs";
+
+// const value = `The  ${productName}  is  + ${Price}`;
+// const msg = `The product is ${Price > 10 ? 'Costly' : 'Cheap'}`
+// console.log(value)
+// console.log(msg);
+
+// default parameter
+
+// function average(a = 0, b = 0) {
+//     console.log(a, b);
+//     const avg = (a + b) / 2;
+//     return avg
+// }
+
+// const avg = average(4);
+// console.log(avg)
+
+// rest parameter
+// function test() {
+//     const arr = [11, 33, 43, 22];
+//     const [a, ...rest] = arr;
+
+//     console.log(a, rest);
+// }
+
+// test();
+
+// function test (...total) {
+
+//     const a = total.reduce((sum, current) => sum + current)
+//     console.log(a);
+// }
+
+// // test(11, 44, 64, 22, 66, 3)
+
+// const a = [11, 44, 64, 22, 66, 3, 234];
+// test(...a);
+
+//parameter destructuring
+
+// const obj = {
+//     name: 'hello world',
+//     age: 1
+// }
+
+// function test({name, age}) {
+//     console.log(name, age);
+// }
+
+// test(obj);
+
+// var, let, const
+
+// let a = "hello";
+
+// function test() {
+//     console.log(testVar);
+//     let testVar = 12;
+
+// }
+
+// test()
+
+// function test() {
+//     let a = 20;
+
+//     if(true) {
+//         let a = 100;
+
+//         console.log(a);
+//     }
+
+//     console.log(a);
+// }
+
+// test();
+
+// const .................................
+
+// function test() {
+//     const a = [];
+// a.push(12)
+// console.log(a);
+
+// a = [23, 32]
+// }
+
+// test();
+
+// JSON ...................................
+// let a = 10
+// let b = false
+// var c = "Code Malayalam"
+// var d = ["Code", "Malayalam"]
+// let e = {
+//   name: "Code Malayalam",
+//   age: 1,
+//   topic: ["JavaScript", "React", "SCSS", "git", "aws"],
+//   caption: "Keep calm and JS",
+// }
+
+// let jsonE = JSON.stringify(e)
+
+// // console.log(jsonE);
+
+// let obj = JSON.parse(jsonE)
+// console.log(obj)
+
+//Equality
+
+// const val1 = 5
+// const val2 = 5
+// console.log("Integer", val1 === val2)
+
+// const val3 = "Code Malayalam"
+// const val4 = "Code Malayalam"
+// console.log("String", val3 === val4)
+
+// const val5 = ["Code", "Malayalam"]
+// const val6 = ["Code", "Malayalam"]
+
+// console.log("Array", val5 === val6)
+
+// const val7 = { name: "Code Malayalam" }
+// const val8 = { name: "Code Malayalam" }
+// console.log("Object", val7 === val8)
+
+//mutable
+
+// var a = {
+//     name: 'Code Malayalam'
+// };
+
+// var b = a;
+
+// b.name = 'Code Malayalam 2.0';
+
+// console.log('a= ', a);
+// console.log('b= ', b);
+
+// function junk(obj) {
+//   obj.test = "Test"
+//   return obj
+// }
+
+// const myObj = {
+//   name: "Code Malayalam",
+// }
+
+// var ret = junk(myObj)
+
+// console.log(ret === myObj)
+
+// console.log(ret === myObj)

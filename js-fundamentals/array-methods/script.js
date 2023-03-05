@@ -201,3 +201,12 @@
 
 // console.log(result);
 
+const numbers = [129, 50, 23];
+
+result = numbers.reduce(myFunc);
+
+function myFunc(total, num) {
+    return total - num;
+}
+
+console.log(result);

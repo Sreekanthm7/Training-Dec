@@ -201,12 +201,28 @@
 
 // console.log(result);
 
-const numbers = [129, 50, 23];
+// const numbers = [129, 50, 23];
 
-result = numbers.reduce(myFunc);
+// result = numbers.reduce(myFunc);
 
-function myFunc(total, num) {
-    return total - num;
+// function myFunc(total, num) {
+//     return total - num;
+// }
+
+// console.log(result);
+
+
+
+const persons = [
+    {firstname : "Malcom", lastname: "Reynolds"},
+    {firstname : "Kaylee", lastname: "Frye"},
+    {firstname : "Jayne", lastname: "Cobb"}
+]
+
+const fullName = persons.map(getFullName);
+
+function getFullName(item) {Java Syntax
+    return [item.firstname, item.lastname].join(" ");
 }
 
-console.log(result);
+console.log(fullName);

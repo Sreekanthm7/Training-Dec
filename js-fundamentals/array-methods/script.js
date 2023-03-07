@@ -221,7 +221,7 @@ const persons = [
 
 const fullName = persons.map(getFullName);
 
-function getFullName(item) {Java Syntax
+function getFullName(item) {
     return [item.firstname, item.lastname].join(" ");
 }
 

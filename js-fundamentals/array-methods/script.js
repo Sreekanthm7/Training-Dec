@@ -138,6 +138,15 @@
 // result = fruits.includes("Banana", 1)
 // console.log(result);
 
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// result = fruits.includes("Mango")
+
+// console.log(result);
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+result = fruits.includes("Banana", 1)
+console.log(result);
+
 // index().........................................
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -213,6 +222,7 @@
 
 
 
+
 const persons = [
     {firstname : "Malcom", lastname: "Reynolds"},
     {firstname : "Kaylee", lastname: "Frye"},
@@ -226,3 +236,4 @@ function getFullName(item) {
 }
 
 console.log(fullName);
+

@@ -143,9 +143,9 @@
 
 // console.log(result);
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-result = fruits.includes("Banana", 1)
-console.log(result);
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// result = fruits.includes("Banana", 1)
+// console.log(result);
 
 // index().........................................
 

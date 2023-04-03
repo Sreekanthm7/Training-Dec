@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'inter-regular';
+    src: url(assets/fonts/Inter-Regular.woff2);
+}
+
+@font-face {
+    font-family: 'inter-semibold';
+    src: url(assets/fonts/Inter-SemiBold.woff2);
+}
+
+@font-face {
+    font-family: 'roboto-medium';
+    src: url(assets/fonts/roboto-medium.woff2);
+}
+
+@font-face {
+    font-family: 'roboto-regular';
+    src: url(assets/fonts/roboto-regular.woff2);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-header-left{
+    display: flex;
+    flex-direction: row;
+    align-items:  center;
+}
+
+.mobile-header-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flipkart-icon-mobile img{
+    width: 23px;
+    height: 23px;
+}  
+
+.back-icon{
+    padding: 10px 12px;
+    transform: translateY(4px);
+}
+
+.flipkart-icon-mobile{
+    padding: 10px;
+    transform: translate(-11px, 6px);
+
+}
+.mobile-header-left p{
+    font-family: 'roboto-regular';
+    transform: translate(-9px, 2px);
+}
+.search-icon{
+
+}
+.cart-icon{
+
+}
+
+.mobile-header-right p{
+
+}

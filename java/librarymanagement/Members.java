@@ -33,18 +33,27 @@ public class Members {
         return mobilenumber;
     }
 
-    public void setMobilenumber(int mobilenumber) {
+    public boolean setMobilenumber(int mobilenumber) {
+        if(mobilenumber == 0){
+            return false;
+        }else{
         this.mobilenumber = mobilenumber;
+        return true;
+        }
     }
 
-    public void borrowBook(Book book){
-        bookBorrowed.add(book);
-        
+    public boolean borrowBook(Book originOfSpecies){
+        if(Book.isAvailable){
+             bookBorrowed.add(originOfSpecies);
+        }
+        return false;
     }
 
     public void returnBook(Book book){
         bookBorrowed.remove(book);
     }
+
+  
 
     
     

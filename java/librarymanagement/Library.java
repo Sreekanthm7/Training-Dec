@@ -6,8 +6,12 @@ public class Library {
     
     ArrayList<Book> books = new ArrayList<>();
 
-    public void addBook(Book book){
-        books.add(book);
+    public boolean addBook(Book book){
+        if(book.isAvailable()){
+       return books.add(book);
+        }else{
+        return false;
+        }
     }
 
     public void removeBook(Book book){

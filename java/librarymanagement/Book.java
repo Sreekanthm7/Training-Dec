@@ -1,9 +1,11 @@
 package librarymanagement;
 
 public class Book {
+    public static boolean isAvailable;
     String name;
     int id;
     String author;
+    boolean available;
 
     Book(String name, int id, String author){
         this.name = name;
@@ -40,6 +42,15 @@ public class Book {
         this.author = author;
     }
 
+    public boolean isAvailable() {
+        return available;
+    }
+
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
+
+  
     
 
 }

@@ -54,10 +54,10 @@ public class Grade {
             feesAmount = 20000 - feeDiscount;
         } else if (student.isEligibleForFeeDiscount() == false && getGrade() == 1) {
             feesAmount = 20000;
-        } else if (student.isEligibleForFeeDiscount() == true && getGrade() == 2 || getGrade() == 3) {
+        } else if (student.isEligibleForFeeDiscount() == true && (getGrade() == 2 || getGrade() == 3)) {
             double feeDiscount = 0.2 * 30000;
             feesAmount = 30000 - feeDiscount;
-        } else if (student.isEligibleForFeeDiscount() == false && getGrade() == 2 || getGrade() == 3) {
+        } else if (student.isEligibleForFeeDiscount() == false && (getGrade() == 2 || getGrade() == 3)) {
             feesAmount = 30000;
         }
         return feesAmount;

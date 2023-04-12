@@ -3,9 +3,7 @@ public class BorrowedBooks {
     Member member;
     Copy copy;
     String dueDate;
-
-
-
+    
     public Member getMember() {
         return member;
     }

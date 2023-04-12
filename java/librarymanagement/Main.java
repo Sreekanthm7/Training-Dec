@@ -94,29 +94,32 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        // Book originOfSpecies = new Book("Origin of Species", 1, "Charles Darvin");
-        // Book warAndPeace = new Book("War and Peace", 2, "Leo Tolstoy");
-        // Library lib = new Library();
+        Book originOfSpecies = new Book("Origin of Species", 1, "Charles Darvin");
+        Book warAndPeace = new Book("War and Peace", 2, "Leo Tolstoy");
+        Library lib = new Library();
 
-        // lib.addBook(originOfSpecies);
-        // lib.addBook(warAndPeace);
+        lib.addBook(originOfSpecies);
+        lib.addBook(warAndPeace);
 
-        // System.out.println(lib);
+        System.out.println(lib);
 
-        // Members John = new Members("John", 734242343);
+        Members John = new Members("John", 734242343);
 
-        // John.borrowBook(originOfSpecies);
-        // John.borrowBook(warAndPeace);
+        John.borrowBook(originOfSpecies);
+        John.borrowBook(warAndPeace);
 
-        // John.returnBook(warAndPeace);
+        John.returnBook(warAndPeace);
 
-        // System.out.println(John);
+        System.out.println(John);
 
-        // testMobileNumber();
+        testMobileNumber();
 
-        // testBorrowBook();
+        testBorrowBook();
         testAddBook();
         System.out.println("Test Passed");
 
     }
 }
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

@@ -212,3 +212,45 @@
   margin: 0 8px;
   color: #fff;
 }
+
+
+.nav-container{
+background-color: #fff;
+position: absolute;
+width: 100%;
+margin-top: 56px;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .16);
+}
+
+.nav-list{
+  max-width: 1248px;
+  height: 40px;
+  margin: auto;
+  position: relative;
+}
+
+.nav-list ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  margin: 0 24px 0 24px;
+}
+
+.nav-total-list li{
+  list-style: none;
+  display: flex;
+}
+
+.nav-total-list li p{
+  font-family: "roboto-medium";
+  font-size: 14px;
+}
+
+.nav-list ul svg{
+  transform: rotate(270deg);
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 4.7px;
+  height: 8px;
+}

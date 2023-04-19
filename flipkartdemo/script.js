@@ -1,10 +1,11 @@
+const mobileContainer = document.querySelector(".mobile-container")
 const navContainer = document.querySelector(".nav-container")
 const navList = document.querySelector(".nav-list")
 const navTotalList = document.querySelector(".nav-total-list")
 
 const arrowImg = `<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="RWB9Wm"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#878787" class="_2JzwqO"></path></svg>`
 
-const navListData = [
+let navListData = [
   {
     label: "Electronics",
     imageURL: arrowImg,
@@ -58,7 +59,7 @@ console.log(navBar.join(""))
 
 navTotalList.innerHTML = navBar.join("")
 
-const mobileListData = [
+let mobileListData = [
   {
     name: "APPLE iPHONE 13 (Midnight, 128 GB)",
     photo: "assets/img/iphone13.webp",
@@ -66,7 +67,7 @@ const mobileListData = [
     compare: "Add to Compare",
     favorite: "heart.svg",
     rating: 4.7,
-    stars: "stars.svg",
+    stars: "assets/img/stars.svg",
     reviews: "2,00,969 Ratings & 10,919 Reviews",
     specifications: {
       one: "128 GB ROM",
@@ -88,7 +89,7 @@ const mobileListData = [
     compare: "Add to Compare",
     favorite: "heart.svg",
     rating: 4.6,
-    stars: "stars.svg",
+    stars: "assets/img/stars.svg",
     reviews: "2,01,019 Ratings & 10,920 Reviews",
     specifications: {
       one: "128 GB ROM",
@@ -111,7 +112,7 @@ const mobileListData = [
     compare: "Add to Compare",
     favorite: "heart.svg",
     rating: 4.4,
-    stars: "stars.svg",
+    stars: "assets/img/stars.svg",
     reviews: "1,37,239 Ratings & 7,920 Reviews",
     specifications: {
       one: "4 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
@@ -134,13 +135,13 @@ const mobileListData = [
     compare: "Add to Compare",
     favorite: "heart.svg",
     rating: 4.7,
-    stars: "stars.svg",
+    stars: "assets/img/stars.svg",
     reviews: "8,521 Ratings & 532 Reviews",
     specifications: {
       one: "128 GB ROM",
       two: "17.02 cm (6.7 inch) Super Retina XDR Display",
       three: "12MP + 12MP | 12MP Front Camera",
-      four: "A15 Bionic Chip, 6 Core Processor Processor",
+      four: "A15 BproductRatingionic Chip, 6 Core Processor Processor",
       five: "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
     },
     actualPrice: 79999,
@@ -157,7 +158,7 @@ const mobileListData = [
     compare: "Add to Compare",
     favorite: "heart.svg",
     rating: 4.3,
-    stars: "stars.svg",
+    stars: "assets/img/stars.svg",
     reviews: "1,78,707 Ratings & 14,008 Reviews",
     specifications: {
       one: "6 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
@@ -179,7 +180,7 @@ const mobileListData = [
     compare: "Add to Compare",
     favorite: "heart.svg",
     rating: 4.2,
-    stars: "stars.svg",
+    stars: "assets/img/stars.svg",
     reviews: "1,437 Ratings & 137 Reviews",
     specifications: {
       one: "4 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
@@ -201,7 +202,7 @@ const mobileListData = [
     compare: "Add to Compare",
     favorite: "heart.svg",
     rating: 4.7,
-    stars: "stars.svg",
+    stars: "assets/img/stars.svg",
     reviews: "1,017 Ratings & 81 Reviews",
     specifications: {
       one: "128 GB ROM",
@@ -223,7 +224,7 @@ const mobileListData = [
     compare: "Add to Compare",
     favorite: "heart.svg",
     rating: 4.5,
-    stars: "stars.svg",
+    stars: "assets/img/stars.svg",
     reviews: "1,27,317 Ratings & 10,196 Reviews",
     specifications: {
       one: "64 GB ROM",
@@ -240,10 +241,11 @@ const mobileListData = [
   },
 ]
 
-mobileContainer = document.querySelector(".mobile-container")
+let newItem = [...mobileListData]
 
-let mobileList = mobileListData.map(function (item) {
-  let html = `
+function mobileList() {
+  return mobileListData.map(function (item) {
+    let html = `
  <div class = "mobile-content">
   <div class="mobile-left-container">
     <div class="mobile-img-container">
@@ -269,7 +271,7 @@ let mobileList = mobileListData.map(function (item) {
       <div class="rating-review">
         <div class="mobile-rating">
           <p>${item.rating}</p>
-          <img src=${item.stars} alt="">
+          <img src=${item.stars}alt="">
         </div>
         <div class="mobile-review">
           <p>${item.reviews}</p>
@@ -293,16 +295,7 @@ let mobileList = mobileListData.map(function (item) {
             item.actualPrice -
             Math.ceil((item.actualPrice * item.discount) / 100)
           }</span>
-        </div>
-        <div class="price-offer">
-          <div class="orginal-price">
-            <span>${item.rupee}</span>
-            <span>${item.actualPrice}</span>
-          </div>
-          <div class="offer">
-            <span>${item.discount}% off</span>
-
-          </div>
+        
         </div>
       </div>  
       <div class="flipkart-assured-img">
@@ -312,8 +305,97 @@ let mobileList = mobileListData.map(function (item) {
     </div>
   </div>
   </div>
+  </div>
   `
-  return html
-})
+    return html
+  })
+}
+calling()
+function calling() {
+  let joinArray = mobileList(mobileListData).join("")
+  console.log(joinArray)
+  mobileContainer.innerHTML = joinArray
+}
 
-mobileContainer.innerHTML = mobileList.join("")
+function update() {
+  mobileContainer.innerHTML = ""
+  mobileList()
+  calling()
+}
+
+function filterBrand(data) {
+  let filterType = []
+  let ratingArrray = []
+
+  let apple = document.getElementById("apple")
+  let samsung = document.getElementById("samsung")
+
+  if (apple.checked === true) {
+    filterType.push("iphone")
+  }
+  if (samsung.checked === true) {
+    filterType.push("samsung")
+  }
+
+  let fourStar = document.getElementById("four-star")
+  let threeStar = document.getElementById("three-star")
+
+  if (fourStar.checked === true) {
+    ratingArrray.push(4)
+  }
+
+  if (threeStar.checked === true) {
+    ratingArrray.push(3)
+  }
+
+  if (filterType.length) {
+    data = brandFilter(data, filterType)
+    console.log(data, "data")
+
+    update()
+    mobileListData = data
+  }
+  // if(ratingFilter.length){
+  //   data = productRating(data, ratingFilter);
+
+  //   update()
+  //   mobileList(data)
+  // }
+}
+
+function setUpFilter(mobileClick) {
+  let apple = document.getElementById("apple")
+  let samsung = document.getElementById("samsung")
+
+  apple.addEventListener("change", () => {
+    filterBrand(mobileClick)
+  })
+
+  samsung.addEventListener("change", () => {
+    filterBrand(mobileClick)
+  })
+
+  let fourStar = document.getElementById("four-star")
+  let threeStar = document.getElementById("three-star")
+
+  fourStar.addEventListener("change", () => {
+    filterBrand(mobileClick)
+  })
+  threeStar.addEventListener("change", () => {
+    filterBrand(mobileClick)
+  })
+}
+
+function brandFilter(mobiles, brands) {
+  return mobiles.filter((item) => {
+    return brands.includes(item.type)
+  })
+}
+
+function ratingFilter(mobiles, ratings) {
+  return mobiles.filter((item) => {
+    return item.rating >= ratings
+  })
+}
+
+setUpFilter(newItem)

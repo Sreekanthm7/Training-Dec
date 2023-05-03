@@ -227,41 +227,92 @@
 
 // arrayfunctions
 
-const arr = [
-  {
-    name: "Alice",
-    mark: 35,
-    place: "Kannur",
-  },
-  {
-    name: "Bob",
-    mark: 28,
-    place: "Palakad",
-  },
-  {
-    name: "Catherine",
-    mark: 44,
-    place: "Thrissur",
-  },
-  {
-    name: "Daniel",
-    mark: 23,
-    place: "Kollam",
-  },
-]
+// const arr = [
+//   {
+//     name: "Alice",
+//     mark: 35,
+//     place: "Kannur",
+//   },
+//   {
+//     name: "Bob",
+//     mark: 28,
+//     place: "Palakad",
+//   },
+//   {
+//     name: "Catherine",
+//     mark: 44,
+//     place: "Thrissur",
+//   },
+//   {
+//     name: "Daniel",
+//     mark: 23,
+//     place: "Kollam",
+//   },
+// ]
 
-// arr.forEach((item) => {
-//     console.log(item);
-// })
+// // arr.forEach((item) => {
+// //     console.log(item);
+// // })
 
-// var found = arr.find((item) => {
-//     return item.name == 'Bob';
+// // var found = arr.find((item) => {
+// //     return item.name == 'Bob';
+// // });
+
+// // console.log(found);
+
+// var found = arr.filter((item) => {
+//     return item.mark < 30;
 // });
 
 // console.log(found);
 
-var found = arr.filter((item) => {
-    return item.mark < 30;
-});
+// var student1 = {
+//   name: 'Alen',
+//   yob: 1990,
 
-console.log(found);
+//   getAge: function() {
+//     return new Date().getFullYear() - this.yob;
+//   },
+//   getName: function() {
+//     return this.name;
+//   }
+// };
+
+// console.log(student1.getName(), student1.getAge());
+
+// function printMinYob(...args) {
+//   var arr = args.map(item => item.yob);
+//   console.log(Math.max(...arr));
+// }
+
+class Student {
+  name
+  yob
+
+  constructor(name, yob) {
+    this.name = name
+    this.yob = yob
+  }
+
+  static printMinYob(...args) {
+    var arr = args.map(item => item.yob);
+    console.log(Math.min(...arr));
+  }
+
+  getAge() {
+    return new Date().getFullYear - this.yob
+  }
+  getName() {
+    return this.name
+  }
+}
+
+var student1 = new Student("Alen", 1990)
+var student2 = new Student("Bob", 1995)
+var student3 = new Student("Cook", 1992)
+
+console.log(student1)
+console.log(student2)
+console.log(student3)
+
+Student.printMinYob(student1, student2, student3)

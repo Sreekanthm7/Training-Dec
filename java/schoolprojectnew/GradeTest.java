@@ -25,5 +25,46 @@ public class GradeTest {
         assertEquals(expected, got);
     }
 
+    @Test
+    public void testFeesToPay() {
+
+        Double expected;
+        Double got;
+
+        Grade gradeOne = new Grade(1, "Leela");
+        Student ram = new Student("Ram", 5);
+        ram.setSingleParent(true);
+
+         expected = 16000.0;
+         got = gradeOne.feesToPay(ram);
+
+        assertEquals(expected, got);
+
+
+        ram.setSingleParent(false);
+
+        expected = 20000.0;
+        got = gradeOne.feesToPay(ram);
+        
+        assertEquals(expected, got);
+
+        Grade gradeTwo = new Grade(2, "John");
+
+        Student rahul = new Student("Rahul", 6);
+
+        rahul.setSingleParent(true);
+
+        expected = 24000.0;
+        got = gradeTwo.feesToPay(rahul);
+
+        assertEquals(expected, got);
+
+        rahul.setSingleParent(false);
+
+        expected = 30000.0;
+        got = gradeTwo.feesToPay(rahul);
+
+    }
+
 
 }

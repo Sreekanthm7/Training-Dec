@@ -285,34 +285,157 @@
 //   console.log(Math.max(...arr));
 // }
 
-class Student {
-  name
-  yob
+// class Student {
+//   name
+//   yob
 
-  constructor(name, yob) {
-    this.name = name
-    this.yob = yob
+//   constructor(name, yob) {
+//     this.name = name
+//     this.yob = yob
+//   }
+
+//   static printMinYob(...args) {
+//     var arr = args.map(item => item.yob);
+//     console.log(Math.min(...arr));
+//   }
+
+//   getAge() {
+//     return new Date().getFullYear - this.yob
+//   }
+//   getName() {
+//     return this.name
+//   }
+// }
+
+// var student1 = new Student("Alen", 1990)
+// var student2 = new Student("Bob", 1995)
+// var student3 = new Student("Cook", 1992)
+
+// console.log(student1)
+// console.log(student2)
+// console.log(student3)
+
+// Student.printMinYob(student1, student2, student3)
+
+// class Button {
+//   constructor(name) {
+//     this.button = document.createElement("button")
+//     this.button.innerHTML = name
+//     document.body.appendChild(this.button)
+//   }
+
+//   set width(width) {
+//     this.button.style.width = width + 'px';
+//   }
+//   set height(height) {
+//     this.button.style.height = height + 'px'
+//   }
+// }
+
+// var b1 = new Button("click me!")
+// b1.width = 100;
+// b1.height = 100;
+// console.log(b1);
+
+// class Button {
+//   constructor(name) {
+//     this.button = document.createElement("button")
+//     this.button.innerHTML = name
+//     document.body.appendChild(this.button)
+//   }
+
+//   onclick(fn) {
+//     this.button.onclick = fn
+//   }
+// }
+
+// class GreenButton extends Button {
+//   onclick(fn) {
+//     this.button.onclick = function() {
+//       this.button.style.background = 'green';
+//       fn();
+//     }.bind(this);
+
+//   }
+// }
+
+// var b1 = new GreenButton('GButton');
+// b1.onclick(function() {
+//   console.log('Clicked');
+// })
+
+//promise chaining
+
+// console.log("Requesting 1")
+// const pr = myFetch("https://jsonplaceholder.typicode.com/todos/1")
+
+// const val = pr.then((data) => {
+//   console.log(data)
+// })
+
+// pr2.then((data) => {
+//   console.log(data);
+//   console.log('Requesting 2');
+//   return myFetch('https://jsonplaceholder.typicode.com/todos/2');
+// });
+
+// const pr3 = pr2.then((data) => {
+//   console.log(data);
+//   console.log('Requesting 3');
+//   return myFetch('https://jsonplaceholder.typicode.com/todos/3');
+// });
+
+// pr3.then((data) => {
+//   console.log(data);
+// });
+
+// console.log("=== Requesting 1")
+// getJson("https://jsonplaceholder.typicode.com/todos/1")
+//   .then((data) => {
+//     console.log(data)
+//     console.log("=== Requesting 2")
+//     return getJson("https://jsonplaceholder.typicode.com/todos/2")
+//   })
+//   .then((data) => {
+//     console.log(data)
+//     console.log("=== Requesting 3")
+//     return getJson("https://jsonplaceholder.typicode.com/todos/3")
+//   })
+//   .then((data) => {
+//     console.log(data)
+//   })
+
+
+ console.log('Started');
+
+ let b;
+
+ try{
+    console.log('on try');
+    b = getVal2();
+ } catch(e) {
+  console.log('on catch');
+  b = 0;
+ } finally {
+  console.log('In finally');
+ }
+
+ const a = getVal1();
+
+ const result = processValues(a, b);
+ console.log(result);
+
+ console.log('ended');
+
+ function getVal1() {
+   return 12;
   }
+  
+  function getVal2() {
+   junk()
+  return 22;
+ }
 
-  static printMinYob(...args) {
-    var arr = args.map(item => item.yob);
-    console.log(Math.min(...arr));
-  }
-
-  getAge() {
-    return new Date().getFullYear - this.yob
-  }
-  getName() {
-    return this.name
-  }
-}
-
-var student1 = new Student("Alen", 1990)
-var student2 = new Student("Bob", 1995)
-var student3 = new Student("Cook", 1992)
-
-console.log(student1)
-console.log(student2)
-console.log(student3)
-
-Student.printMinYob(student1, student2, student3)
+ function processValues(a, b) {
+  return a + b;
+ }

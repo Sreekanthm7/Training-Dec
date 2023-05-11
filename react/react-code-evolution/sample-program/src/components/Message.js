@@ -7,11 +7,10 @@ class Message extends Component {
       message: "Welcome visitor",
     }
   }
-
   changeMessage() {
     this.setState({
-      message: 'Thank you for subscribing'
-  })
+        message: 'Thank you for subscribing'
+    })
   }
 
   render() {

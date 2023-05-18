@@ -1,5 +1,8 @@
 package bookmeetingroom;
 
+import java.sql.Date;
+import java.time.LocalDate;
+
 public class Employee {
     String name;
     String id;
@@ -27,16 +30,13 @@ public class Employee {
         this.id = id;
     }
 
+
+
     @Override
     public String toString() {
         return "Employee [name=" + name + ", id=" + id + "]";
     }
 
 
-
-    public static void bookMeetingRoom(MeetingRoom meetingRoom, Employee employeeName) {
-      
-    }
-    
 }
                

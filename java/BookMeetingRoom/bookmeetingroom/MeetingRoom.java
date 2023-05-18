@@ -3,9 +3,18 @@ import java.util.Date;
 
 public class MeetingRoom {
     String roomNumber;
-    Date date;
     boolean isAvailable;
     
+    MeetingRoom(String roomNumber){
+        this.roomNumber = roomNumber;
+    }
+
+
+    @Override
+    public String toString() {
+        return "MeetingRoom [roomNumber=" + roomNumber + "]";
+    }
+
 
     public String getRoomNumber() {
         return roomNumber;
@@ -13,14 +22,6 @@ public class MeetingRoom {
 
     public void setRoomNumber(String roomNumber) {
         this.roomNumber = roomNumber;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
     }
 
     public boolean isAvailable() {
@@ -31,4 +32,8 @@ public class MeetingRoom {
         this.isAvailable = isAvailable;
     }
     
+    public void bookMeetingRoom(Office office, Employee employee){
+        // office.reservedMeetingRoom.add(employee);
+
+    }
 }

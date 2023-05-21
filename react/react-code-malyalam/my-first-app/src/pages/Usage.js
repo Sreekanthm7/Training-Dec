@@ -8,11 +8,14 @@ function Usage(params) {
   const [boom, setBoom] = useState(false)
 
   useEffect(() => {
-    console.log("Inside Use Effect", value)
+    setBoom(false)
+    const id = setTimeout(() => {
+      setBoom(true)
+    }, value * 1000)
     return () => {
-      console.log("value", value)
+      clearTimeout(id);
     }
-  }, [value, color])
+  }, [value])
 
   return (
     <div className="usage">
@@ -47,6 +50,7 @@ function Usage(params) {
           Blue
         </button>
       </div>
+
       {boom && value ? (
         <div className="boom">
           <span>Boom</span>

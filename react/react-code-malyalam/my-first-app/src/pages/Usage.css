@@ -16,3 +16,17 @@
   font-weight: bold;
  
 }
+
+.boom {
+  transform: translateY(220px);
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 20px;
+}
+.boom span {
+  color: white;
+  font-size: 60px;
+  margin-left: 20px;
+
+}

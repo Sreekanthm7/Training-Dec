@@ -1,3 +1,23 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'latest1';
+  src: url('./assets/fonts/latest.woff2');
+}
+@font-face {
+  font-family: 'latest2';
+  src: url('./assets/fonts/latest\ \(1\).woff2');
+}
+
+@font-face {
+  font-family: 'mwfluenticon';
+  src: url('./assets/fonts/MWFFluentIcons.woff2');
+}
+
 .App {
   text-align: center;
 }

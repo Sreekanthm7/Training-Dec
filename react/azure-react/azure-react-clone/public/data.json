@@ -88,5 +88,60 @@
   "accelarationMigration": {
     "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/home_accelerate?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=500&hei=400&qlt=75&fmt=png-alpha&fit=crop",
     "text": "Accelerate your migration and modernization with Azure"
-  }
+  },
+
+  "discoverAzure": [
+    {
+      "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/discover-img-1?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1200&hei=600&qlt=100&fit=constrain",
+      "title": "AZURE OPENAI SERVICE",
+      "text": "Start building with ChatGPT—now available through Azure OpenAI Service."
+    },
+    {
+      "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/discover-img-2?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=786&hei=443&qlt=100&fit=constrain",
+      "title": "MICROSOFT AI",
+      "text": "See how Microsoft is making the promise of AI real with advancements grounded in our mission to help every person on the planet achieve more."
+    },
+    {
+      "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/discover-img-03?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=920&qlt=100&fit=constrain",
+      "title": "AZURE MIGRATE",
+      "text": "Easily migrate to Azure and upgrade in place your workloads reaching end-of-support in Windows Server 2012 R2 or later."
+    },
+    {
+      "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/discover-img-cost-optimization?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=600&hei=300&qlt=100&fit=constrain",
+      "title": "WORKLOAD EFFICIENCY",
+      "text": "Quickly apply cost optimization recommendations using the new virtual machine rightsizing capability."
+    },
+    {
+      "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/discover-card5?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=786&hei=443&qlt=100&fit=constrain",
+      "title": "AZURE GLOBAL INFRASTRUCTURE",
+      "text": "Go beyond the limits of on-premises datacenters with more regions than any other provider."
+    },
+    {
+      "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/discover-img-4?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1200&qlt=100&fit=constrain",
+      "title": "MICROSOFT DEFENDER FOR CLOUD",
+      "text": "Protect multicloud environments with antimalware scanning and enhanced data security posture management."
+    }
+  ],
+
+  "developerStories": {
+    "background-image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/dev-stories-sara-chipps-desktop?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1920&qlt=75&fit=constrain",
+    "text": "Sara Chipps, co-founder of Girl Develop It and Jewelbots, and former Director of Public Q&amp;A at Stack Overflow, has helped more than 100,000 women and girls learn to code"
+  },
+  "azureSupport": [
+    {
+      "image": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/pricing06?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=48&hei=48&qlt=75&fit=constrain",
+      "title": "Start building on Azure free",
+      "text": "Get popular services free for 12 months and 55+ other services free always—plus USD 200&nbsp;credit to use in your first 30 days."
+    },
+    {
+      "image": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/home_icon-chat?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=48&hei=48&qlt=75&fit=constrain",
+      "title": "Connect with a sales specialist",
+      "text": "Chat with or call a sales specialist for personalized guidance."
+    },
+    {
+      "image": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/book-alt?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=48&hei=48&qlt=75&fit=constrain",
+      "title": "New to Azure? Learn at your own pace",
+      "text": "Learn cloud computing and Azure with self-paced modules on Microsoft Learn."
+    }
+  ]
 }

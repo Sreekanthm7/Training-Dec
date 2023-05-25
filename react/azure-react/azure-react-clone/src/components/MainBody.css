@@ -23,24 +23,87 @@
   margin-bottom: 0.5rem;
   font-weight: 600;
   line-height: 1.2;
-  font-family: 'latest2';
+  font-family: "latest2";
   text-align: left;
 }
+.hybrid-data-container {
+  margin: 0px 0px 4px;
+}
 
+.hybrid-data {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.new-to-azure {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 16px 24px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  border: 0.0625rem solid transparent;
+}
+
+.new-to-azure-container {
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  transform: translate(-6px, -5px);
+}
+.new-to-azure-container p {
+  font-size: 16px;
+  font-family: 'latest1';
+}
+
+.new-to-azure-container a {
+  background-color: transparent;
+  color: #0078d4;
+  border-color: #0078d4;
+  display: inline-block;
+  font-weight: 600;
+  border: 0.125rem solid #0078d4;
+  border-radius: 0.125rem;
+  text-decoration: none;
+  padding: 0.625rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  font-family: 'latest1';
+  transform: translateX(10px);
+}
 
 @media screen and (min-width: 1024px) {
-    .on-premise-hybrid-container h2 {
-        text-align: center;
-    }
+  .on-premise-hybrid-container h2 {
+    text-align: center;
+  }
+
+  .hybrid-data {
+    display: flex;
+    width: 33.33%;
+    margin: 0;
+  }
+  .new-to-azure {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .on-premise-hybrid {
-        margin: 24px 0px;
-        padding: 8px 0px 16px;
-      }
-    .on-premise-hybrid-container h2 {
-        font-size: 24px;
-        margin-bottom: 12px;
-    }
+  .on-premise-hybrid {
+    margin: 24px 0px;
+    padding: 8px 0px 16px;
+  }
+  .on-premise-hybrid-container h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .hybrid-data-container {
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 90%;
+    box-sizing: content-box;
+    max-width: 1600px;
+    margin-inline: auto;
+  }
 }

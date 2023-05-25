@@ -20,7 +20,7 @@ function Innovation() {
     fetchData()
   }, [])
 
-  console.log(data)
+  // console.log(data)
   return (
     <>
         <div className="azure-innovation-mobile">

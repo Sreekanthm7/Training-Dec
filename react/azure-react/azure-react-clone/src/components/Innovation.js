@@ -12,7 +12,7 @@ function Innovation() {
         return responce.json()
       })
       .then((data) => {
-        setData(data.innovationMobile)
+        setData(data.innovation)
       })
   }
 
@@ -23,13 +23,9 @@ function Innovation() {
   console.log(data)
   return (
     <>
-      <div className="test">
         <div className="azure-innovation-mobile">
           <div className="innovation-background-img-mobile">
             <img src={data.backgroundImg} />
-          </div>
-          <div className="innovation-background-img-desktop">
-            <img src={data.backgroundImgDesktop} />
           </div>
           <div className="innovation-content-container">
             <div className="innovation-content-body">
@@ -51,7 +47,6 @@ function Innovation() {
             </div>
           </div>
         </div>
-      </div>
     </>
   )
 }

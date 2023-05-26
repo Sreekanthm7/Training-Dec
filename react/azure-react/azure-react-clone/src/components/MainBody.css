@@ -73,6 +73,29 @@
   font-family: 'latest1';
   transform: translateX(10px);
 }
+.products-service-heading {
+  padding: 72px 0px 0px;
+  transform: translateY(-5px);
+}
+.products-service-heading-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 12px;
+}
+
+.products-service-heading-container h2 {
+  font-size: 19px;
+  margin: 0px 0px 8px;
+  font-family: 'latest2';
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.blank-container {
+  padding: 48px 0px 0px;
+}
+
 
 @media screen and (min-width: 1024px) {
   .on-premise-hybrid-container h2 {
@@ -105,5 +128,11 @@
     box-sizing: content-box;
     max-width: 1600px;
     margin-inline: auto;
+  }
+  .products-service-heading-container h2 {
+    font-size: 24px;
+  }
+  .products-service-heading-container {
+    padding: 0 72px;
   }
 }

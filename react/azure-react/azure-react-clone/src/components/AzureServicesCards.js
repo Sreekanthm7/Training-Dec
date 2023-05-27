@@ -1,7 +1,7 @@
 import React from 'react'
 import './ServicesCards.css'
 
-function AzureServicesCards({img, text, link}) {
+export default function AzureServicesCards({img, text, link}) {
 
   return (
     <>

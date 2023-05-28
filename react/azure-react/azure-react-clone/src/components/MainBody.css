@@ -54,7 +54,7 @@
 }
 .new-to-azure-container p {
   font-size: 16px;
-  font-family: 'latest1';
+  font-family: "latest1";
 }
 
 .new-to-azure-container a {
@@ -70,7 +70,7 @@
   font-size: 1rem;
   line-height: 1;
   cursor: pointer;
-  font-family: 'latest1';
+  font-family: "latest1";
   transform: translateX(10px);
 }
 .products-service-heading {
@@ -87,7 +87,7 @@
 .products-service-heading-container h2 {
   font-size: 19px;
   margin: 0px 0px 8px;
-  font-family: 'latest2';
+  font-family: "latest2";
   font-weight: 600;
   line-height: 1.2;
 }
@@ -96,6 +96,33 @@
   padding: 48px 0px 0px;
 }
 
+.see-all-products-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 24px 12px;
+  text-align: left;
+}
+
+.see-all-products-container a {
+  margin: 8px 0px;
+  padding: 0px 27px 0px 0px;
+  color: #0067b8;
+  font-size: 16px;
+  font-family: "latest1";
+  font-weight: 600;
+}
+
+.arrow {
+  position: relative;
+}
+.arrow::after {
+  font-family: 'mwfluenticon';
+  content: "";
+  position: absolute;
+  left: 0.4375em;
+  top: calc(18% + 0.0625em);
+}
 
 @media screen and (min-width: 1024px) {
   .on-premise-hybrid-container h2 {

@@ -3,6 +3,7 @@ import AzureProducts from "./AzureProducts"
 import HybridData from "./HybridData"
 import Innovation from "./Innovation"
 import "./MainBody.css"
+import downArrow from "../assets/img/arrow.svg"
 
 function MainBody() {
   const [data, setData] = useState([])
@@ -57,6 +58,12 @@ function MainBody() {
       </div>
       <div className="blank-container"></div>
       <AzureProducts />
+      <div className="see-all-products-container">
+        <a>
+          <span>See all products(200+)</span>
+          <span className="arrow"></span>
+          </a>
+      </div>
     </div>
   )
 }

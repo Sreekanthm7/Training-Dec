@@ -4,6 +4,10 @@ import HybridData from "./HybridData"
 import Innovation from "./Innovation"
 import "./MainBody.css"
 import downArrow from "../assets/img/arrow.svg"
+import AzureCustomers from "./AzureCustomers"
+import AccelarationMigration from "./AccelarationMigration"
+import DiscoverAzure from "./DiscoverAzure"
+import DeveloperStories from "./DeveloperStories"
 
 function MainBody() {
   const [data, setData] = useState([])
@@ -22,7 +26,7 @@ function MainBody() {
   useEffect(() => {
     fetchData()
   }, [])
-  console.log(data)
+  // console.log(data)
   return (
     <div>
       <Innovation />
@@ -53,7 +57,10 @@ function MainBody() {
       </div>
       <div className="products-service-heading">
         <div className="products-service-heading-container">
-          <h2>Start putting your ideas into action with Azure products and services</h2>
+          <h2>
+            Start putting your ideas into action with Azure products and
+            services
+          </h2>
         </div>
       </div>
       <div className="blank-container"></div>
@@ -62,8 +69,17 @@ function MainBody() {
         <a>
           <span>See all products(200+)</span>
           <span className="arrow"></span>
-          </a>
+        </a>
       </div>
+      <div className="customer-innovating">
+        <div className="customer-innovation-container">
+          <h2>Find out how these customers are innovating with Azure</h2>
+        </div>
+      </div>
+      <AzureCustomers />
+      <AccelarationMigration />
+      <DiscoverAzure />
+      <DeveloperStories />
     </div>
   )
 }

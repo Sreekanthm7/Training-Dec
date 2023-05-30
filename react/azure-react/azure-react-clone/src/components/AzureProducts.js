@@ -37,8 +37,8 @@ function AzureProducts() {
   const handleClick = (item) => {
     setVal(item)
   }
-  console.log(val)
-  console.log(data.val)
+  // console.log(val)
+  // console.log(data.val)
 
   return (
     <>

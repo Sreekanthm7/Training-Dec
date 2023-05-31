@@ -10,6 +10,7 @@ function AzureCustomers() {
   const [handrData, setHandRData] = useState({})
   const [nhsData, setNhsData] = useState({})
   const [forzaData, setForzaData] = useState([])
+  const [style, setStyle] = useState("customer-img-container img")
 
   const fetchData = () => {
     fetch(
@@ -38,22 +39,36 @@ function AzureCustomers() {
     setVal(item)
   }
 
+  const changeStyle = () => {
+    console.log("you just clicked")
+    setStyle("customer-img-container-two img")
+  }
+
+  // const grayStyle ={
+  //   filter: grayscale('0%'),
+  // }
+
   return (
     <>
       <div className="azure-customer-container">
         <div className="customer-icons-container">
-          {nav.map((item) => {
-            return (
-              <a>
-                <div className="customer-img-container">
-                  <img
-                    src={item.image}
-                    onClick={() => handleClick(item.value)}
-                  />
-                </div>
-              </a>
-            )
-          })}
+          {val == "Fujitsu" &&
+            nav.map((item) => {
+              return (
+                <a>
+                  <div className="customer-img-container">
+                    <img
+                      src={item.image}
+                      className={style}
+                      onClick={() => {
+                        handleClick(item.value)
+                        changeStyle()
+                      }}
+                    />
+                  </div>
+                </a>
+              )
+            })}
         </div>
         {val === "Fujitsu" && (
           <AzureCustomerCards
@@ -62,24 +77,18 @@ function AzureCustomers() {
           />
         )}
         {val === "NBA" && (
-          <AzureCustomerCards
-            img={nbaData.backgroundImg}
-            text={nbaData.text}
-          />
+          <AzureCustomerCards img={nbaData.backgroundImg} text={nbaData.text} />
         )}
-          {val === "HandR" && (
+        {val === "HandR" && (
           <AzureCustomerCards
             img={handrData.backgroundImg}
             text={handrData.text}
           />
         )}
-         {val === "NHS" && (
-          <AzureCustomerCards
-            img={nhsData.backgroundImg}
-            text={nhsData.text}
-          />
+        {val === "NHS" && (
+          <AzureCustomerCards img={nhsData.backgroundImg} text={nhsData.text} />
         )}
-          {val === "Forza" && (
+        {val === "Forza" && (
           <AzureCustomerCards
             img={forzaData.backgroundImg}
             text={forzaData.text}

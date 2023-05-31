@@ -8,6 +8,8 @@ import AzureCustomers from "./AzureCustomers"
 import AccelarationMigration from "./AccelarationMigration"
 import DiscoverAzure from "./DiscoverAzure"
 import DeveloperStories from "./DeveloperStories"
+import AzureServicesCards from "./AzureServicesCards"
+import AzureSupport from "./AzureSupport"
 
 function MainBody() {
   const [data, setData] = useState([])
@@ -80,6 +82,7 @@ function MainBody() {
       <AccelarationMigration />
       <DiscoverAzure />
       <DeveloperStories />
+      <AzureSupport />
     </div>
   )
 }

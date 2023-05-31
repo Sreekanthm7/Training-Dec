@@ -73,3 +73,9 @@
     align-items: center;
   }
 }
+
+@media screen and (min-width: 1440px) {
+    .azure-products {
+      overflow-x: hidden;
+    }
+}

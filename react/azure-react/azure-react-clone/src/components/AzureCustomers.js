@@ -10,8 +10,6 @@ function AzureCustomers() {
   const [handrData, setHandRData] = useState({})
   const [nhsData, setNhsData] = useState({})
   const [forzaData, setForzaData] = useState([])
-  const [style, setStyle] = useState("customer-img-container")
-
 
   const fetchData = () => {
     fetch(
@@ -38,12 +36,6 @@ function AzureCustomers() {
     setVal(item)
   }
 
-  const changeStyle = () => {
-    console.log("you just clicked")
-    setStyle("customer-img-container-two")
-  }
-
-
   return (
     <>
       <div className="azure-customer-container">
@@ -52,10 +44,9 @@ function AzureCustomers() {
             return (
               <a key={item.value}>
                 <div
-                  className={style}
+                  className= "customer-img-container"
                   onClick={() => {
                     handleClick(item.value)
-                    changeStyle()
                   }}
                 >
                   <img src={item.image} />

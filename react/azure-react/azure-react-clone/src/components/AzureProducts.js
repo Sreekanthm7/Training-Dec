@@ -37,7 +37,6 @@ function AzureProducts() {
     setVal(item)
   }
 
-
   return (
     <>
       <div className="azure-products-services">
@@ -46,8 +45,9 @@ function AzureProducts() {
             <div className="azure-products-container">
               {nav.map((item) => {
                 return (
-                  <a onClick={() => handleClick(item.value)} key={item.value}>{item.text}</a>
-                  
+                  <a onClick={() => handleClick(item.value)} key={item.value}>
+                    {item.text}
+                  </a>
                 )
               })}
             </div>
@@ -73,7 +73,6 @@ function AzureProducts() {
                       text={item.text}
                       link={item.link}
                       key={item.image}
-
                     />
                   )
                 })}
@@ -85,7 +84,6 @@ function AzureProducts() {
                       text={item.text}
                       link={item.link}
                       key={item.image}
-
                     />
                   )
                 })}
@@ -97,7 +95,6 @@ function AzureProducts() {
                       text={item.text}
                       link={item.link}
                       key={item.image}
-
                     />
                   )
                 })}
@@ -109,7 +106,6 @@ function AzureProducts() {
                       text={item.text}
                       link={item.link}
                       key={item.image}
-
                     />
                   )
                 })}
@@ -121,7 +117,6 @@ function AzureProducts() {
                       text={item.text}
                       link={item.link}
                       key={item.image}
-
                     />
                   )
                 })}

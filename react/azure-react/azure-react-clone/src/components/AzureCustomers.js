@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import AzureCustomerCards from "./AzureCustomerCards"
 import "./AzureCustomers.css"
 
@@ -10,7 +10,8 @@ function AzureCustomers() {
   const [handrData, setHandRData] = useState({})
   const [nhsData, setNhsData] = useState({})
   const [forzaData, setForzaData] = useState([])
-  const [style, setStyle] = useState("customer-img-container img")
+  const [style, setStyle] = useState("customer-img-container")
+
 
   const fetchData = () => {
     fetch(
@@ -32,8 +33,6 @@ function AzureCustomers() {
   useEffect(() => {
     fetchData()
   }, [])
-  // console.log(nav)
-  console.log(fujitsuData)
 
   const handleClick = (item) => {
     setVal(item)
@@ -41,34 +40,30 @@ function AzureCustomers() {
 
   const changeStyle = () => {
     console.log("you just clicked")
-    setStyle("customer-img-container-two img")
+    setStyle("customer-img-container-two")
   }
 
-  // const grayStyle ={
-  //   filter: grayscale('0%'),
-  // }
 
   return (
     <>
       <div className="azure-customer-container">
         <div className="customer-icons-container">
-          {val == "Fujitsu" &&
-            nav.map((item) => {
-              return (
-                <a>
-                  <div className="customer-img-container">
-                    <img
-                      src={item.image}
-                      className={style}
-                      onClick={() => {
-                        handleClick(item.value)
-                        changeStyle()
-                      }}
-                    />
-                  </div>
-                </a>
-              )
-            })}
+          {nav.map((item) => {
+            return (
+              <a key={item.value}>
+                <div
+                  className={style}
+                  onClick={() => {
+                    handleClick(item.value)
+                    changeStyle()
+                  }}
+                >
+                  <img src={item.image} />
+                
+                </div>
+              </a>
+            )
+          })}
         </div>
         {val === "Fujitsu" && (
           <AzureCustomerCards

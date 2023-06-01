@@ -20,7 +20,7 @@ function DiscoverAzure() {
   useEffect(() => {
     fetchData()
   }, [])
-  console.log(discoverData)
+
   return (
     <>
       <div className="discover-azure">

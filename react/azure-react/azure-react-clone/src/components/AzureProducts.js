@@ -32,13 +32,11 @@ function AzureProducts() {
   useEffect(() => {
     fetchData()
   }, [])
-  // console.log(data)
 
   const handleClick = (item) => {
     setVal(item)
   }
-  // console.log(val)
-  // console.log(data.val)
+
 
   return (
     <>
@@ -48,7 +46,8 @@ function AzureProducts() {
             <div className="azure-products-container">
               {nav.map((item) => {
                 return (
-                  <a onClick={() => handleClick(item.value)}>{item.text}</a>
+                  <a onClick={() => handleClick(item.value)} key={item.value}>{item.text}</a>
+                  
                 )
               })}
             </div>
@@ -62,6 +61,7 @@ function AzureProducts() {
                       img={item.image}
                       text={item.text}
                       link={item.link}
+                      key={item.image}
                     />
                   )
                 })}
@@ -72,6 +72,8 @@ function AzureProducts() {
                       img={item.image}
                       text={item.text}
                       link={item.link}
+                      key={item.image}
+
                     />
                   )
                 })}
@@ -82,6 +84,8 @@ function AzureProducts() {
                       img={item.image}
                       text={item.text}
                       link={item.link}
+                      key={item.image}
+
                     />
                   )
                 })}
@@ -92,6 +96,8 @@ function AzureProducts() {
                       img={item.image}
                       text={item.text}
                       link={item.link}
+                      key={item.image}
+
                     />
                   )
                 })}
@@ -102,6 +108,8 @@ function AzureProducts() {
                       img={item.image}
                       text={item.text}
                       link={item.link}
+                      key={item.image}
+
                     />
                   )
                 })}
@@ -112,6 +120,8 @@ function AzureProducts() {
                       img={item.image}
                       text={item.text}
                       link={item.link}
+                      key={item.image}
+
                     />
                   )
                 })}

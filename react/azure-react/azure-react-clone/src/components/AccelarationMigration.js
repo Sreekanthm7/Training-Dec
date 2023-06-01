@@ -19,7 +19,6 @@ function AccelarationMigration() {
   useEffect(() => {
     fetchData()
   }, [])
-  console.log(data)
 
   return (
     <>

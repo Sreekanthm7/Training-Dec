@@ -10,6 +10,7 @@ import DiscoverAzure from "./DiscoverAzure"
 import DeveloperStories from "./DeveloperStories"
 import AzureServicesCards from "./AzureServicesCards"
 import AzureSupport from "./AzureSupport"
+import azurelogo from "../assets/img/azure-logo.svg"
 
 function MainBody() {
   const [data, setData] = useState([])
@@ -28,9 +29,20 @@ function MainBody() {
   useEffect(() => {
     fetchData()
   }, [])
-  // console.log(data)
   return (
     <div>
+      <div className="azure-sticky-header">
+        <div className="azure-sticky-header-container">
+          <div className="sticky-azure-logo">
+            <img src={azurelogo} />
+            <a>Azure</a>
+          </div>
+          <ul>
+            <li className="contact-sale">Contact Sales</li>
+            <li className="free-account">Free account</li>
+          </ul>
+        </div>
+      </div>
       <Innovation />
       <div className="on-premise-hybrid">
         <div className="on-premise-hybrid-container">
@@ -42,11 +54,12 @@ function MainBody() {
       </div>
       <div className="hybrid-data-container">
         <div className="hybrid-data">
-          {data.map((item) => (
+          {data.map((item, index) => (
             <HybridData
               img={item.backgroundImg}
               title={item.title}
               text={item.text}
+              key={index}
             />
           ))}
         </div>

@@ -27,6 +27,41 @@
   pointer-events: none;
 }
 
+.chat-with-sales {
+  position: fixed;
+  z-index: 1030;
+  bottom: 0;
+  right: 1rem;
+}
+
+.chat-with-sales-container{
+  display: flex;
+  flex-direction: row;
+  padding: 10px 12px 10px 35px;
+  background-color: #0067B8;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+.chat-icon{
+  position: relative;
+}
+
+.chat-icon::before{
+  position: absolute;
+  left: -1.25rem;
+  content: "";
+  font-family: 'mwfluenticon';
+  font-weight: 400;
+  line-height: 1;
+}
+
+.chat-icon p{
+  font-size: 16px;
+  font-family: 'latest1';
+  font-weight: 400;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

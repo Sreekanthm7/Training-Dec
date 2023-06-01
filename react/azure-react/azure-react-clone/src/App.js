@@ -10,6 +10,14 @@ function App() {
      <Header />
      <MainBody />
      <Footer />
+     <div className="chat-with-sales">
+      <a className="chat-with-sales-container">
+        <span className="chat-icon">
+
+        </span>
+        <p>Chat with sales</p>
+      </a>
+     </div>
     </div>
   )
 }

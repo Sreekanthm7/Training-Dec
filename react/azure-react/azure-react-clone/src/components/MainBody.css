@@ -149,6 +149,77 @@
   text-align: left;
 }
 
+.azure-sticky-header {
+  opacity: 100%;
+  pointer-events: auto;
+  z-index: 999;
+  box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+
+}
+
+.azure-sticky-header-container {
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.sticky-azure-logo {
+  display: flex;
+  align-items: center;
+}
+.sticky-azure-logo img{
+  width: 24px;
+  height: 24px;
+}
+
+.sticky-azure-logo a {
+  font-size: 18px;
+  margin-left: 12px;
+  font-weight: 600;
+  color: currentColor;
+
+}
+
+.azure-sticky-header-container ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-sale {
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #000;
+  color: #1a1a1f;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 9px;
+  line-height: 1;
+  text-align: center;
+  font-family: 'latest2';
+}
+
+.free-account{
+  background-color: #89c402;
+  border: 1px solid #6f9e02;
+  border-radius: 4px;
+  color: #1a1a1f;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 9px;
+  line-height: 1;
+  text-align: center;
+  margin-left: 12px;
+}
+
 @media screen and (min-width: 1024px) {
   .on-premise-hybrid-container h2 {
     text-align: center;

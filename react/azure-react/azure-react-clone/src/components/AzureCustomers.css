@@ -13,6 +13,7 @@
   flex-wrap: nowrap;
   width: 100%;
   overflow-x: scroll;
+  
 }
 
 
@@ -30,21 +31,7 @@
 
 .customer-img-container {
   padding: 0.1875rem;
-  filter: grayscale(100%);
-  border: 0.1875rem solid transparent;
-  border-radius: 0.625rem;
-}
 
-.customer-img-container-two {
-  padding: 0.1875rem;
-  filter: grayscale(0%);
-  border: 0.1875rem solid #0078d4;
-  border-radius: 0.625rem;
-}
-
-.customer-img-container-two img {
-  width: 9.2rem;
-  height: 2.9rem;
 }
 
 .customer-img-container img {
@@ -71,5 +58,6 @@
 @media screen and (min-width: 1440px) {
     .customer-icons-container{
         justify-content: center;
+        overflow-x: hidden;
     }
 }

@@ -31,18 +31,7 @@ function MainBody() {
   }, [])
   return (
     <div>
-      <div className="azure-sticky-header">
-        <div className="azure-sticky-header-container">
-          <div className="sticky-azure-logo">
-            <img src={azurelogo} />
-            <a>Azure</a>
-          </div>
-          <ul>
-            <li className="contact-sale">Contact Sales</li>
-            <li className="free-account">Free account</li>
-          </ul>
-        </div>
-      </div>
+
       <Innovation />
       <div className="on-premise-hybrid">
         <div className="on-premise-hybrid-container">

@@ -100,6 +100,12 @@
   transform: translateY(-2px);
 }
 
+.watch-story:hover {
+  background-color: #0462ab;
+}
+.more-developers-stories-btn span:hover {
+  text-decoration: underline;
+}
 @media screen and (min-width: 768px) {
   .developer-stories-btn-container {
     flex-direction: row;

@@ -50,6 +50,10 @@
   flex-direction: column;
 }
 
+.azure-products-container a:hover {
+  background-color: hsl(0, 0%, 91%);
+}
+
 @media screen and (min-width: 1024px) {
   .azure-services {
     flex-basis: 75%;

@@ -50,15 +50,19 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .discover-azure-card-container {
-        max-width: 1600px;
-        width: 100%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-}
-    .discover-azure-container {
-        max-width: 1600px;
-        margin-right: auto;
-        margin-left: auto;
+  .discover-azure-card-container {
+    max-width: 1600px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .discover-azure-container {
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .discover-azure {
+    margin-bottom: 3rem;
+  }
 }

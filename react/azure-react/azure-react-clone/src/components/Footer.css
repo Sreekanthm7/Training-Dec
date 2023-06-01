@@ -192,6 +192,17 @@
     margin-top: 12px;
 }
 
+.get-azure-mobile-app span:hover{
+  text-decoration: underline;
+}
+
+.footer-content-desktop-list li:hover{
+  text-decoration: underline;
+}
+
+.azure-footer-links li:hover{
+  text-decoration: underline;
+}
 
 @media screen and (min-width: 320px) {
     .footer-content-desktop {

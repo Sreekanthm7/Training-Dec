@@ -112,6 +112,14 @@
   font-family: "latest2";
   transform: translateX(4px);
 }
+.get-started-btn:hover {
+  background-color: #41daf5;
+}
+
+.try-azure-btn:hover{
+  background-color: #ffffff51;
+}
+
 @media screen and (min-width: 1024px) {
   .innovation-content {
     padding: 48px;
@@ -196,6 +204,7 @@
     transform: translate(112px, 32px);
   }
   .innovation-content p {
-    width: 96%;
-}
+    width: 100%;
+  }
+  
 }

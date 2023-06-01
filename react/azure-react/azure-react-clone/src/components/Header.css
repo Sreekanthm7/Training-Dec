@@ -39,6 +39,8 @@
   font-weight: 600;
 }
 
+
+
 .azure-text {
   margin-left: 4px;
   transform: translateY(-3px);
@@ -279,6 +281,22 @@
   font-family: 'latest1';
 
 }
+
+.nav-buttons:hover{
+  text-decoration: underline;
+  color: #000;
+}
+
+.azure-desktop-support li:hover{
+  text-decoration: underline;
+  color: #000;
+}
+
+.free-acount-green-btn:hover{
+  text-decoration: underline;
+  color: #000;
+  background-color: #b6eb39;
+}
 @media screen and (min-width: 320px) {
   .azure-tablet-header {
     display: none;
@@ -298,6 +316,10 @@
   }
   .azure-desktop-support {
     display: none;
+  }
+  .azure-text-tablet a:hover{
+    text-decoration: underline;
+    color: black;
   }
 
   @media screen and (min-width: 1084px) {

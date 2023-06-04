@@ -1,0 +1,44 @@
+.fashion-nav {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  transform: translateY(-4px);
+}
+
+.fashion-nav-img {
+  width: 100%;
+  height: 100%;
+}
+
+.fashion-nav-img img {
+  width: 64px;
+  height: 93.73px;
+}
+
+@media screen and (min-width: 375px) {
+  .fashion-nav-img img {
+    width: 75px;
+    height: 109.84px;
+  }
+  .fashion-nav {
+    transform: translateY(-3px);
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .fashion-nav-img img {
+    width: 85px;
+    height: 125px;
+  }
+  .fashion-nav {
+    transform: translateY(-4px);
+  }
+  @media screen and (min-width: 768px) {
+    .fashion-nav-img img {
+      width: 154px;
+      height: 225px;
+    }
+    .fashion-nav {
+      transform: translateY(-5px);
+    }
+  }
+}

@@ -23,6 +23,16 @@
   src: url(./assets/font/roboto-regular.woff2);
 }
 
+@font-face {
+  font-family: 'inter-regular';
+  src: url(./assets/font/Inter-Regular.woff2);
+}
+
+@font-face {
+  font-family: 'inter-semibold';
+  src: url(./assets/font/Inter-SemiBold.woff2);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

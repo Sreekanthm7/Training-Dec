@@ -4,6 +4,8 @@ import FashionNav from './FashionNav'
 import Header from './Header'
 import MobileNav from './MobileNav'
 import OfferNav from './OfferNav'
+import PopularPicks from './PopularPicks'
+import SeasonSaleEnd from './SeasonSaleEnd'
 
 function MobileView() {
   return (
@@ -13,6 +15,8 @@ function MobileView() {
    <Carousel />
    <FashionNav />
    <OfferNav />
+   <PopularPicks />
+   <SeasonSaleEnd />
    </>
   )
 }

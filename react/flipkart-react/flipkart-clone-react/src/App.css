@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: 'roboto-medium';
-  src: url(./assets/font/roboto-medium.woff2);
+  src: url(./assets/font/roboto-medium\ \(1\).woff2);
 }
 
 @font-face {
@@ -62,3 +62,10 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (min-width: 960px) {
+  .mobile-view {
+    display: none;
+  }
+}
+

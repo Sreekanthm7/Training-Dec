@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import "./PopularPicks.css"
-import PopularPicksCards from "./PopularPicksCards"
+import PopularCards from "./PopularCards"
 
 function PopularPicks() {
   const [PopularPicksData, setPopularPicksData] = useState({})
@@ -40,7 +40,7 @@ function PopularPicks() {
         <div className="popular-picks-card-container">
         {PopularPicksCardData.map((item) => {
           return (
-            <PopularPicksCards img={item.img} text={item.text} link={item.link} key={item.img}/>
+            <PopularCards img={item.img} text={item.text} link={item.link} key={item.img}/>
 
           )
         })}

@@ -1,7 +1,7 @@
 import React from 'react'
-import './PopularPicksCards.css'
+import './PopularCards.css'
 
-function PopularPicksCards({img, text, link}) {
+function PopularCards({img, text, link}) {
   return (
     <>
         <div className='popular-picks-cards'>
@@ -17,4 +17,4 @@ function PopularPicksCards({img, text, link}) {
   )
 }
 
-export default PopularPicksCards
+export default PopularCards

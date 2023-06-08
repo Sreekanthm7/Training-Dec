@@ -1,0 +1,37 @@
+.best-of-electronics {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.best-of-electronics-container {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid #eaeaea;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);    
+    width: 76%;
+    
+}
+
+
+.flight-trip-add {
+    padding: 0px 0px 10px 10px;
+}
+
+.flight-trip-add img {
+    width: 230px;
+    height: 373px;
+}
+
+.electronics-card-container {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 1866px;
+}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import "./DesktopNav.css"
-import blackArrow from '../../assets/img/blackarrow.svg'
+import blackArrow from '../../../assets/img/blackarrow.svg'
 
 function DesktopNav() {
   const [desktopNavData, setDesktopNavData] = useState([])

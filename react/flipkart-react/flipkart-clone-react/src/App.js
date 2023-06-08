@@ -9,7 +9,7 @@ function App() {
       <div className="mobile-view">
         <MobileView />
       </div>
-      <div className="">
+      <div className="desktop-view">
         <DesktopView />
       </div>
     </div>

@@ -1,8 +1,8 @@
 import React from "react"
 import "./HeaderDesktop.css"
-import searchBtn from "../../assets/img/search.svg"
-import downArrow from "../../assets/img/downarrow.svg"
-import carticon from "../../assets/img/carticon.svg"
+import searchBtn from "../../../assets/img/search.svg"
+import downArrow from "../../../assets/img/downarrow.svg"
+import carticon from "../../../assets/img/carticon.svg"
 
 function HeaderDesktop() {
   return (

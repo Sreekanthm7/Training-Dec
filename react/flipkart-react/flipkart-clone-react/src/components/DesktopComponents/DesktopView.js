@@ -1,12 +1,14 @@
 import React from 'react'
-import DesktopNav from './DesktopNav'
-import HeaderDesktop from './HeaderDesktop'
+import DesktopNav from './Nav/DesktopNav'
+import HeaderDesktop from './Header/HeaderDesktop'
+import DesktopMainBody from './MainBody/DesktopMainBody'
 
 function DesktopView() {
   return (
     <>
         <HeaderDesktop />
         <DesktopNav />
+        <DesktopMainBody />
     </>
   )
 }

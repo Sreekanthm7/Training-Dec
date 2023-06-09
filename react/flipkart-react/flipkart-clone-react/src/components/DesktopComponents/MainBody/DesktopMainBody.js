@@ -3,6 +3,7 @@ import BeautyAndMore from "./BeautyAndMore"
 import BestOfElectronics from "./BestOfElectronics"
 import DesktopCarousel from "./DesktopCarousel"
 import './DesktopMainBody.css'
+import MonsoonEssentials from "./MonsoonEssentials"
 import SportsEssential from "./SportsEssential"
 
 function DesktopMainBody() {
@@ -13,6 +14,7 @@ function DesktopMainBody() {
         <BestOfElectronics />
         <BeautyAndMore />
         <SportsEssential />
+        <MonsoonEssentials />
       </div>
     </>
   )

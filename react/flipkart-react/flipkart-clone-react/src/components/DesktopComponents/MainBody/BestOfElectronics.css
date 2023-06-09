@@ -1,37 +1,82 @@
 .best-of-electronics {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
 }
 
 .best-of-electronics-container {
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-top: 1px solid #eaeaea;
-    height: 100%;
-    background-color: #fff;
-    border-radius: 2px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);    
-    width: 76%;
-    
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1px solid #eaeaea;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  width: 76%;
+  z-index: 100;
 }
 
-
 .flight-trip-add {
-    padding: 0px 0px 10px 10px;
+  padding: 0px 0px 10px 10px;
 }
 
 .flight-trip-add img {
-    width: 230px;
-    height: 373px;
+  width: 230px;
+  height: 373px;
 }
 
 .electronics-card-container {
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: row;
-    width: 1866px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  width: 1866px;
 }
+
+.right-btn-electronics {
+  right: 232px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: calc(50% - 52px);
+  width: 47px;
+  height: 104px;
+  background-color: hsla(0, 0%, 100%, 0.98);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.11);
+  position: absolute;
+  z-index: 1;
+}
+
+.right-btn-electronics img {
+  transform: rotate(180deg);
+}
+
+.left-btn-electronics {
+  right: 230px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: calc(50% - 52px);
+  width: 47px;
+  height: 104px;
+  background-color: hsla(0, 0%, 100%, 0.98);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.11);
+  position: absolute;
+  z-index: 1;
+}
+
+.left-btn-electronics img {
+    transform: rotate(180deg);
+  }
+
+  .add-btn {
+    position: relative;
+  }

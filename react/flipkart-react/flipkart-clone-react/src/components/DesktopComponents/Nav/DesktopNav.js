@@ -27,9 +27,10 @@ function DesktopNav() {
         <div className="desktop-nav-container">
           {desktopNavData.map((item) => {
             return (
-              <div className="desktop-nav-cards">
+              <div className="desktop-nav-cards" key={item.img}>
                 <div className="desktop-nav-img">
                   <img src={item.img}/>
+    
                 </div>
                 <div className="nav-title">
                   <p>{item.text}</p>

@@ -31,7 +31,7 @@ function SalesIsLive() {
         <div className="sales-live-cards-container">
           {salesCardData.map((item) => {
             return (
-              <div className="sales-is-live-card-img">
+              <div className="sales-is-live-card-img" key={item}>
                 <img src={item} />
               </div>
             )

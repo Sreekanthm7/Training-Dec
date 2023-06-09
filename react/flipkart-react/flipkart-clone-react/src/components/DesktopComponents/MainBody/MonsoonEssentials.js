@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react"
 import DataMainCardTwo from "./DataMainCardTwo"
+import "./MonsoonEssentials.css"
 import ProductDesktopCards from "./ProductDesktopCards"
-import "./SportsEssential.css"
 import arrow from "../../../assets/img/btnarrowdesktop.svg"
 
 
-function SportsEssential() {
-  const [productCard, setProductCard] = useState([])
+function MonsoonEssentials() {
   const [mainCard, setMainCard] = useState([])
+  const [productCard, setProductCard] = useState([])
 
   const fetchData = () => {
     fetch(
@@ -17,8 +17,8 @@ function SportsEssential() {
         return response.json()
       })
       .then((data) => {
-        setProductCard(data.SportEssentialsDesktopCards)
-        setMainCard(data.SportsEssentialMainCard)
+        setMainCard(data.MonsoonEssentialsMainCard)
+        setProductCard(data.MonsoonEssentialsDesktopCards)
       })
   }
 
@@ -28,11 +28,11 @@ function SportsEssential() {
 
   return (
     <>
-      <div className="sports-essentials">
-        <div className="sports-essential-main-card">
+      <div className="monsoon-essentials">
+        <div className="moonsoon-essential-main-card">
           <DataMainCardTwo text={mainCard} />
         </div>
-        <div className="sports-essential-products">
+        <div className="monsoon-essential-products">
           {productCard.map((item) => {
             return (
               <ProductDesktopCards
@@ -45,12 +45,12 @@ function SportsEssential() {
             )
           })}
         </div>
-        <div className="right-btn-sports">
-          <img src={arrow} />
+        <div className="right-btn-monsoon">
+        <img src={arrow} />
         </div>
       </div>
     </>
   )
 }
 
-export default SportsEssential
+export default MonsoonEssentials

@@ -1,11 +1,16 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import "./BeautyAndMore.css"
 import DataMainCardTwo from "./DataMainCardTwo"
 import ProductDesktopCards from "./ProductDesktopCards"
+import arrow from "../../../assets/img/btnarrowdesktop.svg"
+
 
 function BeautyAndMore() {
   const [mainCardData, setMainCardData] = useState({})
   const [productCard, setProductCard] = useState([])
+  const imageCard = useRef();
+  const arrowRight = useRef()
+  const arrowLeft = useRef()
 
   const fetchData = () => {
     fetch(
@@ -24,6 +29,13 @@ function BeautyAndMore() {
     fetchData()
   }, [])
 
+  const handleClickRight = () => {
+    imageCard.current.style.transform = `translateX(${-35}%)`;
+    arrowRight.current.style.display = "none";
+    // arrowLeft.current.style.display = "flex";
+    imageCard.current.style.transition = "transform ease-in-out 0.45s";
+  };
+
   return (
     <>
       <div className="beauty-and-more">
@@ -33,7 +45,7 @@ function BeautyAndMore() {
             text={mainCardData.text}
           />
         </div>
-        <div className="beauty-and-more-products">
+        <div className="beauty-and-more-products" ref={imageCard}>
           {productCard.map((item) => {
             return (
               <ProductDesktopCards
@@ -41,11 +53,16 @@ function BeautyAndMore() {
                 heading={item.heading}
                 link={item.link}
                 text={item.text}
+                key={item.img}
               />
             )
           })}
         </div>
+        <div className="right-btn-beauty" onClick={handleClickRight} ref={arrowRight}>
+        <img src={arrow} />
       </div>
+      </div>
+      
     </>
   )
 }

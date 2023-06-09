@@ -1,20 +1,22 @@
-.sports-essentials {
-    padding: 0px 0px 10px;   
+.monsoon-essentials {
+    padding: 0px 0px 10px;
     display: flex;
     border-top: 1px solid #eaeaea;
     height: 100%;
     background-color: #fff;
     border-radius: 2px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
     max-width: 1600px;
     margin-inline: auto;
     position: relative;
 }
-.sports-essential-main-card {
-    width: 230px;
-    position: relative;
-    height: 361px;
+
+.moonsoon-essential-main-card {
+   width: 230px;
+   position: relative;
+   height: 361px;
 }
+
 .data-main-card-two-content {
     display: flex;
     flex-direction: column;
@@ -50,12 +52,12 @@
     justify-content: center;
   }
   
-  .sports-essential-products {
+  .monsoon-essential-products {
     display: flex;
     overflow-x: hidden;
 }
 
-.right-btn-sports {
+.right-btn-monsoon {
     right: 0;
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
@@ -68,9 +70,9 @@
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.11);
     position: absolute;
     z-index: 1;
-    bottom: 151px;
+    bottom: 148px;
 }
 
-.right-btn-sports img {
-    transform: rotate(180deg);
+.right-btn-monsoon img {
+  transform: rotate(180deg);
 }

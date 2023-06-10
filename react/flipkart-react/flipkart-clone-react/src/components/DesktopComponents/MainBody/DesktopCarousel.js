@@ -59,6 +59,7 @@ function DesktopCarousel() {
                   transform: `translateX(${-100 * index}%)`,
                   transition: "transform ease-out 0.45s",
                 }}
+                key={item}
               >
                 <img src={item} />
               </div>

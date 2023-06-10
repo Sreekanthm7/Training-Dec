@@ -8,6 +8,7 @@
   overflow-x: hidden;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 .desktop-header-container {

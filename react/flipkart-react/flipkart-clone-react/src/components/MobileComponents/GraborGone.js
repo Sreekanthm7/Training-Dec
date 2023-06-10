@@ -42,7 +42,7 @@ function GraborGone() {
           <div className="grab-or-gone-card-container-box">
             {grabOrGoneCardData.map((item) => {
               return(
-              <GrabOrGoneCards img={item.img} text={item.text} link={item.link} />
+              <GrabOrGoneCards img={item.img} text={item.text} link={item.link} key={item.img} />
               )
             })}
           </div>

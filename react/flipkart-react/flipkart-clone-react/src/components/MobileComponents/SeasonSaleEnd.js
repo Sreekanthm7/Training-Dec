@@ -29,7 +29,7 @@ function SeasonSaleEnd() {
         </div>
         <div className="season-end-sale-cards">
           {seasonSaleEndData.map((item) => {
-            return <img src={item} className="season-end-sale-img"/>
+            return <img src={item} className="season-end-sale-img" key={item}/>
           })}
         </div>
       </div>

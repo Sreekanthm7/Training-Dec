@@ -25,19 +25,19 @@ function DesktopCarousel() {
   const CallIndex = () => {
     setIndex(index == carousel.length - 1 ? 0 : index + 1)
   }
-  useEffect(() => {
-    setTimeout(CallIndex, 3000)
-  })
+  // useEffect(() => {
+     setTimeout(CallIndex, 3000)
+  // })
   const handleClickRight = () => {
     setIndex(index + 1)
     CallIndex()
-    clearInterval()
+    clearTimeout()
   }
 
   const handleClickLeft = () => {
     setIndex(index - 1)
     CallIndex()
-    clearInterval()
+    clearTimeout()
   }
 
   // const clearInterval = () => {

@@ -4,11 +4,10 @@ import DataMainCardTwo from "./DataMainCardTwo"
 import ProductDesktopCards from "./ProductDesktopCards"
 import arrow from "../../../assets/img/btnarrowdesktop.svg"
 
-
 function BeautyAndMore() {
   const [mainCardData, setMainCardData] = useState({})
   const [productCard, setProductCard] = useState([])
-  const imageCard = useRef();
+  const imageCard = useRef()
   const arrowRight = useRef()
   const arrowLeft = useRef()
 
@@ -30,11 +29,11 @@ function BeautyAndMore() {
   }, [])
 
   const handleClickRight = () => {
-    imageCard.current.style.transform = `translateX(${-35}%)`;
-    arrowRight.current.style.display = "none";
+    imageCard.current.style.transform = `translateX(${-35}%)`
+    arrowRight.current.style.display = "none"
     // arrowLeft.current.style.display = "flex";
-    imageCard.current.style.transition = "transform ease-in-out 0.45s";
-  };
+    imageCard.current.style.transition = "transform ease-in-out 0.45s"
+  }
 
   return (
     <>
@@ -58,13 +57,21 @@ function BeautyAndMore() {
             )
           })}
         </div>
-        <div className="right-btn-beauty" onClick={handleClickRight} ref={arrowRight}>
-        <img src={arrow} />
+        <div
+          className="right-btn-beauty"
+          onClick={handleClickRight}
+          ref={arrowRight}
+        >
+          <img src={arrow} />
+        </div>
       </div>
-      </div>
-      
+      <div>
+          </div>
     </>
   )
 }
 
 export default BeautyAndMore
+
+
+  

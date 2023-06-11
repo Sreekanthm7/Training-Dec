@@ -65,8 +65,13 @@ function BeautyAndMore() {
           <img src={arrow} />
         </div>
       </div>
+      <div>
+          </div>
     </>
   )
 }
 
 export default BeautyAndMore
+
+
+  

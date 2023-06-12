@@ -50,3 +50,7 @@
     transform: rotate(-90deg);
     margin-left: 10px;
 }
+
+.desktop-nav-cards :hover {
+    color: #2874f0;
+}

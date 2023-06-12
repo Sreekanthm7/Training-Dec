@@ -29,9 +29,16 @@ function BeautyAndMore() {
   }, [])
 
   const handleClickRight = () => {
-    imageCard.current.style.transform = `translateX(${-35}%)`
+    imageCard.current.style.transform = `translateX(${-25}%)`
     arrowRight.current.style.display = "none"
-    // arrowLeft.current.style.display = "flex";
+    arrowLeft.current.style.display = "flex"
+    imageCard.current.style.transition = "transform ease-in-out 0.45s"
+  }
+
+  const handleClickLeft = () => {
+    imageCard.current.style.transform = `translateX(${2}%)`
+    arrowLeft.current.style.display = "none"
+    arrowRight.current.style.display = "flex"
     imageCard.current.style.transition = "transform ease-in-out 0.45s"
   }
 
@@ -43,6 +50,13 @@ function BeautyAndMore() {
             img={mainCardData.backgroundImg}
             text={mainCardData.text}
           />
+        </div>
+        <div
+          className="left-btn-beauty"
+          ref={arrowLeft}
+          onClick={handleClickLeft}
+        >
+          <img src={arrow} />
         </div>
         <div className="beauty-and-more-products" ref={imageCard}>
           {productCard.map((item) => {
@@ -65,13 +79,8 @@ function BeautyAndMore() {
           <img src={arrow} />
         </div>
       </div>
-      <div>
-          </div>
     </>
   )
 }
 
 export default BeautyAndMore
-
-
-  

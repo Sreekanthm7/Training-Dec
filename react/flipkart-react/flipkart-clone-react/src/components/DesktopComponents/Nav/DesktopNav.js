@@ -34,7 +34,6 @@ function DesktopNav() {
                 </div>
                 <div className="nav-title">
                   <p>{item.text}</p>
-                  {item.list ? <img src={blackArrow} className="arrow-img" />: "" }
                 </div>
               </div>
             )

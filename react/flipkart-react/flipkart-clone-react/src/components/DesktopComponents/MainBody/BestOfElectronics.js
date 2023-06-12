@@ -30,25 +30,33 @@ function BestOfElectronics() {
 
   const handleClickRight = () => {
     console.log(imageCard)
-    imageCard.current.style.transform = `translateX(${-35}%)`
+    imageCard.current.style.transform = `translateX(${-65}%)`
     arrowRight.current.style.display = "none"
-    // arrowLeft.current.style.display = "flex";
+    arrowLeft.current.style.display = "flex"
+    imageCard.current.style.transition = "transform ease-in-out 0.45s"
+  }
+
+  const handleClickLeft = () => {
+    imageCard.current.style.transform = `translateX(${2}%)`
+    arrowLeft.current.style.display = "none"
+    arrowRight.current.style.display = "flex"
     imageCard.current.style.transition = "transform ease-in-out 0.45s"
   }
 
   return (
     <>
       <div className="best-of-electronics">
-        {/* <div className="left-btn-electronics">
-            <img src={arrow} />
-        </div> */}
         <div className="best-of-electronics-container">
           <DataMainCard
             img={mainCardData.backgroundImg}
             text={mainCardData.text}
           />
+
         </div>
-        <div className="electronics-card-container">
+        <div className="left-btn-electronics" ref={arrowLeft} onClick={handleClickLeft}>
+            <img src={arrow} />
+          </div>
+        <div className="electronics-card-container" ref={imageCard}>
           {productCard.map((item) => {
             return (
               <ProductDesktopCards
@@ -80,5 +88,3 @@ function BestOfElectronics() {
 }
 
 export default BestOfElectronics
-
-

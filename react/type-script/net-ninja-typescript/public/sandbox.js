@@ -1,3 +1,4 @@
+"use strict";
 // let names = ['luigi', 'mario', 'yoshi']
 // names.push('toad')
 // let numbers = [10, 20, 30, 40]
@@ -38,3 +39,26 @@
 //     beltColour: string
 // }
 // ninjaTwo = {name: 'shamil', age: 18, beltColour: 'white'}
+// let age: any = 25
+// age = true
+// console.log(age)
+// age = 'hello'
+// console.log(age);
+// interface Account {
+//     id: number
+//     displayName: string
+//     version: 1
+// }
+// function welcome(user: Account) {
+//     console.log(user.id);
+// }
+// type Result = "pass" | "fail"
+// function verify(result: Result) {
+//     if(result == "pass") {
+//         console.log("Passed");
+//     } else {
+//         console.log("Failed");
+//     }
+// }
+// verify("fail")
+console.log('test');

@@ -1,10 +1,4 @@
-.nav-bar-container {
-    height: 55.4955px;
-    background-color: #fff;
-    display: flex;
-    overflow-x: scroll;
-    padding-right: 22px;
-}
+
 
 @media screen and (min-width: 375px) {
     .nav-bar-container img {

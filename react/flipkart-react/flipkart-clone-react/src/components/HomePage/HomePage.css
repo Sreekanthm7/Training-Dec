@@ -1,0 +1,43 @@
+.desktop-main-body {
+  padding: 8px;
+}
+.nav-bar-container {
+  height: 55.4955px;
+  background-color: #fff;
+  display: flex;
+  overflow-x: scroll;
+  padding-right: 22px;
+}
+.carousel-mobile {
+  display: flex;
+  overflow: hidden;
+  
+}
+.carousel-img {
+  transform: translate(0);
+}
+.fashion-nav {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  transform: translateY(-4px);
+}
+.offer-nav {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    transform: translateY(-4px);
+  }
+@media screen and (min-width: 320px) {
+  .Desktop-home-page {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .Mobile-home-page {
+    display: none;
+  }
+
+  .Desktop-home-page {
+    display: block;
+  }
+}

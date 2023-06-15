@@ -1,38 +1,14 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import "./FashionNav.css"
 
-function FashionNav() {
-  const [fashionData, setFashionData] = useState([])
-
-  const fetchData = () => {
-    fetch(
-      "https://raw.githubusercontent.com/Sreekanthm7/jsondata/main/flipkart-json-data/flipkart.json"
-    )
-    .then((response) => {
-        return response.json()
-    })
-    .then((data) => {
-        setFashionData(data.fashionNavMobile)
-    })
-  }
-
-  useEffect(() => {
-    fetchData()
-  }, [])
-
+function FashionNav({img}) {
+ 
   return (
     <>
-      <div className="fashion-nav">
-        {fashionData.map((item) => {
-            return(
-        <div className="fashion-nav-img" key={item}> 
-          <img src={item} />
-          
+   
+        <div className="fashion-nav-img" key={img}> 
+          <img src={img} />
         </div>
-            )
-        })}
-        
-      </div>
     </>
   )
 }

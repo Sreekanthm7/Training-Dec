@@ -1,17 +1,11 @@
 import logo from "./logo.svg"
 import "./App.css"
-import MobileView from "./components/MobileComponents/MobileView"
-import DesktopView from "./components/DesktopComponents/DesktopView"
+import HomePage from "./components/HomePage/HomePage"
 
 function App() {
   return (
     <div className="App">
-      <div className="mobile-view">
-        <MobileView />
-      </div>
-      <div className="desktop-view">
-        <DesktopView />
-      </div>
+     <HomePage />
     </div>
   )
 }

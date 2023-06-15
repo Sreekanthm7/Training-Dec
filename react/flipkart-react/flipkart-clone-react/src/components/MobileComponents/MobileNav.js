@@ -1,10 +1,14 @@
 import React from "react"
 import "./MobileNav.css"
 
-function MobileNav({img}) {
+function MobileNav({navData}) {
   return (
     <>
-        <img src={img} />
+         <div className="nav-bar-container">
+          {navData.map((item) => {
+            return <img src={item}></img>
+          })}
+        </div>
     </>
   )
 }

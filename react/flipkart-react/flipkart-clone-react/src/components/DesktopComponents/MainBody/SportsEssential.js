@@ -4,29 +4,10 @@ import ProductDesktopCards from "./ProductDesktopCards"
 import "./SportsEssential.css"
 import arrow from "../../../assets/img/btnarrowdesktop.svg"
 
-function SportsEssential() {
-  const [productCard, setProductCard] = useState([])
-  const [mainCard, setMainCard] = useState([])
+function SportsEssential({mainCardData, productCardTwo}) {
   const imageCard = useRef()
   const arrowRight = useRef()
   const arrowLeft = useRef()
-
-  const fetchData = () => {
-    fetch(
-      "https://raw.githubusercontent.com/Sreekanthm7/jsondata/main/flipkart-json-data/flipkart.json"
-    )
-      .then((response) => {
-        return response.json()
-      })
-      .then((data) => {
-        setProductCard(data.SportEssentialsDesktopCards)
-        setMainCard(data.SportsEssentialMainCard)
-      })
-  }
-
-  useEffect(() => {
-    fetchData()
-  }, [])
 
   const handleClickRight = () => {
     imageCard.current.style.transform = `translateX(${-50}%)`
@@ -45,7 +26,7 @@ function SportsEssential() {
     <>
       <div className="sports-essentials">
         <div className="sports-essential-main-card">
-          <DataMainCardTwo text={mainCard} />
+          <DataMainCardTwo text={mainCardData[0]} />
         </div>
         <div
           className="left-btn-sports"
@@ -55,7 +36,7 @@ function SportsEssential() {
           <img src={arrow} />
         </div>
         <div className="sports-essential-products" ref={imageCard}>
-          {productCard.map((item) => {
+          {productCardTwo.map((item) => {
             return (
               <ProductDesktopCards
                 img={item.img}

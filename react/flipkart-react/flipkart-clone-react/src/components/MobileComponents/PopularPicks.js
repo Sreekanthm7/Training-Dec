@@ -1,29 +1,8 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import "./PopularPicks.css"
 import PopularCards from "./PopularCards"
 
-function PopularPicks() {
-  const [PopularPicksData, setPopularPicksData] = useState({})
-  const [PopularPicksCardData, setPopularPicksCardData] = useState([])
-
-  const fetchData = () => {
-    fetch(
-      "https://raw.githubusercontent.com/Sreekanthm7/jsondata/main/flipkart-json-data/flipkart.json"
-    )
-      .then((response) => {
-        return response.json()
-      })
-      .then((data) => {
-        setPopularPicksData(data.popularPicksMobile)
-        setPopularPicksCardData(data.popularPicksCardsMobile)
-      })
-  }
-
-  useEffect(() => {
-    fetchData()
-  }, [])
-
-
+function PopularPicks({PopularPicksData, PopularPicksCardData}) {
 
   return (
     <>

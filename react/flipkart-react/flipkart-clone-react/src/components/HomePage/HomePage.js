@@ -25,6 +25,22 @@ function HomePage() {
   let [index, setIndex] = useState(0)
   const [fashionData, setFashionData] = useState([])
   const [offerNavData, setOfferNavData] = useState([])
+  const [PopularPicksData, setPopularPicksData] = useState({})
+  const [PopularPicksCardData, setPopularPicksCardData] = useState([])
+  const [seasonSaleEndData, setSeasonSaleEndData] = useState([])
+  const [grabOrGoneData, setGrabOrGoneData] = useState({})
+  const [grabOrGoneCardData, setGrabOrGoneCardData] = useState([])
+  const [salesIsLiveData, setSalesLiveData] = useState({})
+  const [salesCardData, setSalesCardData] = useState([])
+  const [Desktopcarousel, setDesktopCarousel] = useState([])
+  const [mainCardData, setMainCardData] = useState({})
+  const [productCard, setProductCard] = useState([])
+  const [mainCardBeautyData, setMainCardBeautyData] = useState({})
+  const [productCardBeauty, setProductCardBeauty] = useState([])
+  const [productSportsCard, setProductSportsCard] = useState([])
+  const [mainCardSports, setMainCardSports] = useState([])
+  const [mainCardMonsoon, setMainCardMonsson] = useState([])
+  const [productCardMonsoon, setProductCardMonsoon] = useState([])
 
   const fetchData = () => {
     fetch(
@@ -39,6 +55,23 @@ function HomePage() {
         setCarousel(data.flipkartCarouselMobile)
         setFashionData(data.fashionNavMobile)
         setOfferNavData(data.navOfferSales)
+        setPopularPicksData(data.popularPicksMobile)
+        setPopularPicksCardData(data.popularPicksCardsMobile)
+        setSeasonSaleEndData(data.seasonEndSaleMobile)
+        setGrabOrGoneData(data.grabOrGone)
+        setGrabOrGoneCardData(data.grabGoneCards)
+        setSalesLiveData(data.saleIsLive)
+        setSalesCardData(data.salesLiveCards)
+        setDesktopCarousel(data.DesktopCarousel)
+        setMainCardData(data.BestOfElectronics)
+        setProductCard(data.ElectronicsDesktop)
+        setMainCardBeautyData(data.BeautyFoodToysAndMore)
+        setProductCardBeauty(data.BeautyFoodToysAndMoreDesktopCards)
+        setMainCardSports(data.SportsEssentialMainCard)
+        setProductSportsCard(data.SportEssentialsDesktopCards)
+        setMainCardMonsson(data.MonsoonEssentialsMainCard)
+        setProductCardMonsoon(data.MonsoonEssentialsDesktopCards)
+     
       })
   }
 
@@ -52,65 +85,74 @@ function HomePage() {
   useEffect(() => {
     setTimeout(CallIndex, 2000)
   })
+  const CallCarouselIndex = () => {
+    setIndex(index == carousel.length - 1 ? 0 : index + 1)
+  }
 
+  setTimeout(CallIndex, 3000)
+
+  const handleClickRight = () => {
+    setIndex(index + 1)
+    CallCarouselIndex()
+    clearTimeout()
+  }
+
+  const handleClickLeft = () => {
+    setIndex(index - 1)
+    CallCarouselIndex()
+    clearTimeout()
+  }
+
+  console.log()
   return (
     <>
       <div className="Mobile-home-page">
         <Header />
-        <div className="nav-bar-container">
-          {navData.map((item) => {
-            return <MobileNav img={item} />
-          })}
-        </div>
 
-        <div className="carousel-mobile">
-          {carousel.map((item) => {
-            return (
-              <div
-                className="carousel-img"
-                style={{
-                  transform: `translateX(${-100 * index}%)`,
-                  transition: "transform ease-out 0.45s",
-                }}
-                key={item}
-              >
-                <Carousel img={item} />
-              </div>
-            )
-          })}
-        </div>
-        <div className="fashion-nav">
-          {fashionData.map((item) => {
-            return <FashionNav img={item} />
-          })}
-        </div>
+        <MobileNav navData={navData} />
 
-        <div className="offer-nav">
-          {offerNavData.map((item) => {
-            return(
-             <OfferNav img={item}/>
-            )
-          })}
-        </div>
+        <Carousel carousel={carousel} />
 
-        <PopularPicks />
-        <SeasonSaleEnd />
-        <GraborGone />
-        <SalesIsLive />
+        <FashionNav fashionData={fashionData} />
+
+ 
+       <OfferNav offerNavData={offerNavData} />
+     
+
+        <PopularPicks
+          PopularPicksData={PopularPicksData}
+          PopularPicksCardData={PopularPicksCardData}
+        />
+        <SeasonSaleEnd seasonSaleEnd={seasonSaleEndData} />
+        <GraborGone
+          grabOrGone={grabOrGoneData}
+          grabOrGoneCard={grabOrGoneCardData}
+        />
+        <SalesIsLive
+          salesIsLive={salesIsLiveData}
+          salesCardData={salesCardData}
+        />
       </div>
       <div className="Desktop-home-page">
         <HeaderDesktop />
-        <div className="desktop-nav-container">
-          {desktopNavData.map((item) => {
-            return <DesktopNav img={item.img} text={item.text} />
-          })}
-        </div>
+
+        <DesktopNav desktopNavData={desktopNavData} />
+
         <div className="desktop-main-body">
-          <DesktopCarousel />
-          <BestOfElectronics />
-          <BeautyAndMore />
-          <SportsEssential />
-          <MonsoonEssentials />
+          <DesktopCarousel desktopCarousel={Desktopcarousel} />
+          <BestOfElectronics
+            mainCardData={mainCardData}
+            productCard={productCard}
+          />
+          <BeautyAndMore
+            mainCardData={mainCardBeautyData}
+            productCard={productCardBeauty}
+          />
+          <SportsEssential
+            mainCardData={mainCardSports}
+            productCardTwo={productSportsCard}
+          />
+          <MonsoonEssentials mainCardData={mainCardMonsoon} productCardTwo={productCardMonsoon}/>
         </div>
         <FlipkartFooter />
       </div>

@@ -4,29 +4,11 @@ import DataMainCardTwo from "./DataMainCardTwo"
 import ProductDesktopCards from "./ProductDesktopCards"
 import arrow from "../../../assets/img/btnarrowdesktop.svg"
 
-function BeautyAndMore() {
-  const [mainCardData, setMainCardData] = useState({})
-  const [productCard, setProductCard] = useState([])
+function BeautyAndMore({mainCardData, productCard}) {
   const imageCard = useRef()
   const arrowRight = useRef()
   const arrowLeft = useRef()
 
-  const fetchData = () => {
-    fetch(
-      "https://raw.githubusercontent.com/Sreekanthm7/jsondata/main/flipkart-json-data/flipkart.json"
-    )
-      .then((response) => {
-        return response.json()
-      })
-      .then((data) => {
-        setMainCardData(data.BeautyFoodToysAndMore)
-        setProductCard(data.BeautyFoodToysAndMoreDesktopCards)
-      })
-  }
-
-  useEffect(() => {
-    fetchData()
-  }, [])
 
   const handleClickRight = () => {
     imageCard.current.style.transform = `translateX(${-25}%)`

@@ -1,24 +1,7 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import "./SeasonSaleEnd.css"
 
-function SeasonSaleEnd() {
-  const [seasonSaleEndData, setSeasonSaleEndData] = useState([])
-
-  const fetchData = () => {
-    fetch(
-      "https://raw.githubusercontent.com/Sreekanthm7/jsondata/main/flipkart-json-data/flipkart.json"
-    )
-      .then((response) => {
-        return response.json()
-      })
-      .then((data) => {
-        setSeasonSaleEndData(data.seasonEndSaleMobile)
-      })
-  }
-
-  useEffect(() => {
-    fetchData()
-  }, [])
+function SeasonSaleEnd({seasonSaleEnd}) {
 
   return (
     <>
@@ -28,8 +11,10 @@ function SeasonSaleEnd() {
           <p>Sponsored</p>
         </div>
         <div className="season-end-sale-cards">
-          {seasonSaleEndData.map((item) => {
-            return <img src={item} className="season-end-sale-img" key={item}/>
+          {seasonSaleEnd.map((item) => {
+            return(
+            <img src={item} className="season-end-sale-img" key={item}/>
+            )
           })}
         </div>
       </div>

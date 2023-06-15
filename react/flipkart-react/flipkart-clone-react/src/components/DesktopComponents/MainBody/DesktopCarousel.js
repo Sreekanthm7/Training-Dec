@@ -1,29 +1,11 @@
-import React, { useState, useEffect } from "react"
+import React, {useState} from "react"
 import "./DesktopCarousel.css"
 import arrow from "../../../assets/img/btnarrowdesktop.svg"
 
-function DesktopCarousel() {
-  const [carousel, setCarousel] = useState([])
+function DesktopCarousel({desktopCarousel}) {
   const [index, setIndex] = useState(0)
-
-  const fetchData = () => {
-    fetch(
-      "https://raw.githubusercontent.com/Sreekanthm7/jsondata/main/flipkart-json-data/flipkart.json"
-    )
-      .then((response) => {
-        return response.json()
-      })
-      .then((data) => {
-        setCarousel(data.DesktopCarousel)
-      })
-  }
-
-  useEffect(() => {
-    fetchData()
-  }, [])
-
   const CallIndex = () => {
-    setIndex(index == carousel.length - 1 ? 0 : index + 1)
+    setIndex(index == desktopCarousel.length - 1 ? 0 : index + 1)
   }
   // useEffect(() => {
      setTimeout(CallIndex, 3000)
@@ -51,7 +33,7 @@ function DesktopCarousel() {
           <img src={arrow} />
         </div>
         <div className="desktop-carousel-container">
-          {carousel.map((item) => {
+          {desktopCarousel.map((item) => {
             return (
               <div
                 className="desktop-carousel-img"

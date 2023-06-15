@@ -4,29 +4,10 @@ import "./MonsoonEssentials.css"
 import ProductDesktopCards from "./ProductDesktopCards"
 import arrow from "../../../assets/img/btnarrowdesktop.svg"
 
-function MonsoonEssentials() {
-  const [mainCard, setMainCard] = useState([])
-  const [productCard, setProductCard] = useState([])
+function MonsoonEssentials({mainCardData, productCardTwo}) {
   const imageCard = useRef()
   const arrowRight = useRef()
   const arrowLeft = useRef()
-
-  const fetchData = () => {
-    fetch(
-      "https://raw.githubusercontent.com/Sreekanthm7/jsondata/main/flipkart-json-data/flipkart.json"
-    )
-      .then((response) => {
-        return response.json()
-      })
-      .then((data) => {
-        setMainCard(data.MonsoonEssentialsMainCard)
-        setProductCard(data.MonsoonEssentialsDesktopCards)
-      })
-  }
-
-  useEffect(() => {
-    fetchData()
-  }, [])
 
   const handleClickRight = () => {
     imageCard.current.style.transform = `translateX(${-50}%)`
@@ -45,7 +26,7 @@ function MonsoonEssentials() {
     <>
       <div className="monsoon-essentials">
         <div className="moonsoon-essential-main-card">
-          <DataMainCardTwo text={mainCard} />
+          <DataMainCardTwo text={mainCardData[0]} />
         </div>
         <div
           className="left-btn-monsoon"
@@ -55,7 +36,7 @@ function MonsoonEssentials() {
           <img src={arrow} />
         </div>
         <div className="monsoon-essential-products" ref={imageCard}>
-          {productCard.map((item) => {
+          {productCardTwo.map((item) => {
             return (
               <ProductDesktopCards
                 img={item.img}

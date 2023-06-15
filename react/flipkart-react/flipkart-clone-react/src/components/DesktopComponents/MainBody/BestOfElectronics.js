@@ -4,29 +4,10 @@ import DataMainCard from "./DataMainCard"
 import ProductDesktopCards from "./ProductDesktopCards"
 import arrow from "../../../assets/img/btnarrowdesktop.svg"
 
-function BestOfElectronics() {
-  const [mainCardData, setMainCardData] = useState({})
-  const [productCard, setProductCard] = useState([])
+function BestOfElectronics({mainCardData, productCard}) {
   const imageCard = useRef()
   const arrowRight = useRef()
   const arrowLeft = useRef()
-
-  const fetchData = () => {
-    fetch(
-      "https://raw.githubusercontent.com/Sreekanthm7/jsondata/main/flipkart-json-data/flipkart.json"
-    )
-      .then((response) => {
-        return response.json()
-      })
-      .then((data) => {
-        setMainCardData(data.BestOfElectronics)
-        setProductCard(data.ElectronicsDesktop)
-      })
-  }
-
-  useEffect(() => {
-    fetchData()
-  }, [])
 
   const handleClickRight = () => {
     console.log(imageCard)

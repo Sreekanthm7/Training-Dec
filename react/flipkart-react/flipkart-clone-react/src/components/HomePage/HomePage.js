@@ -93,7 +93,6 @@ function HomePage() {
       key: key,
       value: components[key],
     }
-    arr.push(obj)
   })
 
   function getDataDesktop(item) {

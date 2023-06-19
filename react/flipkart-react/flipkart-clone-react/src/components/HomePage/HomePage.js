@@ -71,7 +71,6 @@ function HomePage() {
         setProductSportsCard(data.SportEssentialsDesktopCards)
         setMainCardMonsson(data.MonsoonEssentialsMainCard)
         setProductCardMonsoon(data.MonsoonEssentialsDesktopCards)
-     
       })
   }
 
@@ -85,25 +84,24 @@ function HomePage() {
   useEffect(() => {
     setTimeout(CallIndex, 2000)
   })
-  const CallCarouselIndex = () => {
-    setIndex(index == carousel.length - 1 ? 0 : index + 1)
-  }
 
   setTimeout(CallIndex, 3000)
 
-  const handleClickRight = () => {
-    setIndex(index + 1)
-    CallCarouselIndex()
-    clearTimeout()
+  let arr = []
+  Object.keys(components).map((key) => {
+    let obj = {
+      key: key,
+      value: components[key],
+    }
+    arr.push(obj)
+  })
+
+  function getDataDesktop(item) {
+    if (item.key === "flipkartNavMobile") {
+      return <MobileNav navData={item.value} />
+    }
   }
 
-  const handleClickLeft = () => {
-    setIndex(index - 1)
-    CallCarouselIndex()
-    clearTimeout()
-  }
-
-  console.log()
   return (
     <>
       <div className="Mobile-home-page">
@@ -115,9 +113,7 @@ function HomePage() {
 
         <FashionNav fashionData={fashionData} />
 
- 
-       <OfferNav offerNavData={offerNavData} />
-     
+        <OfferNav offerNavData={offerNavData} />
 
         <PopularPicks
           PopularPicksData={PopularPicksData}
@@ -152,7 +148,10 @@ function HomePage() {
             mainCardData={mainCardSports}
             productCardTwo={productSportsCard}
           />
-          <MonsoonEssentials mainCardData={mainCardMonsoon} productCardTwo={productCardMonsoon}/>
+          <MonsoonEssentials
+            mainCardData={mainCardMonsoon}
+            productCardTwo={productCardMonsoon}
+          />
         </div>
         <FlipkartFooter />
       </div>

@@ -19,58 +19,31 @@ import SeasonSaleEnd from "../MobileComponents/SeasonSaleEnd"
 import "./HomePage.css"
 
 function HomePage() {
-  const [navData, setNavData] = useState([])
-  const [desktopNavData, setDesktopNavData] = useState([])
   const [carousel, setCarousel] = useState([])
   let [index, setIndex] = useState(0)
-  const [fashionData, setFashionData] = useState([])
-  const [offerNavData, setOfferNavData] = useState([])
-  const [PopularPicksData, setPopularPicksData] = useState({})
   const [PopularPicksCardData, setPopularPicksCardData] = useState([])
-  const [seasonSaleEndData, setSeasonSaleEndData] = useState([])
-  const [grabOrGoneData, setGrabOrGoneData] = useState({})
   const [grabOrGoneCardData, setGrabOrGoneCardData] = useState([])
-  const [salesIsLiveData, setSalesLiveData] = useState({})
   const [salesCardData, setSalesCardData] = useState([])
-  const [Desktopcarousel, setDesktopCarousel] = useState([])
-  const [mainCardData, setMainCardData] = useState({})
   const [productCard, setProductCard] = useState([])
-  const [mainCardBeautyData, setMainCardBeautyData] = useState({})
   const [productCardBeauty, setProductCardBeauty] = useState([])
   const [productSportsCard, setProductSportsCard] = useState([])
-  const [mainCardSports, setMainCardSports] = useState([])
-  const [mainCardMonsoon, setMainCardMonsson] = useState([])
   const [productCardMonsoon, setProductCardMonsoon] = useState([])
+  const [components, setComponents] = useState([])
 
   const fetchData = () => {
-    fetch(
-      "https://raw.githubusercontent.com/Sreekanthm7/jsondata/main/flipkart-json-data/flipkart.json"
-    )
+    fetch("http://127.0.0.1:5500/flipkart.json")
       .then((response) => {
         return response.json()
       })
       .then((data) => {
-        setDesktopNavData(data.flipkartDesktopNav)
-        setNavData(data.flipkartNavMobile)
-        setCarousel(data.flipkartCarouselMobile)
-        setFashionData(data.fashionNavMobile)
-        setOfferNavData(data.navOfferSales)
-        setPopularPicksData(data.popularPicksMobile)
         setPopularPicksCardData(data.popularPicksCardsMobile)
-        setSeasonSaleEndData(data.seasonEndSaleMobile)
-        setGrabOrGoneData(data.grabOrGone)
         setGrabOrGoneCardData(data.grabGoneCards)
-        setSalesLiveData(data.saleIsLive)
         setSalesCardData(data.salesLiveCards)
-        setDesktopCarousel(data.DesktopCarousel)
-        setMainCardData(data.BestOfElectronics)
         setProductCard(data.ElectronicsDesktop)
-        setMainCardBeautyData(data.BeautyFoodToysAndMore)
         setProductCardBeauty(data.BeautyFoodToysAndMoreDesktopCards)
-        setMainCardSports(data.SportsEssentialMainCard)
         setProductSportsCard(data.SportEssentialsDesktopCards)
-        setMainCardMonsson(data.MonsoonEssentialsMainCard)
         setProductCardMonsoon(data.MonsoonEssentialsDesktopCards)
+        setComponents(data)
       })
   }
 
@@ -83,7 +56,7 @@ function HomePage() {
 
   useEffect(() => {
     setTimeout(CallIndex, 2000)
-  })
+  }, [])
 
   setTimeout(CallIndex, 3000)
 
@@ -93,11 +66,77 @@ function HomePage() {
       key: key,
       value: components[key],
     }
+    arr.push(obj)
   })
+  console.log(arr)
 
-  function getDataDesktop(item) {
-    if (item.key === "flipkartNavMobile") {
-      return <MobileNav navData={item.value} />
+  const getMobileData = (item) => {
+    switch (item.key) {
+      case "flipkartNavMobile":
+        return <MobileNav navData={item.value} />
+      case "flipkartCarouselMobile":
+        return <Carousel carousel={item.value} />
+      case "fashionNavMobile":
+        return <FashionNav fashionData={item.value} />
+      case "navOfferSales":
+        return <OfferNav offerNavData={item.value} />
+      case "popularPicksMobile":
+        return (
+          <PopularPicks
+            PopularPicksData={item.value}
+            PopularPicksCardData={PopularPicksCardData}
+          />
+        )
+      case "seasonEndSaleMobile":
+        return <SeasonSaleEnd seasonSaleEnd={item.value} />
+      case "grabOrGone":
+        return (
+          <GraborGone
+            grabOrGone={item.value}
+            grabOrGoneCard={grabOrGoneCardData}
+          />
+        )
+      case "saleIsLive":
+        return (
+          <SalesIsLive salesIsLive={item.value} salesCardData={salesCardData} />
+        )
+    }
+  }
+
+  const getDesktopData = (item) => {
+    switch (item.key) {
+      case "flipkartDesktopNav":
+        return <DesktopNav desktopNavData={item.value} />
+      case "DesktopCarousel":
+        return <DesktopCarousel desktopCarousel={item.value} />
+      case "BestOfElectronics":
+        return (
+          <BestOfElectronics
+            mainCardData={item.value}
+            productCard={productCard}
+          />
+        )
+      case "BeautyFoodToysAndMore":
+        return (
+          <BeautyAndMore
+            mainCardData={item.value}
+            productCard={productCardBeauty}
+          />
+        )
+      case "SportsEssentialMainCard":
+        return (
+          <SportsEssential
+            mainCardData={item.value}
+            productCardTwo={productSportsCard}
+          />
+        )
+      case "MonsoonEssentialsMainCard":
+        return (
+          <MonsoonEssentials
+            mainCardData={item.value}
+            productCardTwo={productCardMonsoon}
+          />
+        )
     }
   }
 
@@ -105,57 +144,20 @@ function HomePage() {
     <>
       <div className="Mobile-home-page">
         <Header />
-
-        <MobileNav navData={navData} />
-
-        <Carousel carousel={carousel} />
-
-        <FashionNav fashionData={fashionData} />
-
-        <OfferNav offerNavData={offerNavData} />
-
-        <PopularPicks
-          PopularPicksData={PopularPicksData}
-          PopularPicksCardData={PopularPicksCardData}
-        />
-        <SeasonSaleEnd seasonSaleEnd={seasonSaleEndData} />
-        <GraborGone
-          grabOrGone={grabOrGoneData}
-          grabOrGoneCard={grabOrGoneCardData}
-        />
-        <SalesIsLive
-          salesIsLive={salesIsLiveData}
-          salesCardData={salesCardData}
-        />
+        {arr.map((item) => getMobileData(item))}
       </div>
+
       <div className="Desktop-home-page">
         <HeaderDesktop />
 
-        <DesktopNav desktopNavData={desktopNavData} />
-
-        <div className="desktop-main-body">
-          <DesktopCarousel desktopCarousel={Desktopcarousel} />
-          <BestOfElectronics
-            mainCardData={mainCardData}
-            productCard={productCard}
-          />
-          <BeautyAndMore
-            mainCardData={mainCardBeautyData}
-            productCard={productCardBeauty}
-          />
-          <SportsEssential
-            mainCardData={mainCardSports}
-            productCardTwo={productSportsCard}
-          />
-          <MonsoonEssentials
-            mainCardData={mainCardMonsoon}
-            productCardTwo={productCardMonsoon}
-          />
-        </div>
-        <FlipkartFooter />
+        {arr.map((item) => getDesktopData(item))}
       </div>
+      <FlipkartFooter />
     </>
   )
 }
 
 export default HomePage
+
+
+

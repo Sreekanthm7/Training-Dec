@@ -1,20 +1,23 @@
-import { useState } from 'react'
+import { useState } from "react"
 
 type AuthUser = {
-    name: string
-    email: string
+  name: string
+  email: string
 }
 
 export const User = () => {
-    const [user, setUser] = useState(null)
-    const handleLogin = () => {}
-    
-    const handleLogOut = () => {}
-
-    return(
-        <div>
-            <button onClick={handleLogin}>Login</button>
-            <button onClick={handleLogOut}></button>
-        </div>
-    )
+  const [user, setUser] = useState<AuthUser>({} as AuthUser)
+  const handleLogin = () => {
+    setUser({
+      name: "Sreekanth",
+      email: "sreekanth@example.com",
+    })
+  }
+  return (
+    <div>
+      <button onClick={handleLogin}>Login</button>
+      <div>User name is {user?.name}</div>
+      <div>User email is {user?.email}</div>
+    </div>
+  )
 }

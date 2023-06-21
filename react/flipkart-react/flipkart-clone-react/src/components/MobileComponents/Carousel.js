@@ -5,6 +5,7 @@ function Carousel({ carousel,index }) {
 
   return (
     <>
+
      <div className="carousel-mobile">
           {carousel.map((item) => {
             return (
@@ -16,11 +17,13 @@ function Carousel({ carousel,index }) {
                 }}
                 key={item}
               >
+              
                 <img src={item} />
               </div>
             )
           })}
         </div>
+
     </>
   )
 }

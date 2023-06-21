@@ -1,5 +1,5 @@
 .fashion-nav {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(255, 255, 255);
   display: flex;
   transform: translateY(-4px);
 }

@@ -1,0 +1,25 @@
+
+
+@media screen and (min-width: 375px) {
+    .nav-bar-container img {
+        width: 70px;
+        height: 65px;
+    }
+    .nav-bar-container {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 425px){
+    .nav-bar-container img {
+        width: 78px;
+        height: 74px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .nav-bar-container img {
+        width: 141px;
+        height: 134px;
+    }
+}

@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Profile from './components/Profile';
+import AgeCounter from './components/AgeCounter';
 
 function App() {
   return (
     <div className="App">
-     <Profile />
+     <AgeCounter />
     </div>
   );
 }

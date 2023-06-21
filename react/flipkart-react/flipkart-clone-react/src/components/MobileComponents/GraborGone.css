@@ -19,7 +19,6 @@
   width: 100%;
   top: 18px;
   align-items: center;
-  
 }
 
 .grab-or-gone-head-content p {
@@ -50,8 +49,8 @@
 }
 
 .grab-or-gone-card-container-box {
-    margin-left: 10px;
-    margin-right: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  margin-left: 10px;
+  margin-right: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }

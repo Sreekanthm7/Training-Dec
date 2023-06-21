@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"
+import React, { useState, useEffect } from "react"
 import FlipkartFooter from "../DesktopComponents/Footer/FlipkartFooter"
 import HeaderDesktop from "../DesktopComponents/Header/HeaderDesktop"
 import BeautyAndMore from "../DesktopComponents/MainBody/BeautyAndMore"
@@ -153,13 +153,10 @@ function HomePage() {
         {arr.map((item) => getDesktopData(item))}
       </div>
       <div className="flipkart-footer">
-      <FlipkartFooter />
+        <FlipkartFooter />
       </div>
     </>
   )
 }
 
 export default HomePage
-
-
-

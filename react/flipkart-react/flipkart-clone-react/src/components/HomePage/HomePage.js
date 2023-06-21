@@ -152,7 +152,9 @@ function HomePage() {
 
         {arr.map((item) => getDesktopData(item))}
       </div>
+      <div className="flipkart-footer">
       <FlipkartFooter />
+      </div>
     </>
   )
 }

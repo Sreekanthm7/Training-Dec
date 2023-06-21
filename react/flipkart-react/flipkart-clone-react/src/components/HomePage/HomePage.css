@@ -30,6 +30,9 @@
   .Desktop-home-page {
     display: none;
   }
+  .flipkart-footer {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -38,6 +41,9 @@
   }
 
   .Desktop-home-page {
+    display: block;
+  }
+  .flipkart-footer {
     display: block;
   }
 }

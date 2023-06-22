@@ -1,14 +1,14 @@
 .season-end-sale {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
 .season-end-sale-head {
-    padding: 16px;
     display: flex;
     flex-direction: column;
+    padding: 16px;
 }
 
 .season-end-sale-head h3 {

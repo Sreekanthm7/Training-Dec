@@ -1,6 +1,6 @@
 .fashion-nav {
-  background-color: rgb(255, 255, 255);
   display: flex;
+  background-color: rgb(255, 255, 255);
   transform: translateY(-4px);
 }
 

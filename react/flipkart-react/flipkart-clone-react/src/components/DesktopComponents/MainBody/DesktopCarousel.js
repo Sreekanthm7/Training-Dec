@@ -1,8 +1,8 @@
-import React, { useState } from "react"
+import React, {useState} from "react"
 import "./DesktopCarousel.css"
 import arrow from "../../../assets/img/btnarrowdesktop.svg"
 
-function DesktopCarousel({ desktopCarousel }) {
+function DesktopCarousel({desktopCarousel}) {
   const [index, setIndex] = useState(0)
   const CallIndex = () => {
     setIndex(index == desktopCarousel.length - 1 ? 0 : index + 1)

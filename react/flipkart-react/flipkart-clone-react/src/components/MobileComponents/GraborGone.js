@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import "./GraborGone.css"
 import GrabOrGoneCards from "./GrabOrGoneCards"
 
 function GraborGone({grabOrGone, grabOrGoneCard}) {
-
   return (
     <>
       <div className="grab-or-gone-container">
@@ -21,8 +20,13 @@ function GraborGone({grabOrGone, grabOrGoneCard}) {
         <div className="grab-or-gone-card-container">
           <div className="grab-or-gone-card-container-box">
             {grabOrGoneCard.map((item) => {
-              return(
-              <GrabOrGoneCards img={item.img} text={item.text} link={item.link} key={item.img} />
+              return (
+                <GrabOrGoneCards
+                  img={item.img}
+                  text={item.text}
+                  link={item.link}
+                  key={item.img}
+                />
               )
             })}
           </div>

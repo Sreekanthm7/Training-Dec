@@ -1,8 +1,8 @@
 .data-main-card-two-img {
+  position: relative;
   width: 230px;
   z-index: 1;
   height: 361px;
-  position: relative;
 }
 
 .data-main-card-two-img img {
@@ -32,10 +32,13 @@
 }
 
 .view-all-btn-card-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 24px;
   background-color: #2874f0;
   color: #fff;
-  box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   border: none;
   cursor: pointer;
   width: 95px;
@@ -43,7 +46,4 @@
   border-radius: 2px;
   font-family: "roboto-regular";
   font-size: 13px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

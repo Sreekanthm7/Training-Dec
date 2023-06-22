@@ -2,7 +2,6 @@ import React from "react"
 import "./SalesIsLive.css"
 
 function SalesIsLive({salesIsLive, salesCardData}) {
-
   return (
     <>
       <div className="sales-is-live-container">

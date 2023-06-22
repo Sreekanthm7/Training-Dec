@@ -1,15 +1,15 @@
-import React, { useState } from "react"
+import React, {useState} from "react"
 import "./DesktopCarousel.css"
 import arrow from "../../../assets/img/btnarrowdesktop.svg"
 
-function DesktopCarousel({ desktopCarousel }) {
+function DesktopCarousel({desktopCarousel}) {
   const [index, setIndex] = useState(0)
   const CallIndex = () => {
     setIndex(index == desktopCarousel.length - 1 ? 0 : index + 1)
   }
-
-  setTimeout(CallIndex, 3000)
-
+  // useEffect(() => {
+     setTimeout(CallIndex, 3000)
+  // })
   const handleClickRight = () => {
     setIndex(index + 1)
     CallIndex()
@@ -39,13 +39,13 @@ function DesktopCarousel({ desktopCarousel }) {
                 }}
                 key={item}
               >
-                <img src={item} alt="carousel image" />
+                <img src={item} />
               </div>
             )
           })}
         </div>
         <div className="right-btn" onClick={handleClickRight}>
-          <img src={arrow} alt="arrow image" />
+          <img src={arrow} />
         </div>
       </div>
     </>

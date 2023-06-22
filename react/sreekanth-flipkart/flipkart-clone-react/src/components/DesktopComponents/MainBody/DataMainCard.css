@@ -1,19 +1,18 @@
-.data-main-card-two-img {
+.data-main-card-img {
   width: 230px;
   z-index: 1;
   height: 361px;
   position: relative;
 }
 
-.data-main-card-two-img img {
+.data-main-card-img img {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 230px;
 }
 
-.data-main-card-two-content {
-  top: 110px;
+.data-main-card-content {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -22,7 +21,7 @@
   align-items: center;
   transform: translate(10px, -16px);
 }
-.data-main-card-two-content h2 {
+.data-main-card-content h2 {
   font-size: 30px;
   word-wrap: break-word;
   line-height: 1.38;
@@ -31,7 +30,7 @@
   font-family: "roboto-regular";
 }
 
-.view-all-btn-card-two {
+.view-all-btn-card {
   margin-top: 24px;
   background-color: #2874f0;
   color: #fff;

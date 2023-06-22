@@ -1,11 +1,11 @@
-import React from 'react'
-import './DataMainCardTwo.css'
+import React from "react"
+import "./DataMainCardTwo.css"
 
-function DataMainCardTwo({img , text}) {
+function DataMainCardTwo({ img, text }) {
   return (
     <>
-        <div className="data-main-card-two-img">
-        <img src={img} />
+      <div className="data-main-card-two-img">
+        <img src={img} alt="main card img" />
       </div>
       <div className="data-main-card-two-content">
         <h2>{text}</h2>

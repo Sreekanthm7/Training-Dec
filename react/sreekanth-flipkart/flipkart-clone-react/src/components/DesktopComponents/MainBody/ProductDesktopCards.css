@@ -14,7 +14,7 @@
 .product-cards-heading {
   margin: 15px 0px 0px;
   color: #212121;
-  font-family: 'roboto-medium';
+  font-family: "roboto-medium";
   font-size: 14px;
   white-space: nowrap;
   overflow-x: hidden;
@@ -23,7 +23,7 @@
 
 .product-cards-link {
   font-size: 16px;
-  font-family: 'roboto-regular';
+  font-family: "roboto-regular";
   padding: 8px 0px 0px;
   color: #388e3c;
   white-space: nowrap;

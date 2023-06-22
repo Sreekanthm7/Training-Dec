@@ -4,11 +4,10 @@ import DataMainCardTwo from "./DataMainCardTwo"
 import ProductDesktopCards from "./ProductDesktopCards"
 import arrow from "../../../assets/img/btnarrowdesktop.svg"
 
-function BeautyAndMore({mainCardData, productCard}) {
+function BeautyAndMore({ mainCardData, productCard }) {
   const imageCard = useRef()
   const arrowRight = useRef()
   const arrowLeft = useRef()
-
 
   const handleClickRight = () => {
     imageCard.current.style.transform = `translateX(${-25}%)`

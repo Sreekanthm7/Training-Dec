@@ -35,7 +35,7 @@
     line-height: 1.38;
     font-weight: 400;
     width: 210px;
-    font-family: "roboto-regular";
+    font-family: 'roboto-regular';
   }
   
   .view-all-btn-card-two {
@@ -48,7 +48,7 @@
     width: 95px;
     height: 38px;
     border-radius: 2px;
-    font-family: "roboto-regular";
+    font-family: 'roboto-regular';
     font-size: 13px;
     display: flex;
     align-items: center;
@@ -92,10 +92,11 @@
   height: 104px;
   background-color: hsla(0, 0%, 100%, 0.98);
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.11);
-  position: absolute;
   z-index: 1;
   display: none;
 }
 .left-btn-monsoon img {
   transform: rotate(360deg);
 }
+
+

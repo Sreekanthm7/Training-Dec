@@ -1,0 +1,13 @@
+.fashion-nav {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  transform: translateY(-4px);
+}
+
+.fashion-nav-img img{
+  width: 100%;
+  height: 100%;
+}
+
+
+

@@ -22,10 +22,6 @@ function DesktopCarousel({desktopCarousel}) {
     clearTimeout()
   }
 
-  // const clearInterval = () => {
-  //   clearTimeout()
-  //   setTimeout(CallIndex, 3000)
-  // }
   return (
     <>
       <div className="desktop-carousel">

@@ -7,9 +7,8 @@ import carticon from "../../../assets/img/carticon.svg"
 function HeaderDesktop() {
   return (
     <>
-
       <div className="desktop-header">
-      <div className="black-class"></div>
+        <div className="black-class"></div>
         <div className="desktop-header-container">
           <div className="desktop-flipkart-icon">
             <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" />

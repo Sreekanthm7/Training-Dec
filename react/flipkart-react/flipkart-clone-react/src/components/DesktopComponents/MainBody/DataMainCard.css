@@ -27,10 +27,13 @@
   line-height: 1.38;
   font-weight: 400;
   width: 210px;
-  font-family: 'roboto-regular';
+  font-family: "roboto-regular";
 }
 
 .view-all-btn-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 24px;
   background-color: #2874f0;
   color: #fff;
@@ -40,9 +43,6 @@
   width: 95px;
   height: 38px;
   border-radius: 2px;
-  font-family: 'roboto-regular';
+  font-family: "roboto-regular";
   font-size: 13px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

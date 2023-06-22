@@ -2,9 +2,9 @@
   padding: 8px;
 }
 .nav-bar-container {
+  display: flex;
   height: 72.4955px;
   background-color: #fff;
-  display: flex;
   overflow-x: scroll;
   padding-right: 22px;
 }
@@ -17,13 +17,13 @@
   transform: translate(0);
 }
 .fashion-nav {
-  background-color: rgba(255, 255, 255, 1);
   display: flex;
+  background-color: rgba(255, 255, 255, 1);
   transform: translateY(-4px);
 }
 .offer-nav {
+  display: flex;
     background-color: rgba(255, 255, 255, 1);
-    display: flex;
     transform: translateY(-4px);
   }
 @media screen and (min-width: 320px) {

@@ -1,15 +1,13 @@
 .grab-or-gone-cards {
-    padding: 16px 16px 12px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-direction: column;
+    padding: 16px 16px 12px;
     background-color: #fff;
     border-right: 1px solid #e9e9e5;
     border-bottom: 1px solid #e9e9e5;
-    align-items: center;
-    justify-content: space-between;
 }
-
-
 
 .grab-or-gone-cards-img img{
     width: 100%;

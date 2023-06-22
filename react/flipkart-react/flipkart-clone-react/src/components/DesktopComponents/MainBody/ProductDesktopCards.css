@@ -8,11 +8,11 @@
 .product-desktop-cards img {
   width: 200px;
   height: 175px;
-  margin: 12.5px 0px;
+  margin: 12.5px 0;
 }
 
 .product-cards-heading {
-  margin: 15px 0px 0px;
+  margin: 15px 0 0;
   color: #212121;
   font-family: 'roboto-medium';
   font-size: 14px;
@@ -24,7 +24,7 @@
 .product-cards-link {
   font-size: 16px;
   font-family: 'roboto-regular';
-  padding: 8px 0px 0px;
+  padding: 8px 0 0;
   color: #388e3c;
   white-space: nowrap;
 }
@@ -32,7 +32,7 @@
 .product-cards-text {
   font-size: 14px;
   font-family: 'roboto-regular';
-  padding: 7px 0px 0px;
+  padding: 7px 0 0;
   color: #212121;
   opacity: 0.6;
 }

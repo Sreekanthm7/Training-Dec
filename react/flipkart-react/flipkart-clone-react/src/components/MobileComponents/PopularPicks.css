@@ -34,13 +34,13 @@
   grid-gap: 10px;
 }
 .popular-picks-cards {
-  padding: 16px 16px 12px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  padding: 16px 16px 12px;
   border-right-width: 1px;
   border-right-color: rgba(240, 240, 240, 1.00);
   background-color: #fff;
-  justify-content: space-around;
 }
 
 .popular-picks-card-img img {
@@ -75,14 +75,11 @@
   .popular-picks-content {
     bottom: 133px;
   }
-
   .popular-picks-top {
     height: 110.1111px;
   }
 }
 
-
-;
 
 
 

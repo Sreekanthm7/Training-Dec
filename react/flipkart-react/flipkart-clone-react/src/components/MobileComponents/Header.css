@@ -13,9 +13,11 @@
   color: rgb(255, 255, 255);
   padding: 12px;
 }
+
 .hamburger-logo-container {
   display: flex;
 }
+
 .flipkart-logo {
   width: 85px;
   margin-left: 10px;
@@ -36,58 +38,58 @@
 
 .login p {
   margin-left: 39px;
-    margin-right: 13px;
-    font-family: 'roboto-regular';
-    color: #EAEAEA;
+  margin-right: 13px;
+  font-family: 'roboto-regular';
+  color: #eaeaea;
 }
- .cart-icon img {
-  margin-left:  25px;
- }
+.cart-icon img {
+  margin-left: 25px;
+}
 
- .plus-logo img {
-  width:  17px;
+.plus-logo img {
+  width: 17px;
   height: 16px;
- }
+}
 
- .plus-logo {
+.plus-logo {
   transform: translateY(2px);
- }
+}
 
- .cart-icon {
+.cart-icon {
   transform: translateY(2px);
- }
+}
 
- .login {
+.login {
   transform: translateY(-1px);
- }
+}
 
- .header-search-container {
+.header-search-container {
   height: 52px;
   padding-left: 2%;
   padding-right: 2%;
- }
+}
 
- .search-bar {
-  height: 38px;
-  background-color: rgba(255,255,255,1.00);
+.search-bar {
   display: flex;
   align-items: center;
+  height: 38px;
+  background-color: rgba(255, 255, 255, 1);
   transform: translateY(7px);
   cursor: pointer;
- }
+}
 
- .search-icon {
+.search-icon {
   margin: 10px;
- }
+}
 
- .search-icon img {
+.search-icon img {
   width: 14px;
   height: 14px;
   transform: translateY(2px);
- }
+}
 
- .search-bar p {
-  color: rgba(135,135,135,1.00);
+.search-bar p {
+  color: rgba(135, 135, 135, 1);
   font-size: 14px;
   font-family: 'roboto-regular';
- }
+}

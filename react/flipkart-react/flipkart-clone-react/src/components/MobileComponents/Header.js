@@ -29,7 +29,7 @@ function Header() {
           </div>
         </div>
         <div className="header-search-container">
-          <div className="search-bar"> 
+          <div className="search-bar">
             <span className="search-icon">
               <img src="https://rukminim1.flixcart.com/www/30/30/promos/28/04/2022/b05dc6a8-7e45-48ef-8f27-482e3a02bd67.png?q=90" />
             </span>

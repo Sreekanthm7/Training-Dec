@@ -24,16 +24,16 @@
 .product-cards-link {
   font-size: 16px;
   font-family: 'roboto-regular';
-  padding: 8px 0 0;
   color: #388e3c;
+  padding: 8px 0 0;
   white-space: nowrap;
 }
 
 .product-cards-text {
   font-size: 14px;
   font-family: 'roboto-regular';
-  padding: 7px 0 0;
   color: #212121;
+  padding: 7px 0 0;
   opacity: 0.6;
 }
 

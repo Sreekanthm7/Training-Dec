@@ -3,10 +3,10 @@
 }
 .nav-bar-container {
   display: flex;
-  height: 72.4955px;
-  background-color: #fff;
   overflow-x: scroll;
   padding-right: 22px;
+  height: 72.4955px;
+  background-color: #fff;
 }
 .carousel-mobile {
   display: flex;

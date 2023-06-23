@@ -2,7 +2,7 @@ import React from "react"
 import "./GraborGone.css"
 import GrabOrGoneCards from "./GrabOrGoneCards"
 
-function GraborGone({grabOrGone, grabOrGoneCard}) {
+function GraborGone({ grabOrGone, grabOrGoneCard }) {
   return (
     <>
       <div className="grab-or-gone-container">
@@ -23,6 +23,7 @@ function GraborGone({grabOrGone, grabOrGoneCard}) {
               return (
                 <GrabOrGoneCards
                   img={item.img}
+                  alt="grab or gone card images"
                   text={item.text}
                   link={item.link}
                   key={item.img}

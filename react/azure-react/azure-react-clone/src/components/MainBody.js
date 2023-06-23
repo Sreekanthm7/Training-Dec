@@ -3,7 +3,6 @@ import AzureProducts from "./AzureProducts"
 import HybridData from "./HybridData"
 import Innovation from "./Innovation"
 import "./MainBody.css"
-import downArrow from "../assets/img/arrow.svg"
 import AzureCustomers from "./AzureCustomers"
 import AccelarationMigration from "./AccelarationMigration"
 import DiscoverAzure from "./DiscoverAzure"
@@ -31,7 +30,6 @@ function MainBody() {
   }, [])
   return (
     <div>
-
       <Innovation />
       <div className="on-premise-hybrid">
         <div className="on-premise-hybrid-container">

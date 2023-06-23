@@ -10,7 +10,7 @@ function DesktopNav({desktopNavData}) {
             <div className="desktop-nav">
               <div className="desktop-nav-cards" key={item}>
                 <div className="desktop-nav-img">
-                  <img src={item.img} />
+                  <img src={item.img} alt="nav bar images" />
                 </div>
                 <div className="nav-title">
                   <p>{item.text}</p>

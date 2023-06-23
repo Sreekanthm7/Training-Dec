@@ -8,7 +8,7 @@ function FashionNav({fashionData}) {
         {fashionData.map((item) => {
           return (
             <div className="fashion-nav-img" key={item}>
-              <img src={item} />
+              <img src={item} alt="fashion nav images" />
             </div>
           )
         })}

@@ -6,7 +6,7 @@ function PopularCards({img, text, link}) {
     <>
       <div className="popular-picks-cards">
         <div className="popular-picks-card-img">
-          <img src={img} />
+          <img src={img} alt="popular cards image" />
         </div>
         <div className="popular-picks-cards-content">
           <h3>{text}</h3>

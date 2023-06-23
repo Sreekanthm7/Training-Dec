@@ -1,7 +1,7 @@
 import React from "react"
 import "./SeasonSaleEnd.css"
 
-function SeasonSaleEnd({seasonSaleEnd}) {
+function SeasonSaleEnd({ seasonSaleEnd }) {
   return (
     <>
       <div className="season-end-sale">
@@ -11,7 +11,14 @@ function SeasonSaleEnd({seasonSaleEnd}) {
         </div>
         <div className="season-end-sale-cards">
           {seasonSaleEnd.map((item) => {
-            return <img src={item} className="season-end-sale-img" key={item} />
+            return (
+              <img
+                src={item}
+                className="season-end-sale-img"
+                key={item}
+                alt="season end sale card images"
+              />
+            )
           })}
         </div>
       </div>

@@ -24,7 +24,7 @@
 .grab-or-gone-head-content p {
   font-size: 14px;
   color: #212121;
-  font-family: 'roboto-medium';
+  font-family: "roboto-medium";
 }
 
 .view-all-btn {
@@ -51,6 +51,5 @@
 .grab-or-gone-card-container-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px;
 }

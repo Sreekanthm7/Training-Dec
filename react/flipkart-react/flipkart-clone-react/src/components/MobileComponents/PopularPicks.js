@@ -2,7 +2,7 @@ import React from "react"
 import "./PopularPicks.css"
 import PopularCards from "./PopularCards"
 
-function PopularPicks({PopularPicksData, PopularPicksCardData}) {
+function PopularPicks({ PopularPicksData, PopularPicksCardData }) {
   return (
     <>
       <div className="popular-picks-cotainer">
@@ -20,6 +20,7 @@ function PopularPicks({PopularPicksData, PopularPicksCardData}) {
             return (
               <PopularCards
                 img={item.img}
+                alt="popular picks images"
                 text={item.text}
                 link={item.link}
                 key={item.img}

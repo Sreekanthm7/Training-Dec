@@ -13,8 +13,8 @@ function App() {
 
       <CounterOne />
       <CounterTwo />
-      {/* <DocTitleOne />
-     <DocTitleTwo /> */}
+      <DocTitleOne />
+      <DocTitleTwo />
     </div>
   )
 }

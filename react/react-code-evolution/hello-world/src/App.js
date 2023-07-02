@@ -11,13 +11,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
         <h1>Welcome to my app</h1>
-      <MyButton />
+        <MyButton />
 
         {/* <Counter /> */}
 
-        {/* <Message /> */}
+        <Message />
 
         {/* /* <Greet name="Bruce" heroName="Batman">
         <p>This is children props</p>
